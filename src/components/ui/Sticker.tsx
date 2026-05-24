@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 interface StickerProps {
@@ -51,11 +52,14 @@ export const Sticker: React.FC<StickerProps> = ({
       style={{ width, height }}
       data-testid="sticker-container"
     >
-      <img
+      <Image
         src={src}
         alt={alt}
+        width={width}
+        height={height}
         className="w-full h-full object-contain pointer-events-none"
         draggable={false}
+        loading="lazy"
       />
     </motion.div>
   );

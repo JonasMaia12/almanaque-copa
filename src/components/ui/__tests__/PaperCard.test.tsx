@@ -52,4 +52,66 @@ describe('PaperCard Component', () => {
     expect(wrapper).toHaveClass('perspective-1000');
     expect(motionContainer).toHaveClass('transform-style-3d');
   });
+
+  it('is accessible via keyboard: has role="button" and tabIndex=0', () => {
+    render(<PaperCard player={mockPlayer} />);
+    
+    const wrapper = screen.getByTestId('papercard-3d-wrapper');
+    expect(wrapper).toHaveAttribute('role', 'button');
+    expect(wrapper).toHaveAttribute('tabindex', '0');
+  });
+
+  it('has descriptive aria-label that updates after flip', () => {
+    render(<PaperCard player={mockPlayer} />);
+    
+    const wrapper = screen.getByTestId('papercard-3d-wrapper');
+    
+    // Estado inicial: label convida a ver as estatísticas
+    expect(wrapper).toHaveAttribute(
+      'aria-label',
+      'Ver estatísticas de Jogador de Teste'
+    );
+    
+    // Após o clique (flip): label convida a voltar
+    fireEvent.click(wrapper);
+    expect(wrapper).toHaveAttribute(
+      'aria-label',
+      'Voltar para a frente do card de Jogador de Teste'
+    );
+    
+    // Ao clicar novamente: volta ao label original
+    fireEvent.click(wrapper);
+    expect(wrapper).toHaveAttribute(
+      'aria-label',
+      'Ver estatísticas de Jogador de Teste'
+    );
+  });
+
+  it('toggles flip state on click', () => {
+    render(<PaperCard player={mockPlayer} />);
+    
+    const wrapper = screen.getByTestId('papercard-3d-wrapper');
+    const frontSide = screen.getByTestId('card-front');
+    const backSide = screen.getByTestId('card-back');
+    
+    // Estado inicial: frente visível (aria-hidden=false), verso oculto (aria-hidden=true)
+    expect(frontSide).toHaveAttribute('aria-hidden', 'false');
+    expect(backSide).toHaveAttribute('aria-hidden', 'true');
+    
+    // Após clique: estados invertidos
+    fireEvent.click(wrapper);
+    expect(frontSide).toHaveAttribute('aria-hidden', 'true');
+    expect(backSide).toHaveAttribute('aria-hidden', 'false');
+  });
+
+  it('triggers flip on Enter key press', () => {
+    render(<PaperCard player={mockPlayer} />);
+    
+    const wrapper = screen.getByTestId('papercard-3d-wrapper');
+    
+    expect(wrapper).toHaveAttribute('aria-label', 'Ver estatísticas de Jogador de Teste');
+    
+    fireEvent.keyDown(wrapper, { key: 'Enter' });
+    expect(wrapper).toHaveAttribute('aria-label', 'Voltar para a frente do card de Jogador de Teste');
+  });
 });
