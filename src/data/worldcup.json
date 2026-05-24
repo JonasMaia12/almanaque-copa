@@ -4,10 +4,10 @@
       "id": "brasil",
       "name": "Brasil",
       "group": "Grupo G",
-      "badge_image": "/images/badges/brasil.webp",
+      "badge_image": "/images/badges/brasil.png",
       "theme_color": "#ffdf00",
       "titles_count": 5,
-      "manager": "Dorival Júnior",
+      "manager": "Carlo Ancelotti",
       "history": {
         "summary": "Único país pentacampeão mundial e a única seleção a participar de todas as edições da história das Copas do Mundo, o Brasil é sinônimo de futebol arte e alegria em campo.",
         "milestones": "Títulos marcantes conquistados em 1958 (Suécia), 1962 (Chile), 1970 (México), 1994 (EUA) e 2002 (Coreia/Japão)."
@@ -24,7 +24,7 @@
           "position": "Atacante",
           "age": 25,
           "current_club": "Real Madrid",
-          "illustration_url": "/images/players/vini-jr.webp",
+          "illustration_url": "/images/players/vini-jr.png",
           "short_bio": "Revelado pelo Flamengo e estrela do Real Madrid, conhecido por sua velocidade estonteante, dribles desconcertantes e protagonismo em finais europeias.",
           "stats": {
             "career_goals": 145,
@@ -39,8 +39,8 @@
           "jersey_number": 10,
           "position": "Atacante",
           "age": 34,
-          "current_club": "Al-Hilal",
-          "illustration_url": "/images/players/neymar-jr.webp",
+          "current_club": "Santos",
+          "illustration_url": "/images/players/neymar-jr.png",
           "short_bio": "Um dos maiores talentos de sua geração, maior artilheiro da história da Seleção Brasileira em jogos oficiais, dotado de genialidade técnica incomparável.",
           "stats": {
             "career_goals": 436,
@@ -56,7 +56,7 @@
           "position": "Goleiro",
           "age": 33,
           "current_club": "Liverpool",
-          "illustration_url": "/images/players/alisson.webp",
+          "illustration_url": "/images/players/alisson.png",
           "short_bio": "Considerado um dos melhores goleiros do mundo, destaca-se pelo posicionamento perfeito, frieza em situações de mano a mano e reposição de bola precisa.",
           "stats": {
             "career_goals": 1,
@@ -72,7 +72,7 @@
           "position": "Zagueiro",
           "age": 32,
           "current_club": "Paris Saint-Germain",
-          "illustration_url": "/images/players/marquinhos.webp",
+          "illustration_url": "/images/players/marquinhos.png",
           "short_bio": "Capitão do PSG e pilar defensivo da seleção, famoso por sua velocidade de recuperação, excelente impulsão e antecipações limpas.",
           "stats": {
             "career_goals": 38,
@@ -88,7 +88,7 @@
           "position": "Meio-campista",
           "age": 28,
           "current_club": "Newcastle United",
-          "illustration_url": "/images/players/bruno-g.webp",
+          "illustration_url": "/images/players/bruno-g.png",
           "short_bio": "Meio-campista dinâmico e cerebral, dita o ritmo de jogo com passes verticais primorosos, excelente visão de jogo e combatividade defensiva.",
           "stats": {
             "career_goals": 29,
@@ -104,7 +104,7 @@
           "position": "Atacante",
           "age": 25,
           "current_club": "Real Madrid",
-          "illustration_url": "/images/players/rodrygo.webp",
+          "illustration_url": "/images/players/rodrygo.png",
           "short_bio": "Conhecido como 'Rayo', é um jogador extremamente inteligente e polivalente no ataque, decisivo sob pressão e letal em competições eliminatórias.",
           "stats": {
             "career_goals": 82,
@@ -119,7 +119,7 @@
       "id": "argentina",
       "name": "Argentina",
       "group": "Grupo C",
-      "badge_image": "/images/badges/argentina.webp",
+      "badge_image": "/images/badges/argentina.png",
       "theme_color": "#74acdf",
       "titles_count": 3,
       "manager": "Lionel Scaloni",
@@ -139,7 +139,7 @@
           "position": "Atacante",
           "age": 38,
           "current_club": "Inter Miami",
-          "illustration_url": "/images/players/lionel-messi.webp",
+          "illustration_url": "/images/players/lionel-messi.png",
           "short_bio": "Amplamente considerado um dos maiores jogadores de todos os tempos, capitão e lenda viva, coroou sua carreira extraordinária com o título mundial em 2022.",
           "stats": {
             "career_goals": 838,
@@ -155,7 +155,7 @@
           "position": "Goleiro",
           "age": 33,
           "current_club": "Aston Villa",
-          "illustration_url": "/images/players/dibu-martinez.webp",
+          "illustration_url": "/images/players/dibu-martinez.png",
           "short_bio": "Conhecido como 'Dibu', é um goleiro gigante em decisões de pênaltis, famoso por suas defesas milagrosas nos minutos finais e personalidade provocativa.",
           "stats": {
             "career_goals": 0,
@@ -171,7 +171,7 @@
           "position": "Meio-campista",
           "age": 32,
           "current_club": "Atlético de Madrid",
-          "illustration_url": "/images/players/rodrigo-depaul.webp",
+          "illustration_url": "/images/players/rodrigo-depaul.png",
           "short_bio": "O 'motorzinho' da seleção argentina, destaca-se pela entrega física incansável, proteção ao capitão Messi e qualidade na transição ofensiva.",
           "stats": {
             "career_goals": 12,
@@ -187,7 +187,7 @@
           "position": "Atacante",
           "age": 28,
           "current_club": "Internazionale",
-          "illustration_url": "/images/players/lautaro-martinez.webp",
+          "illustration_url": "/images/players/lautaro-martinez.png",
           "short_bio": "Artilheiro implacável conhecido como 'El Toro', combina força física exuberante, excelente finalização de primeira e espírito de liderança.",
           "stats": {
             "career_goals": 142,
@@ -203,7 +203,7 @@
           "position": "Meio-campista",
           "age": 27,
           "current_club": "Liverpool",
-          "illustration_url": "/images/players/alexis-macallister.webp",
+          "illustration_url": "/images/players/alexis-macallister.png",
           "short_bio": "Meio-campista de extrema classe e inteligência tática, controla os espaços vazios e cria chances claras com passes de alta categoria.",
           "stats": {
             "career_goals": 36,
@@ -219,7 +219,7 @@
           "position": "Meio-campista",
           "age": 25,
           "current_club": "Chelsea",
-          "illustration_url": "/images/players/enzo-fernandez.webp",
+          "illustration_url": "/images/players/enzo-fernandez.png",
           "short_bio": "Volante dinâmico revelado pelo River Plate, dita o ritmo com lançamentos precisos de longa distância e excelente leitura defensiva.",
           "stats": {
             "career_goals": 18,

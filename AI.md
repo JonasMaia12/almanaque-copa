@@ -61,11 +61,11 @@ O design simula um **caderno de recortes físico** e toda a interface deve ser d
     {
       "id": "brasil",
       "name": "Brasil",
-      "group": "Grupo A",
+      "group": "Grupo G",
       "badge_image": "/images/badges/brasil.webp",
       "theme_color": "#ffdf00",
       "titles_count": 5,
-      "manager": "Dorival Júnior",
+      "manager": "Carlo Ancelotti",
       "history": {
         "summary": "Único país pentacampeão mundial...",
         "milestones": "Títulos marcantes em 1958, 1962, 1970, 1994 e 2002."
@@ -117,7 +117,7 @@ Todas as imagens serão geradas diretamente pelo assistente IA e salvas na pasta
 
 ### 4.3. Figurinhas dos Jogadores (Stickers)
 *   **Estilo:** Pop-Art de futebol com fundo transparente/isolado.
-    > *"Vector pop-art silhouette of [NOME DO JOGADOR], wearing [CORES DA SELEÇÃO] jersey with number [NÚMERO], highly recognizable facial features or signature hair, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style, isolated white background --no realistic photo"*
+    > *"Vector pop-art silhouette portrait of [DESCRIÇÃO DO JOGADOR], wearing [CORES DA SELEÇÃO] national jersey with number [NÚMERO], clean jersey with no generic words or generic text, displaying the team logo shield on the left chest, highly recognizable facial features and signature hair, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
 *   *Nota:* O fundo será removido programaticamente ou na geração para garantir transparência absoluta (`.webp`).
 
 ---
