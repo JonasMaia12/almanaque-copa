@@ -120,6 +120,19 @@ Todas as imagens serão geradas diretamente pelo assistente IA e salvas na pasta
     > *"Vector pop-art silhouette portrait of [DESCRIÇÃO DO JOGADOR], wearing [CORES DA SELEÇÃO] national jersey with number [NÚMERO], clean jersey with no generic words or generic text, displaying the team logo shield on the left chest, highly recognizable facial features and signature hair, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
 *   *Nota:* O fundo será removido programaticamente ou na geração para garantir transparência absoluta (`.webp`).
 
+### 4.4. Exemplos de Prompts Reais de Jogadores Utilizados
+Para manter a consistência visual em futuras expansões de figurinhas, siga as estruturas de prompts reais utilizadas nos pilotos:
+* **Vinícius Júnior (Brasil):**
+  > *"Vector pop-art silhouette portrait of Vinicius Junior, wearing yellow and green Brazilian national jersey with number 7, clean jersey with no generic words or generic text, displaying the Brazil flag shield on the left chest, highly recognizable facial features and signature hair, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
+* **Lionel Messi (Argentina):**
+  > *"Vector pop-art silhouette portrait of Lionel Messi, wearing light blue and white striped Argentine national jersey with number 10, clean jersey with no generic words or generic text, displaying the Argentina flag shield on the left chest, highly recognizable facial features and signature beard and hair, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
+* **Neymar Jr. (Brasil):**
+  > *"Vector pop-art silhouette portrait of Neymar Jr, wearing yellow and green Brazilian national jersey with number 10, clean jersey with no generic words or generic text, displaying the Brazil flag shield on the left chest, highly recognizable facial features and signature haircut, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
+* **Alisson Becker (Brasil - Goleiro):**
+  > *"Vector pop-art silhouette portrait of goalkeeper Alisson Becker, wearing black goalkeeper national jersey with number 1, clean jersey with no generic words or generic text, displaying the Brazil flag shield on the left chest, highly recognizable facial features with prominent beard, goalkeeper gloves on hands, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
+* **Emiliano 'Dibu' Martínez (Argentina - Goleiro):**
+  > *"Vector pop-art silhouette portrait of goalkeeper Emiliano Dibu Martinez, wearing green goalkeeper national jersey with number 23, clean jersey with no generic words or generic text, displaying the Argentina flag shield on the left chest, highly recognizable facial features and hair style, goalkeeper gloves on hands, comic book halftone dots background, dynamic soccer action pose, sharp vector lines, paper cutout edge sticker style with clean thick white outline border, isolated on solid plain neutral background --no realistic photo"*
+
 ---
 
 ## 5. Fluxo de Git & Gerenciamento de Código
@@ -168,4 +181,19 @@ Para garantir reversibilidade e segurança, adotaremos um fluxo estrito de contr
 - [x] Escrita de testes E2E com Playwright (navegação de grupos, flip de cards, responsividade mobile Pixel 5).
 - [x] Execução bem-sucedida do build de produção final estático (`npm run build`).
 - [x] Conclusão de todas as validações locais com 100% de aprovação (testes e compilação Next.js).
+
+---
+
+## 7. Próximos Passos (Fase 5 - Expansão & Refinamentos)
+
+Para as próximas sessões de desenvolvimento do Almanaque da Copa, planeja-se:
+1. **Expansão do Plantel de Jogadores**:
+   * Duplicar o número de jogadores cadastrados no `worldcup.json` para cada seleção (estendendo as seleções de 3 para 6 jogadores, e de 6 para 11 jogadores no Brasil e Argentina).
+   * Gerar as respectivas figurinhas Pop-Art para os novos jogadores cadastrados seguindo os prompts de exemplo da Seção 4.4.
+2. **Interatividade de Arrastar Adesivos (Drag & Drop)**:
+   * Implementar a capacidade física de arrastar adesivos e figurinhas livremente sobre a mesa de corte verde (Home) e as páginas internas de papel pautado usando o suporte a `drag` do Framer Motion, simulando o comportamento de um scrapbook de verdade.
+3. **Novas Seleções de Destaque**:
+   * Completar as informações e assets visuais exclusivos para outras grandes seleções (como França com Kylian Mbappé, Portugal com Cristiano Ronaldo, Espanha com Lamine Yamal e Inglaterra com Jude Bellingham).
+4. **Deploy & CI/CD**:
+   * Configurar e implantar a build SSG no Vercel (Plano Hobby) e associar as rodadas de testes automatizados unitários (Vitest) e E2E (Playwright) em uma pipeline de GitHub Actions para evitar regressões visuais ou quebras no fluxo do usuário.
 
