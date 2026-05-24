@@ -89,7 +89,7 @@ const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/ec98dadf-3
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: 'vini_jr_sticker.png', out: `${publicDir}/players/vini-jr.png` }
+  { in: 'dibu_1779644252043.png', out: `${publicDir}/players/dibu-martinez.png` }
 ];
 
 async function run() {
