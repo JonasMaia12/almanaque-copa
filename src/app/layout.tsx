@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Permanent_Marker, Caveat, Kalam } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const permanentMarker = Permanent_Marker({
+  weight: "400",
+  variable: "--font-marker",
   subsets: ["latin"],
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const caveat = Caveat({
+  variable: "--font-handwritten",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const kalam = Kalam({
+  weight: ["300", "400", "700"],
+  variable: "--font-stats",
   subsets: ["latin"],
   display: "swap",
 });
@@ -27,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${outfit.variable} h-full antialiased`}
+      className={`${permanentMarker.variable} ${caveat.variable} ${kalam.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-handwritten">
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Player } from '@/types/worldcup';
 
@@ -21,10 +22,25 @@ export const PaperCard: React.FC<PaperCardProps> = ({
     setIsFlipped(!isFlipped);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleCardClick();
+    }
+  };
+
+  const flipLabel = isFlipped
+    ? `Voltar para a frente do card de ${player.name}`
+    : `Ver estatísticas de ${player.name}`;
+
   return (
     <div 
       className="relative w-[280px] h-[400px] perspective-1000 cursor-pointer select-none mx-auto"
+      role="button"
+      tabIndex={0}
+      aria-label={flipLabel}
       onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
       data-testid="papercard-3d-wrapper"
     >
       <motion.div
@@ -51,6 +67,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
           className="absolute inset-0 w-full h-full rounded-2xl bg-white p-4 flex flex-col justify-between backface-hidden border-4 border-neutral-100 shadow-scrapbook"
           style={{ borderColor: `${themeColor}cc` }}
           data-testid="card-front"
+          aria-hidden={isFlipped}
         >
           {/* Fundo de papelão sutil no card para dar profundidade física */}
           <div className="absolute inset-0 rounded-xl opacity-[0.03] bg-repeat pointer-events-none" style={{ backgroundImage: "url('/images/textures/kraft-paper.png')" }} />
@@ -63,6 +80,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
             <div 
               className="w-8 h-8 rounded-full flex items-center justify-center text-white font-extrabold shadow-sm border border-white/20"
               style={{ backgroundColor: themeColor }}
+              aria-label={`Camisa ${player.jersey_number}`}
             >
               {player.jersey_number}
             </div>
@@ -74,12 +92,16 @@ export const PaperCard: React.FC<PaperCardProps> = ({
             <div 
               className="absolute w-32 h-32 rounded-full opacity-10 filter blur-xs animate-pulse"
               style={{ backgroundColor: themeColor }}
+              aria-hidden="true"
             />
-            <img
+            <Image
               src={player.illustration_url}
-              alt={player.name}
+              alt={`Ilustração pop-art de ${player.name}`}
+              width={200}
+              height={220}
               className="h-full w-full object-contain z-10 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] pointer-events-none"
               draggable={false}
+              loading="lazy"
             />
           </div>
 
@@ -99,6 +121,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
           className="absolute inset-0 w-full h-full rounded-2xl p-4 flex flex-col justify-between backface-hidden rotate-y-180 border-4 border-neutral-100 shadow-scrapbook bg-amber-50"
           style={{ borderColor: themeColor }}
           data-testid="card-back"
+          aria-hidden={!isFlipped}
         >
           {/* Fundo de textura pautada amassada para o verso parecer uma anotação de caderno */}
           <div className="absolute inset-0 rounded-xl bg-lined-paper opacity-[0.25] pointer-events-none" />
@@ -112,6 +135,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
               <div 
                 className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold"
                 style={{ backgroundColor: themeColor }}
+                aria-label={`Camisa ${player.jersey_number}`}
               >
                 {player.jersey_number}
               </div>
@@ -120,7 +144,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
             {/* Biografia Curta (Estilizada como escrita à mão) */}
             <div className="my-3 bg-white/70 backdrop-blur-xs p-3 rounded-lg border border-neutral-200/40 relative shadow-xs">
               <p className="text-xs text-neutral-700 italic leading-relaxed font-sans">
-                "{player.short_bio}"
+                &quot;{player.short_bio}&quot;
               </p>
             </div>
 
@@ -145,7 +169,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({
 
             {/* Fato Histórico (Estilo Recorte de Jornal Velho) */}
             <div className="mt-3 p-3 bg-neutral-100/90 rounded border-l-4 border-neutral-500 shadow-2xs relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-neutral-400 text-white text-[7px] font-black uppercase px-1">
+              <div className="absolute top-0 right-0 bg-neutral-400 text-white text-[7px] font-black uppercase px-1" aria-hidden="true">
                 FATO
               </div>
               <p className="text-[10px] text-neutral-600 font-semibold leading-relaxed">

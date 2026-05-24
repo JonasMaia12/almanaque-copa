@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-outfit);
+  --font-marker: var(--font-marker);
+  --font-handwritten: var(--font-handwritten);
+  --font-stats: var(--font-stats);
+  
+  --color-mesa: #1a2e1a;
+  --color-kraft: #c8a97e;
+  --color-papel: #f0e8d0;
+  --color-linha-caderno: #c8d8e8;
+  --color-caneta-azul: #1a3a6b;
+  --color-caneta-vermelha: #8b1a1a;
+  --color-caneta-preta: #1a1a1a;
+  --color-marca-texto: rgba(255, 224, 102, 0.75);
+  --color-marca-verde: rgba(102, 255, 153, 0.65);
+  --color-punk-red: #cc1100;
   
   /* Sombras reais tridimensionais de papel/colagem */
   --shadow-scrapbook: 
@@ -25,50 +37,44 @@
 }
 
 :root {
-  --color-green-cutting: #15392d;
+  --color-green-cutting: var(--color-mesa);
 }
 
 body {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-handwritten), system-ui, sans-serif;
   background-color: var(--color-green-cutting);
   overflow-x: hidden;
 }
 
-/* --- ESTILOS DE TEXTURAS REAIS (ORCÂNICAS E TÁTEIS) --- */
+/* --- ESTILOS DE TEXTURAS CSS (ORCÂNICAS E TÁTEIS) --- */
 
-/* Fundo da Mesa de Trabalho (Mesa de Corte Verde + Vinheta de Iluminação) */
+/* Fundo da Mesa de Trabalho (Mesa de Corte Verde + Grain) */
 .bg-cutting-mat {
-  background-image: 
-    radial-gradient(circle, transparent 20%, rgba(0, 0, 0, 0.65) 100%),
-    url('/images/textures/cutting-mat.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: 
+    /* SVG feTurbulence em base64 via background-image inline */
+    url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.15" /></svg>'),
+    radial-gradient(ellipse at center, #22402a 0%, #0f1f10 100%);
+  background-size: 200px 200px, 100% 100%;
   background-attachment: fixed;
 }
 
-/* Textura de Papelão Kraft (Capa do Caderno) com sutil overlay de gradiente para volume */
+/* Textura de Papelão Kraft (Capa do Caderno) */
 .bg-kraft-cardboard {
-  background-image: 
-    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.15) 100%),
-    url('/images/textures/kraft-paper.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: 
+    url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.08" /></svg>'),
+    linear-gradient(135deg, #d4b483 0%, #b8956a 100%);
+  background-size: 200px 200px, 100% 100%;
 }
 
-/* Textura de Papel Pautado Amassado (Páginas Internas) */
+/* Textura de Papel Pautado */
 .bg-lined-paper {
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.03) 0%, transparent 5%, transparent 95%, rgba(0, 0, 0, 0.03) 100%),
-    url('/images/textures/crinkled-lined-paper.png');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Textura de papelão cru para divisórias */
-.paper-edge-shadow {
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  background: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      var(--color-linha-caderno) 27px,
+      var(--color-linha-caderno) 28px
+    ), var(--color-papel);
 }
 
 /* Perspectiva 3D para virada de cards e folhas */
@@ -86,4 +92,15 @@ body {
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+/* Utilitário para fonte cursiva */
+.font-marker {
+  font-family: var(--font-marker), cursive;
+}
+.font-handwritten {
+  font-family: var(--font-handwritten), cursive;
+}
+.font-stats {
+  font-family: var(--font-stats), cursive;
 }
