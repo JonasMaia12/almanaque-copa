@@ -1,0 +1,435 @@
+{
+  "teams": [
+    {
+      "id": "brasil",
+      "name": "Brasil",
+      "group": "Grupo G",
+      "badge_image": "/images/badges/brasil.webp",
+      "theme_color": "#ffdf00",
+      "titles_count": 5,
+      "manager": "Dorival Júnior",
+      "history": {
+        "summary": "Único país pentacampeão mundial e a única seleção a participar de todas as edições da história das Copas do Mundo, o Brasil é sinônimo de futebol arte e alegria em campo.",
+        "milestones": "Títulos marcantes conquistados em 1958 (Suécia), 1962 (Chile), 1970 (México), 1994 (EUA) e 2002 (Coreia/Japão)."
+      },
+      "culture": {
+        "traditional_food": "Feijoada, Coxinha e Pastel de Feira",
+        "curiosity": "O termo 'Pelé' virou oficialmente um adjetivo no dicionário de língua portuguesa para designar algo ou alguém que é fora do comum, incomparável ou excepcional."
+      },
+      "players": [
+        {
+          "id": "vini-jr",
+          "name": "Vinícius Júnior",
+          "jersey_number": 7,
+          "position": "Atacante",
+          "age": 25,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/vini-jr.webp",
+          "short_bio": "Revelado pelo Flamengo e estrela do Real Madrid, conhecido por sua velocidade estonteante, dribles desconcertantes e protagonismo em finais europeias.",
+          "stats": {
+            "career_goals": 145,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Marcou seu primeiro gol em Copas do Mundo contra a Coreia do Sul nas oitavas de final da Copa de 2022."
+          }
+        },
+        {
+          "id": "neymar-jr",
+          "name": "Neymar Jr",
+          "jersey_number": 10,
+          "position": "Atacante",
+          "age": 34,
+          "current_club": "Al-Hilal",
+          "illustration_url": "/images/players/neymar-jr.webp",
+          "short_bio": "Um dos maiores talentos de sua geração, maior artilheiro da história da Seleção Brasileira em jogos oficiais, dotado de genialidade técnica incomparável.",
+          "stats": {
+            "career_goals": 436,
+            "world_cups_played": 3,
+            "world_cup_goals": 8,
+            "historical_fact": "Igualou o recorde oficial de gols de Pelé pela seleção na Copa do Mundo de 2022 no Catar."
+          }
+        },
+        {
+          "id": "alisson-becker",
+          "name": "Alisson Becker",
+          "jersey_number": 1,
+          "position": "Goleiro",
+          "age": 33,
+          "current_club": "Liverpool",
+          "illustration_url": "/images/players/alisson.webp",
+          "short_bio": "Considerado um dos melhores goleiros do mundo, destaca-se pelo posicionamento perfeito, frieza em situações de mano a mano e reposição de bola precisa.",
+          "stats": {
+            "career_goals": 1,
+            "world_cups_played": 2,
+            "world_cup_goals": 0,
+            "historical_fact": "Foi o goleiro titular incontestável do Brasil nas Copas do Mundo de 2018 na Rússia e 2022 no Catar."
+          }
+        },
+        {
+          "id": "marquinhos",
+          "name": "Marquinhos",
+          "jersey_number": 4,
+          "position": "Zagueiro",
+          "age": 32,
+          "current_club": "Paris Saint-Germain",
+          "illustration_url": "/images/players/marquinhos.webp",
+          "short_bio": "Capitão do PSG e pilar defensivo da seleção, famoso por sua velocidade de recuperação, excelente impulsão e antecipações limpas.",
+          "stats": {
+            "career_goals": 38,
+            "world_cups_played": 2,
+            "world_cup_goals": 0,
+            "historical_fact": "Líder defensivo do Brasil, atuando em quase todas as partidas das campanhas de 2018 e 2022."
+          }
+        },
+        {
+          "id": "bruno-guimaraes",
+          "name": "Bruno Guimarães",
+          "jersey_number": 8,
+          "position": "Meio-campista",
+          "age": 28,
+          "current_club": "Newcastle United",
+          "illustration_url": "/images/players/bruno-g.webp",
+          "short_bio": "Meio-campista dinâmico e cerebral, dita o ritmo de jogo com passes verticais primorosos, excelente visão de jogo e combatividade defensiva.",
+          "stats": {
+            "career_goals": 29,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Ganhou espaço crucial na seleção após grande protagonismo na Premier League inglesa."
+          }
+        },
+        {
+          "id": "rodrygo-goes",
+          "name": "Rodrygo Goes",
+          "jersey_number": 11,
+          "position": "Atacante",
+          "age": 25,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/rodrygo.webp",
+          "short_bio": "Conhecido como 'Rayo', é um jogador extremamente inteligente e polivalente no ataque, decisivo sob pressão e letal em competições eliminatórias.",
+          "stats": {
+            "career_goals": 82,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Estreou em Copas do Mundo em 2022 com apenas 21 anos, sendo peça chave nas mudanças táticas da equipe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "group": "Grupo C",
+      "badge_image": "/images/badges/argentina.webp",
+      "theme_color": "#74acdf",
+      "titles_count": 3,
+      "manager": "Lionel Scaloni",
+      "history": {
+        "summary": "Três vezes campeã mundial e atual detentora do título da Copa do Mundo, a Argentina possui uma das torcidas mais apaixonadas do planeta e é berço de gênios do futebol.",
+        "milestones": "Títulos históricos conquistados em 1978 (Argentina), 1986 (México, com o brilho eterno de Maradona) e 2022 (Catar, sob a liderança magistral de Lionel Messi)."
+      },
+      "culture": {
+        "traditional_food": "Asado (churrasco argentino), Empanadas e Dulce de Leche",
+        "curiosity": "O consumo de Erva Mate é um patrimônio cultural tão forte na delegação que os jogadores levaram cerca de 500 kg de erva para a Copa do Catar em 2022."
+      },
+      "players": [
+        {
+          "id": "lionel-messi",
+          "name": "Lionel Messi",
+          "jersey_number": 10,
+          "position": "Atacante",
+          "age": 38,
+          "current_club": "Inter Miami",
+          "illustration_url": "/images/players/lionel-messi.webp",
+          "short_bio": "Amplamente considerado um dos maiores jogadores de todos os tempos, capitão e lenda viva, coroou sua carreira extraordinária com o título mundial em 2022.",
+          "stats": {
+            "career_goals": 838,
+            "world_cups_played": 5,
+            "world_cup_goals": 13,
+            "historical_fact": "É o jogador com mais partidas na história das Copas do Mundo (26 jogos) e marcou gols em todas as fases da Copa de 2022."
+          }
+        },
+        {
+          "id": "emiliano-martinez",
+          "name": "Emiliano Martínez",
+          "jersey_number": 23,
+          "position": "Goleiro",
+          "age": 33,
+          "current_club": "Aston Villa",
+          "illustration_url": "/images/players/dibu-martinez.webp",
+          "short_bio": "Conhecido como 'Dibu', é um goleiro gigante em decisões de pênaltis, famoso por suas defesas milagrosas nos minutos finais e personalidade provocativa.",
+          "stats": {
+            "career_goals": 0,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Fez uma das defesas mais icônicas da história das Copas no último segundo da prorrogação na final contra a França em 2022."
+          }
+        },
+        {
+          "id": "rodrigo-de-paul",
+          "name": "Rodrigo De Paul",
+          "jersey_number": 7,
+          "position": "Meio-campista",
+          "age": 32,
+          "current_club": "Atlético de Madrid",
+          "illustration_url": "/images/players/rodrigo-depaul.webp",
+          "short_bio": "O 'motorzinho' da seleção argentina, destaca-se pela entrega física incansável, proteção ao capitão Messi e qualidade na transição ofensiva.",
+          "stats": {
+            "career_goals": 12,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Foi o jogador que mais cobriu quilômetros em campo pela seleção argentina na campanha do título de 2022."
+          }
+        },
+        {
+          "id": "lautaro-martinez",
+          "name": "Lautaro Martínez",
+          "jersey_number": 22,
+          "position": "Atacante",
+          "age": 28,
+          "current_club": "Internazionale",
+          "illustration_url": "/images/players/lautaro-martinez.webp",
+          "short_bio": "Artilheiro implacável conhecido como 'El Toro', combina força física exuberante, excelente finalização de primeira e espírito de liderança.",
+          "stats": {
+            "career_goals": 142,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Bateu o pênalti decisivo que classificou a Argentina contra a Holanda nas quartas de final de 2022."
+          }
+        },
+        {
+          "id": "alexis-mac-allister",
+          "name": "Alexis Mac Allister",
+          "jersey_number": 20,
+          "position": "Meio-campista",
+          "age": 27,
+          "current_club": "Liverpool",
+          "illustration_url": "/images/players/alexis-macallister.webp",
+          "short_bio": "Meio-campista de extrema classe e inteligência tática, controla os espaços vazios e cria chances claras com passes de alta categoria.",
+          "stats": {
+            "career_goals": 36,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Deu a assistência milimétrica para o gol histórico de Di María na final da Copa do Mundo de 2022."
+          }
+        },
+        {
+          "id": "enzo-fernandez",
+          "name": "Enzo Fernández",
+          "jersey_number": 24,
+          "position": "Meio-campista",
+          "age": 25,
+          "current_club": "Chelsea",
+          "illustration_url": "/images/players/enzo-fernandez.webp",
+          "short_bio": "Volante dinâmico revelado pelo River Plate, dita o ritmo com lançamentos precisos de longa distância e excelente leitura defensiva.",
+          "stats": {
+            "career_goals": 18,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Foi eleito a Revelação Jovem Oficial da Copa do Mundo de 2022 após assumir a titularidade no meio do torneio."
+          }
+        }
+      ]
+    },
+    {
+      "id": "franca",
+      "name": "França",
+      "group": "Grupo D",
+      "badge_image": "/images/badges/franca.webp",
+      "theme_color": "#002395",
+      "titles_count": 2,
+      "manager": "Didier Deschamps",
+      "history": {
+        "summary": "Bicampeã mundial (1998 e 2018) e famosa por revelar elencos multimilionários e repletos de velocidade.",
+        "milestones": "Campeã em casa em 1998 (liderada por Zidane) e na Rússia em 2018 (liderada por Mbappé)."
+      },
+      "culture": {
+        "traditional_food": "Baguaetes, Croissants e Crème Brûlée",
+        "curiosity": "A seleção é conhecida nacionalmente como 'Les Bleus' (Os Azuis)."
+      },
+      "players": [
+        {
+          "id": "kylian-mbappe",
+          "name": "Kylian Mbappé",
+          "jersey_number": 10,
+          "position": "Atacante",
+          "age": 27,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/mbappe.webp",
+          "short_bio": "Estrela global famosa por sua velocidade absurda de arranque e finalização cirúrgica.",
+          "stats": {
+            "career_goals": 312,
+            "world_cups_played": 2,
+            "world_cup_goals": 12,
+            "historical_fact": "Marcou um Hat-Trick histórico na grande final da Copa do Mundo de 2022."
+          }
+        },
+        {
+          "id": "antoine-griezmann",
+          "name": "Antoine Griezmann",
+          "jersey_number": 7,
+          "position": "Meio-campista",
+          "age": 35,
+          "current_club": "Atlético de Madrid",
+          "illustration_url": "/images/players/griezmann.webp",
+          "short_bio": "O cérebro tático dos Bleus, polivalente e incansável na marcação e criação de jogadas.",
+          "stats": {
+            "career_goals": 180,
+            "world_cups_played": 2,
+            "world_cup_goals": 4,
+            "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
+          }
+        },
+        {
+          "id": "tchouameni",
+          "name": "Aurélien Tchouaméni",
+          "jersey_number": 8,
+          "position": "Meio-campista",
+          "age": 26,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/tchouameni.webp",
+          "short_bio": "Pilar físico e técnico no meio de campo, excelente interceptador de passes.",
+          "stats": {
+            "career_goals": 15,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Marcou um gol antológico de longa distância contra a Inglaterra nas quartas de final em 2022."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alemanha",
+      "name": "Alemanha",
+      "group": "Grupo E",
+      "badge_image": "/images/badges/alemanha.webp",
+      "theme_color": "#000000",
+      "titles_count": 4,
+      "manager": "Julian Nagelsmann",
+      "history": {
+        "summary": "Tetracampeã mundial famosa por sua disciplina tática impecável e constância em grandes torneios.",
+        "milestones": "Títulos icônicos em 1954 (Milagre de Berna), 1974, 1990 e a consagração no Brasil em 2014."
+      },
+      "culture": {
+        "traditional_food": "Bratwurst (salsicha alemã), Pretzel e Sauerkraut",
+        "curiosity": "É um dos países mais vitoriosos em número de finais disputadas na história das Copas."
+      },
+      "players": [
+        {
+          "id": "jamal-musiala",
+          "name": "Jamal Musiala",
+          "jersey_number": 10,
+          "position": "Meio-campista",
+          "age": 23,
+          "current_club": "Bayern de Munique",
+          "illustration_url": "/images/players/musiala.webp",
+          "short_bio": "Conhecido como 'Bambi', é um jovem prodígio com dribles mágicos em espaços minúsculos.",
+          "stats": {
+            "career_goals": 55,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Foi o principal criador de jogadas da Alemanha na Copa do Mundo do Catar com apenas 19 anos."
+          }
+        },
+        {
+          "id": "florian-wirtz",
+          "name": "Florian Wirtz",
+          "jersey_number": 17,
+          "position": "Meio-campista",
+          "age": 23,
+          "current_club": "Bayer Leverkusen",
+          "illustration_url": "/images/players/wirtz.webp",
+          "short_bio": "Meia altamente criativo e dinâmico, maestro da campanha perfeita do Leverkusen na Alemanha.",
+          "stats": {
+            "career_goals": 45,
+            "world_cups_played": 0,
+            "world_cup_goals": 0,
+            "historical_fact": "Considerado o futuro do meio-campo alemão para as próximas Copas do Mundo."
+          }
+        },
+        {
+          "id": "antonio-rudiger",
+          "name": "Antonio Rüdiger",
+          "jersey_number": 2,
+          "position": "Zagueiro",
+          "age": 33,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/rudiger.webp",
+          "short_bio": "Zagueiro veloz, impetuoso e carismático, famoso por suas corridas peculiares e desarmes decisivos.",
+          "stats": {
+            "career_goals": 18,
+            "world_cups_played": 2,
+            "world_cup_goals": 0,
+            "historical_fact": "Líder indiscutível da defesa alemã em competições continentais e mundiais."
+          }
+        }
+      ]
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "group": "Grupo H",
+      "badge_image": "/images/badges/portugal.webp",
+      "theme_color": "#e52d27",
+      "titles_count": 0,
+      "manager": "Roberto Martínez",
+      "history": {
+        "summary": "Uma das seleções europeias mais talentosas da atualidade, liderada durante duas décadas por uma lenda global do futebol.",
+        "milestones": "Melhor campanha histórica foi o 3º lugar em 1966 com a lenda Eusébio (o Pantera Negra)."
+      },
+      "culture": {
+        "traditional_food": "Bacalhau à Brás, Pastel de Nata e Sardinhas",
+        "curiosity": "A seleção é carinhosamente apelidada de 'Seleção das Quinas' devido ao escudo nacional."
+      },
+      "players": [
+        {
+          "id": "cristiano-ronaldo",
+          "name": "Cristiano Ronaldo",
+          "jersey_number": 7,
+          "position": "Atacante",
+          "age": 41,
+          "current_club": "Al-Nassr",
+          "illustration_url": "/images/players/cristiano-ronaldo.webp",
+          "short_bio": "Um dos maiores atletas da história mundial, detentor de inúmeros recordes de gols e títulos europeus.",
+          "stats": {
+            "career_goals": 885,
+            "world_cups_played": 5,
+            "world_cup_goals": 8,
+            "historical_fact": "É o único jogador da história do futebol a marcar gols em 5 edições diferentes de Copas do Mundo."
+          }
+        },
+        {
+          "id": "bruno-fernandes",
+          "name": "Bruno Fernandes",
+          "jersey_number": 8,
+          "position": "Meio-campista",
+          "age": 31,
+          "current_club": "Manchester United",
+          "illustration_url": "/images/players/bruno-fernandes.webp",
+          "short_bio": "Maestro no meio-campo com passes de alta definição e chute forte de média distância.",
+          "stats": {
+            "career_goals": 160,
+            "world_cups_played": 2,
+            "world_cup_goals": 2,
+            "historical_fact": "Foi o maior assistente e artilheiro de Portugal na campanha da Copa do Catar em 2022."
+          }
+        },
+        {
+          "id": "bernardo-silva",
+          "name": "Bernardo Silva",
+          "jersey_number": 10,
+          "position": "Meio-campista",
+          "age": 31,
+          "current_club": "Manchester City",
+          "illustration_url": "/images/players/bernardo-silva.webp",
+          "short_bio": "Jogador super inteligente dotado de condução de bola fantástica e altíssima dedicação tática.",
+          "stats": {
+            "career_goals": 85,
+            "world_cups_played": 2,
+            "world_cup_goals": 0,
+            "historical_fact": "Motor cerebral tático nas conquistas de Portugal e do Manchester City sob comando de Guardiola."
+          }
+        }
+      ]
+    }
+  ]
+}
