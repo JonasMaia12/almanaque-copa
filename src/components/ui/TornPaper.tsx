@@ -17,7 +17,7 @@ export const TornPaper: React.FC<TornPaperProps> = ({
   return (
     <div 
       className={`relative w-full overflow-hidden leading-[0] z-20 pointer-events-none ${className} ${
-        position === 'bottom' ? 'rotate-180' : ''
+        position === 'top' ? 'rotate-180' : ''
       }`}
       style={{ height: '35px' }}
       data-testid="torn-paper-container"

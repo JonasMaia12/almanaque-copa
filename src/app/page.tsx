@@ -71,10 +71,10 @@ export default function Home() {
 
           {/* Carimbo de 2026 rústico usando font-marker */}
           <div
-            className="absolute right-[-10px] md:right-[20%] top-16 md:top-20 border-4 border-dashed border-red-700/60 text-red-700/70 font-marker text-lg md:text-xl font-extrabold px-3 py-1 rounded rotate-12 select-none uppercase tracking-wider bg-white/20 backdrop-blur-sm"
+            className="absolute right-[-10px] md:right-[15%] top-16 md:top-20 border-4 border-dashed border-red-800 text-red-800 font-marker text-lg md:text-xl font-extrabold px-3 py-1 rounded rotate-12 select-none uppercase tracking-wider bg-white/90 shadow-md"
             aria-hidden="true"
           >
-            EUA 2026
+            CAN • MEX • EUA 2026
           </div>
         </h1>
 

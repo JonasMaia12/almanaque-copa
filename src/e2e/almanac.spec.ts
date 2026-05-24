@@ -10,8 +10,8 @@ test.describe('World Cup Almanac E2E Tests', () => {
     const almanaqueText = page.locator('span:has-text("A")').first();
     await expect(almanaqueText).toBeVisible();
 
-    // 3. Verifica se o carimbo EUA 2026 está na tela
-    const carimbo = page.locator('div:has-text("EUA 2026")').last();
+    // 3. Verifica se o carimbo está na tela
+    const carimbo = page.locator('div:has-text("CAN • MEX • EUA 2026")').last();
     await expect(carimbo).toBeVisible();
   });
 

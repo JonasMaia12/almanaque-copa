@@ -81,7 +81,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
               <h3 className="font-marker text-sm uppercase tracking-wide text-neutral-800 mb-2">
                 Curiosidade
               </h3>
-              <p className="text-xl text-neutral-800 leading-tight font-handwritten">
+              <p className="text-2xl text-neutral-800 leading-tight font-handwritten">
                 {team.culture.curiosity}
               </p>
             </div>
@@ -91,7 +91,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
               <h3 className="font-marker text-sm uppercase tracking-wide text-neutral-800 mb-2">
                 Gastronomia
               </h3>
-              <p className="text-xl text-neutral-800 leading-tight font-handwritten">
+              <p className="text-2xl text-neutral-800 leading-tight font-handwritten">
                 {team.culture.traditional_food}
               </p>
             </div>
@@ -104,24 +104,18 @@ export default async function TeamPage({ params }: TeamPageProps) {
             <h3 className="font-marker text-lg uppercase tracking-wider mb-2">
               História
             </h3>
-            <p className="text-xl leading-tight font-handwritten">
+            <p className="text-2xl leading-tight font-handwritten">
               {team.history.summary}
             </p>
-            <p className="text-xl leading-tight mt-3 font-bold font-handwritten text-red-900">
+            <p className="text-2xl leading-tight mt-3 font-bold font-handwritten text-red-900">
               {team.history.milestones}
             </p>
           </div>
         </div>
 
-        <TornPaper color="#ffffff" position="top" className="my-2 shadow-2xs" />
-
         {/* JOGADORES */}
-        <div className="bg-white p-6 md:p-8 pl-10 md:pl-16 flex-1 flex flex-col justify-start relative">
-          <h2 className="font-marker font-bold text-neutral-900 text-2xl md:text-3xl mb-8 text-center uppercase tracking-wide">
-            Figurinhas Piloto
-          </h2>
-
-          <div className="flex flex-col w-full">
+        <div className="p-6 md:p-8 pl-10 md:pl-16 flex-1 flex flex-col justify-start relative">
+          <div className="flex flex-col w-full mt-2">
             {team.players.map((player, idx) => (
               <PlayerRow 
                 key={player.id} 
