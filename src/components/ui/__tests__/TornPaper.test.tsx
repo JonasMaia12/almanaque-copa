@@ -19,13 +19,13 @@ describe('TornPaper Component', () => {
     expect(path).toHaveStyle({ fill: '#ffefd5' });
   });
 
-  it('applies rotate class only when position is bottom', () => {
-    const { rerender } = render(<TornPaper position="top" />);
+  it('applies rotate class only when position is top', () => {
+    const { rerender } = render(<TornPaper position="bottom" />);
     
     let container = screen.getByTestId('torn-paper-container');
     expect(container).not.toHaveClass('rotate-180');
 
-    rerender(<TornPaper position="bottom" />);
+    rerender(<TornPaper position="top" />);
     container = screen.getByTestId('torn-paper-container');
     expect(container).toHaveClass('rotate-180');
   });

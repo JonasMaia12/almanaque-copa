@@ -3,39 +3,93 @@ const Jimp = require('jimp');
 async function processImage(inputPath, outputPath) {
   try {
     const image = await Jimp.read(inputPath);
+    const width = image.bitmap.width;
+    const height = image.bitmap.height;
     
-    // We assume the background is white or near-white.
-    image.scan(0, 0, image.bitmap.width, image.bitmap.height, function(x, y, idx) {
-      const r = this.bitmap.data[idx + 0];
-      const g = this.bitmap.data[idx + 1];
-      const b = this.bitmap.data[idx + 2];
-      
-      // If pixel is very close to white (e.g. > 240)
-      if (r > 240 && g > 240 && b > 240) {
-        this.bitmap.data[idx + 3] = 0; // Alpha 0
+    // Matriz de controle para evitar revisitar pixels
+    const visited = new Uint8Array(width * height);
+    const queue = [];
+
+    // Função para verificar se um pixel é branco (r > 240, g > 240, b > 240)
+    function isWhite(x, y) {
+      const idx = (y * width + x) * 4;
+      const r = image.bitmap.data[idx + 0];
+      const g = image.bitmap.data[idx + 1];
+      const b = image.bitmap.data[idx + 2];
+      return r > 240 && g > 240 && b > 240;
+    }
+
+    // Adiciona pixels da borda à fila
+    // Linhas de cima e baixo
+    for (let x = 0; x < width; x++) {
+      if (isWhite(x, 0)) {
+        visited[0 * width + x] = 1;
+        queue.push({ x, y: 0 });
       }
-    });
+      if (isWhite(x, height - 1)) {
+        visited[(height - 1) * width + x] = 1;
+        queue.push({ x, y: height - 1 });
+      }
+    }
+    // Colunas esquerda e direita
+    for (let y = 0; y < height; y++) {
+      if (isWhite(0, y)) {
+        if (!visited[y * width + 0]) {
+          visited[y * width + 0] = 1;
+          queue.push({ x: 0, y });
+        }
+      }
+      if (isWhite(width - 1, y)) {
+        if (!visited[y * width + (width - 1)]) {
+          visited[y * width + (width - 1)] = 1;
+          queue.push({ x: width - 1, y });
+        }
+      }
+    }
+
+    // BFS para preencher/tornar transparente os pixels conectados
+    let head = 0;
+    const directions = [
+      { dx: 1, dy: 0 },
+      { dx: -1, dy: 0 },
+      { dx: 0, dy: 1 },
+      { dx: 0, dy: -1 }
+    ];
+
+    while (head < queue.length) {
+      const { x, y } = queue[head++];
+      
+      // Tornar o pixel transparente (Alpha = 0)
+      const idx = (y * width + x) * 4;
+      image.bitmap.data[idx + 3] = 0;
+
+      // Olhar vizinhos
+      for (const dir of directions) {
+        const nx = x + dir.dx;
+        const ny = y + dir.dy;
+
+        if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
+          const nIdx = ny * width + nx;
+          if (!visited[nIdx] && isWhite(nx, ny)) {
+            visited[nIdx] = 1;
+            queue.push({ x: nx, y: ny });
+          }
+        }
+      }
+    }
     
     await image.writeAsync(outputPath);
-    console.log(`Processed: ${outputPath}`);
+    console.log(`Processed with Edge Flood Fill: ${outputPath}`);
   } catch (err) {
     console.error(`Error processing ${inputPath}:`, err);
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/20e5142b-99a7-44cf-892c-b734df4db4a3';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/ec98dadf-3d64-4d47-800e-4d2311cc7989';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: 'trophy_1779644150204.png', out: `${publicDir}/trophy.png` },
-  { in: 'vini_jr_1779644162941.png', out: `${publicDir}/players/vini-jr.png` },
-  { in: 'neymar_1779644175059.png', out: `${publicDir}/players/neymar-jr.png` },
-  { in: 'alisson_1779644187715.png', out: `${publicDir}/players/alisson.png` },
-  { in: 'marquinhos_1779644200403.png', out: `${publicDir}/players/marquinhos.png` },
-  { in: 'bruno_g_1779644213138.png', out: `${publicDir}/players/bruno-g.png` },
-  { in: 'rodrygo_1779644226833.png', out: `${publicDir}/players/rodrygo.png` },
-  { in: 'messi_1779644240252.png', out: `${publicDir}/players/lionel-messi.png` },
-  { in: 'dibu_1779644252043.png', out: `${publicDir}/players/dibu-martinez.png` },
+  { in: 'vini_jr_sticker.png', out: `${publicDir}/players/vini-jr.png` }
 ];
 
 async function run() {

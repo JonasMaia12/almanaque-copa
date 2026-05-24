@@ -98,19 +98,19 @@
           }
         },
         {
-          "id": "rodrygo-goes",
-          "name": "Rodrygo Goes",
+          "id": "raphinha",
+          "name": "Raphinha",
           "jersey_number": 11,
           "position": "Atacante",
-          "age": 25,
-          "current_club": "Real Madrid",
-          "illustration_url": "/images/players/rodrygo.png",
-          "short_bio": "Conhecido como 'Rayo', é um jogador extremamente inteligente e polivalente no ataque, decisivo sob pressão e letal em competições eliminatórias.",
+          "age": 29,
+          "current_club": "Barcelona",
+          "illustration_url": "/images/players/raphinha.png",
+          "short_bio": "Extremo veloz e criativo, capitão e destaque do Barcelona, famoso por sua intensidade tática, chutes precisos de média distância e exímio batedor de faltas.",
           "stats": {
-            "career_goals": 82,
+            "career_goals": 135,
             "world_cups_played": 1,
             "world_cup_goals": 0,
-            "historical_fact": "Estreou em Copas do Mundo em 2022 com apenas 21 anos, sendo peça chave nas mudanças táticas da equipe."
+            "historical_fact": "Vestiu a lendária camisa 10 da Seleção Brasileira em 2024, assumindo o protagonismo ofensivo do país na ausência de Neymar."
           }
         }
       ]
