@@ -133,3 +133,39 @@ Para garantir reversibilidade e segurança, adotaremos um fluxo estrito de contr
     *   Execução da criação de PR via GitHub CLI:
         `gh pr create --title "[Título Lógico]" --body "[Descrição detalhada do PR em uma única linha longa, sem quebras de linha]"`
     *   As revisões serão analisadas e o merge será feito via **Squash Merge**.
+
+---
+
+## 6. Checklist de Status do Projeto
+
+### 🛠️ Fase 1: Configuração do Ambiente & Estruturação de Dados (CONCLUÍDO)
+- [x] Inicialização do Next.js com TypeScript, Tailwind CSS e Framer Motion.
+- [x] Configuração da infraestrutura de testes unitários com Vitest e testes E2E com Playwright (Chromium desktop e mobile).
+- [x] Criação do esquema de tipos em `src/types/worldcup.ts`.
+- [x] Criação do banco de dados local estruturado `src/data/worldcup.json` atualizado para 2026.
+- [x] Inicialização do Git e push da branch `main` no GitHub.
+
+### 🎨 Fase 2: Geração de Imagens & Texturas (CONCLUÍDO)
+- [x] Geração das 3 texturas de alta fidelidade: mesa de corte verde, papelão kraft e papel pautado amassado.
+- [x] Geração de escudos estilo adesivo vintage para Brasil e Argentina.
+- [x] Geração e otimização das figurinhas Pop-Art de jogadores piloto (Messi, Neymar, Alisson, Dibu Martínez, Vini Jr).
+- [x] Criação de Pull Request, Code Review e Squash Merge na `main`.
+
+### 📐 Fase 3: Design System & Componentes Scrapbook (CONCLUÍDO)
+- [x] Configuração dos tokens de tema do Tailwind v4 via `@theme` no `globals.css`.
+- [x] Configuração das fontes Outfit e Inter no `layout.tsx`.
+- [x] Desenvolvimento do componente de adesivos táteis `Sticker.tsx` com animações físicas.
+- [x] Desenvolvimento do componente interativo 3D Flippable `PaperCard.tsx` com biografia e estatísticas de 2026.
+- [x] Desenvolvimento do componente divisor orgânico `TornPaper.tsx` com SVG mascarado de rasgadura.
+- [x] Criação e execução com 100% de sucesso de 10 testes unitários Vitest.
+- [x] Criação de Pull Request e Squash Merge na `main`.
+
+### 📖 Fase 4: Páginas, Integração & Testes E2E (CONCLUÍDO)
+- [x] Criação de branch específica: `fase-4-paginas-integracao`.
+- [x] Implementação da Capa e do Accordion interativo de Grupos na Home utilizando links semânticos e adesivos interativos.
+- [x] Implementação das páginas dinâmicas das Seleções com furos de espiral e divisores de papel rasgado.
+- [x] Integração dos dados do JSON de 2026 para renderização estática rápida (SSG) de todas as seleções.
+- [x] Escrita de testes E2E com Playwright (navegação de grupos, flip de cards, responsividade mobile Pixel 5).
+- [x] Execução bem-sucedida do build de produção final estático (`npm run build`).
+- [x] Conclusão de todas as validações locais com 100% de aprovação (testes e compilação Next.js).
+
