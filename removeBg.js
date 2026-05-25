@@ -85,11 +85,11 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/ec98dadf-3d64-4d47-800e-4d2311cc7989';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/dc23e42e-eda7-44ef-a6c0-31e7ac38b12a';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: 'dibu_antigo.png', out: `${publicDir}/players/dibu-martinez.png` }
+  { in: 'dibu_martinez_1779692931126.png', out: `${publicDir}/players/dibu-martinez-transparent.png` }
 ];
 
 async function run() {
