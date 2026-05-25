@@ -21,7 +21,7 @@ export function TrophyRow({ count, className = "" }: TrophyRowProps) {
             aria-hidden="true"
           >
             <Image 
-              src="/images/trophy.webp" 
+              src="/images/trophy.png" 
               alt="Troféu" 
               width={24} 
               height={36} 

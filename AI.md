@@ -259,13 +259,13 @@ Grupo H → #fdf6e3 (bege kraft)
 
 ## 5. Diretrizes de Geração de Imagens (IA)
 
-Todas as imagens são geradas via IA e salvas em `/public/images/` como `.webp`.
+Todas as imagens são geradas via IA e pós-processadas para remoção do fundo sólido externo, sendo salvas em `/public/images/` no formato `.png` com transparência real de alta fidelidade (preservando o contorno branco estilo sticker).
 **Texturas de fundo não são mais arquivos de imagem — são CSS puro.**
 
 ### 5.1. Troféu da Copa (NOVO — substitui estrelas ★)
 > *"Flat vector illustration of a FIFA World Cup trophy, golden yellow color, thick black outline, pop-art comic book style, sticker style with clean thick white border edge, isolated on solid plain white background, simple and iconic, no text, no realistic photo rendering, bold graphic novel aesthetic"*
 
-- Salvar em `/public/images/trophy.webp`
+- Salvar em `/public/images/trophy.png` (após processamento de transparência)
 - Tamanho de exibição: ~32×48px por troféu
 - `animate-bounce` com delay escalonado de 150ms por troféu
 
@@ -282,9 +282,9 @@ Para manter a estética densa de quadrinhos da primeira imagem de sucesso (como 
 ### 5.4. Pós-Processamento (Transparência Real)
 As IAs de imagem geram arquivos com fundo sólido (branco). Para manter a estética de scrapbook real:
 1. Usamos o script Node.js (`removeBg.js`) que processa cada imagem com `jimp`.
-2. O script identifica a cor branca (`r > 240, g > 240, b > 240`) e define a opacidade/alpha como `0`.
-3. O resultado final é um verdadeiro arquivo `.png` transparente.
-4. Na renderização (`PlayerRow`), dispensamos fundos brancos extras (como polaroid) ou CSS de `mix-blend-multiply`, deixando o jogador perfeitamente recortado na página.
+2. O script identifica a cor branca (`r > 240, g > 240, b > 240`) usando algoritmo de *Edge Flood Fill* partindo das bordas externas e define a opacidade/alpha como `0`.
+3. O resultado final é um verdadeiro arquivo `.png` transparente com contorno branco intacto.
+4. Na renderização (`PlayerRow` e `TrophyRow`), dispensamos fundos brancos extras (como polaroid) ou CSS de `mix-blend-multiply`, deixando o jogador e o troféu perfeitamente recortados e integrados na página.
 
 ---
 

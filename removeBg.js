@@ -89,12 +89,17 @@ const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/dc23e42e-e
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: 'dibu_martinez_1779692931126.png', out: `${publicDir}/players/dibu-martinez-transparent.png` }
+  { in: `${artifactsDir}/vini_jr_1779691862624.png`, out: `${publicDir}/players/vini-jr.png` },
+  { in: `${artifactsDir}/neymar_jr_1779691956112.png`, out: `${publicDir}/players/neymar-jr.png` },
+  { in: `${artifactsDir}/alisson_1779691987079.png`, out: `${publicDir}/players/alisson.png` },
+  { in: `${artifactsDir}/dibu_martinez_1779692931126.png`, out: `${publicDir}/players/dibu-martinez.png` },
+  { in: `${artifactsDir}/rodrigo_depaul_1779692972555.png`, out: `${publicDir}/players/rodrigo-depaul.png` },
+  { in: `${publicDir}/trophy.png`, out: `${publicDir}/trophy.png` }
 ];
 
 async function run() {
   for (const f of files) {
-    await processImage(`${artifactsDir}/${f.in}`, f.out);
+    await processImage(f.in, f.out);
   }
 }
 
