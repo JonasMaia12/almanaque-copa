@@ -24,7 +24,7 @@
           "position": "Atacante",
           "age": 25,
           "current_club": "Real Madrid",
-          "illustration_url": "/images/players/vini-jr.png",
+          "illustration_url": "/images/players/vini-jr.webp",
           "short_bio": "Revelado pelo Flamengo e estrela do Real Madrid, conhecido por sua velocidade estonteante, dribles desconcertantes e protagonismo em finais europeias.",
           "stats": {
             "career_goals": 145,
@@ -40,7 +40,7 @@
           "position": "Atacante",
           "age": 34,
           "current_club": "Santos",
-          "illustration_url": "/images/players/neymar-jr.png",
+          "illustration_url": "/images/players/neymar-jr.webp",
           "short_bio": "Um dos maiores talentos de sua geração, maior artilheiro da história da Seleção Brasileira em jogos oficiais, dotado de genialidade técnica incomparável.",
           "stats": {
             "career_goals": 436,
@@ -56,7 +56,7 @@
           "position": "Goleiro",
           "age": 33,
           "current_club": "Liverpool",
-          "illustration_url": "/images/players/alisson.png",
+          "illustration_url": "/images/players/alisson.webp",
           "short_bio": "Considerado um dos melhores goleiros do mundo, destaca-se pelo posicionamento perfeito, frieza em situações de mano a mano e reposição de bola precisa.",
           "stats": {
             "career_goals": 1,
@@ -72,7 +72,7 @@
           "position": "Zagueiro",
           "age": 32,
           "current_club": "Paris Saint-Germain",
-          "illustration_url": "/images/players/marquinhos.png",
+          "illustration_url": "/images/players/marquinhos.webp",
           "short_bio": "Capitão do PSG e pilar defensivo da seleção, famoso por sua velocidade de recuperação, excelente impulsão e antecipações limpas.",
           "stats": {
             "career_goals": 38,
@@ -88,7 +88,7 @@
           "position": "Meio-campista",
           "age": 28,
           "current_club": "Newcastle United",
-          "illustration_url": "/images/players/bruno-g.png",
+          "illustration_url": "/images/players/bruno-g.webp",
           "short_bio": "Meio-campista dinâmico e cerebral, dita o ritmo de jogo com passes verticais primorosos, excelente visão de jogo e combatividade defensiva.",
           "stats": {
             "career_goals": 29,
@@ -104,7 +104,7 @@
           "position": "Atacante",
           "age": 29,
           "current_club": "Barcelona",
-          "illustration_url": "/images/players/raphinha.png",
+          "illustration_url": "/images/players/raphinha.webp",
           "short_bio": "Extremo veloz e criativo, capitão e destaque do Barcelona, famoso por sua intensidade tática, chutes precisos de média distância e exímio batedor de faltas.",
           "stats": {
             "career_goals": 135,
