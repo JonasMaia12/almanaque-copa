@@ -209,9 +209,8 @@ Grupo H → #fdf6e3 (bege kraft)
 * **Seleções Inclusas:** Todas as seleções da Copa 2026.
 * **Pilotos de validação visual:** Brasil e Argentina.
 * **Escopo de Jogadores:**
-  * Seleções principais (Brasil/Argentina): 6 jogadores de destaque.
-  * Demais seleções: 3 jogadores de destaque.
-  * *Fase futura:* duplicar número de jogadores.
+  * Todas as seleções (incluindo Brasil e Argentina): exatamente 3 jogadores de destaque.
+  * *Fase futura:* expandir o plantel de jogadores.
 
 ### Estrutura do Esquema JSON
 ```json

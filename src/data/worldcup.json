@@ -64,54 +64,6 @@
             "world_cup_goals": 0,
             "historical_fact": "Foi o goleiro titular incontestável do Brasil nas Copas do Mundo de 2018 na Rússia e 2022 no Catar."
           }
-        },
-        {
-          "id": "marquinhos",
-          "name": "Marquinhos",
-          "jersey_number": 4,
-          "position": "Zagueiro",
-          "age": 32,
-          "current_club": "Paris Saint-Germain",
-          "illustration_url": "/images/players/marquinhos.webp",
-          "short_bio": "Capitão do PSG e pilar defensivo da seleção, famoso por sua velocidade de recuperação, excelente impulsão e antecipações limpas.",
-          "stats": {
-            "career_goals": 38,
-            "world_cups_played": 2,
-            "world_cup_goals": 0,
-            "historical_fact": "Líder defensivo do Brasil, atuando em quase todas as partidas das campanhas de 2018 e 2022."
-          }
-        },
-        {
-          "id": "bruno-guimaraes",
-          "name": "Bruno Guimarães",
-          "jersey_number": 8,
-          "position": "Meio-campista",
-          "age": 28,
-          "current_club": "Newcastle United",
-          "illustration_url": "/images/players/bruno-g.webp",
-          "short_bio": "Meio-campista dinâmico e cerebral, dita o ritmo de jogo com passes verticais primorosos, excelente visão de jogo e combatividade defensiva.",
-          "stats": {
-            "career_goals": 29,
-            "world_cups_played": 1,
-            "world_cup_goals": 0,
-            "historical_fact": "Ganhou espaço crucial na seleção após grande protagonismo na Premier League inglesa."
-          }
-        },
-        {
-          "id": "raphinha",
-          "name": "Raphinha",
-          "jersey_number": 11,
-          "position": "Atacante",
-          "age": 29,
-          "current_club": "Barcelona",
-          "illustration_url": "/images/players/raphinha.webp",
-          "short_bio": "Extremo veloz e criativo, capitão e destaque do Barcelona, famoso por sua intensidade tática, chutes precisos de média distância e exímio batedor de faltas.",
-          "stats": {
-            "career_goals": 135,
-            "world_cups_played": 1,
-            "world_cup_goals": 0,
-            "historical_fact": "Vestiu a lendária camisa 10 da Seleção Brasileira em 2024, assumindo o protagonismo ofensivo do país na ausência de Neymar."
-          }
         }
       ]
     },
@@ -155,7 +107,7 @@
           "position": "Goleiro",
           "age": 33,
           "current_club": "Aston Villa",
-          "illustration_url": "/images/players/dibu-martinez.png",
+          "illustration_url": "/images/players/dibu-martinez.webp",
           "short_bio": "Conhecido como 'Dibu', é um goleiro gigante em decisões de pênaltis, famoso por suas defesas milagrosas nos minutos finais e personalidade provocativa.",
           "stats": {
             "career_goals": 0,
@@ -171,61 +123,13 @@
           "position": "Meio-campista",
           "age": 32,
           "current_club": "Atlético de Madrid",
-          "illustration_url": "/images/players/rodrigo-depaul.png",
+          "illustration_url": "/images/players/rodrigo-depaul.webp",
           "short_bio": "O 'motorzinho' da seleção argentina, destaca-se pela entrega física incansável, proteção ao capitão Messi e qualidade na transição ofensiva.",
           "stats": {
             "career_goals": 12,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Foi o jogador que mais cobriu quilômetros em campo pela seleção argentina na campanha do título de 2022."
-          }
-        },
-        {
-          "id": "lautaro-martinez",
-          "name": "Lautaro Martínez",
-          "jersey_number": 22,
-          "position": "Atacante",
-          "age": 28,
-          "current_club": "Internazionale",
-          "illustration_url": "/images/players/lautaro-martinez.png",
-          "short_bio": "Artilheiro implacável conhecido como 'El Toro', combina força física exuberante, excelente finalização de primeira e espírito de liderança.",
-          "stats": {
-            "career_goals": 142,
-            "world_cups_played": 1,
-            "world_cup_goals": 0,
-            "historical_fact": "Bateu o pênalti decisivo que classificou a Argentina contra a Holanda nas quartas de final de 2022."
-          }
-        },
-        {
-          "id": "alexis-mac-allister",
-          "name": "Alexis Mac Allister",
-          "jersey_number": 20,
-          "position": "Meio-campista",
-          "age": 27,
-          "current_club": "Liverpool",
-          "illustration_url": "/images/players/alexis-macallister.png",
-          "short_bio": "Meio-campista de extrema classe e inteligência tática, controla os espaços vazios e cria chances claras com passes de alta categoria.",
-          "stats": {
-            "career_goals": 36,
-            "world_cups_played": 1,
-            "world_cup_goals": 1,
-            "historical_fact": "Deu a assistência milimétrica para o gol histórico de Di María na final da Copa do Mundo de 2022."
-          }
-        },
-        {
-          "id": "enzo-fernandez",
-          "name": "Enzo Fernández",
-          "jersey_number": 24,
-          "position": "Meio-campista",
-          "age": 25,
-          "current_club": "Chelsea",
-          "illustration_url": "/images/players/enzo-fernandez.png",
-          "short_bio": "Volante dinâmico revelado pelo River Plate, dita o ritmo com lançamentos precisos de longa distância e excelente leitura defensiva.",
-          "stats": {
-            "career_goals": 18,
-            "world_cups_played": 1,
-            "world_cup_goals": 1,
-            "historical_fact": "Foi eleito a Revelação Jovem Oficial da Copa do Mundo de 2022 após assumir a titularidade no meio do torneio."
           }
         }
       ]
