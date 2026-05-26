@@ -85,16 +85,13 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/dc23e42e-eda7-44ef-a6c0-31e7ac38b12a';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/3557b48b-790b-466e-9ef8-5cab59c63fd2';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/vini_jr_1779691862624.png`, out: `${publicDir}/players/vini-jr.png` },
-  { in: `${artifactsDir}/neymar_jr_1779691956112.png`, out: `${publicDir}/players/neymar-jr.png` },
-  { in: `${artifactsDir}/alisson_1779691987079.png`, out: `${publicDir}/players/alisson.png` },
-  { in: `${artifactsDir}/dibu_martinez_1779692931126.png`, out: `${publicDir}/players/dibu-martinez.png` },
-  { in: `${artifactsDir}/rodrigo_depaul_1779692972555.png`, out: `${publicDir}/players/rodrigo-depaul.png` },
-  { in: `${publicDir}/trophy.png`, out: `${publicDir}/trophy.png` }
+  { in: `${artifactsDir}/vini_jr.png`, out: `${publicDir}/players/vini-jr.png` },
+  { in: `${artifactsDir}/neymar_jr.png`, out: `${publicDir}/players/neymar-jr.png` },
+  { in: `${artifactsDir}/alisson.png`, out: `${publicDir}/players/alisson.png` }
 ];
 
 async function run() {
