@@ -254,6 +254,261 @@
           }
         }
       ]
+    },
+    {
+      "id": "espanha",
+      "name": "Espanha",
+      "group": "Grupo A",
+      "badge_image": "/images/badges/espanha.png",
+      "theme_color": "#c60b1e",
+      "titles_count": 1,
+      "manager": "Luis de la Fuente",
+      "history": {
+        "summary": "Campeã mundial em 2010 e famosa pela revolução do estilo de jogo 'Tiki-Taka' de posse de bola paciente e passes curtos rápidos.",
+        "milestones": "Conquistou a Copa do Mundo de 2010 na África do Sul com gol antológico de Iniesta na prorrogação contra a Holanda."
+      },
+      "culture": {
+        "traditional_food": "Paella Valenciana, Jamón Ibérico e Tapas",
+        "curiosity": "A seleção é amplamente conhecida como 'La Roja' devido ao icônico uniforme de cor vermelha vibrante."
+      },
+      "players": [
+        {
+          "id": "lamine-yamal",
+          "name": "Lamine Yamal",
+          "jersey_number": 19,
+          "position": "Atacante",
+          "age": 18,
+          "current_club": "Barcelona",
+          "illustration_url": "/images/players/lamine-yamal.png",
+          "short_bio": "Jovem fenômeno histórico, detentor de inúmeros recordes de precocidade mundial e peça fundamental nas conquistas continentais.",
+          "stats": {
+            "career_goals": 25,
+            "world_cups_played": 0,
+            "world_cup_goals": 0,
+            "historical_fact": "Tornou-se o jogador mais jovem da história a disputar e marcar gols em competições europeias de seleções."
+          }
+        },
+        {
+          "id": "rodri-hernandez",
+          "name": "Rodri",
+          "jersey_number": 16,
+          "position": "Meio-campista",
+          "age": 29,
+          "current_club": "Manchester City",
+          "illustration_url": "/images/players/rodri.png",
+          "short_bio": "O melhor volante do futebol moderno, cérebro estratégico e pilar tático incontestável da seleção e de seu clube.",
+          "stats": {
+            "career_goals": 38,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Conquistou a Bola de Ouro (Ballon d'Or) coroando seu protagonismo absoluto e liderança tática impecável."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inglaterra",
+      "name": "Inglaterra",
+      "group": "Grupo B",
+      "badge_image": "/images/badges/inglaterra.png",
+      "theme_color": "#002040",
+      "titles_count": 1,
+      "manager": "Thomas Tuchel",
+      "history": {
+        "summary": "Criadora do futebol moderno e campeã em 1966, possui a liga nacional mais rica do mundo e elencos sempre muito badalados.",
+        "milestones": "Único título conquistado em 1966 jogando em casa, em uma final emocionante e controversa contra a Alemanha Ocidental."
+      },
+      "culture": {
+        "traditional_food": "Fish and Chips (peixe com batatas fritas) e English Breakfast",
+        "curiosity": "Apelidada de 'The Three Lions' (Os Três Leões) devido ao brasão tradicional estampado em seu uniforme desde 1872."
+      },
+      "players": [
+        {
+          "id": "jude-bellingham",
+          "name": "Jude Bellingham",
+          "jersey_number": 10,
+          "position": "Meio-campista",
+          "age": 22,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/bellingham.png",
+          "short_bio": "Meia completo e elegante de passada larga, dotado de mentalidade vencedora implacável e grande faro de gols em momentos decisivos.",
+          "stats": {
+            "career_goals": 65,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Marcou o primeiro gol da Inglaterra na Copa do Mundo de 2022 contra o Irã com apenas 19 anos."
+          }
+        },
+        {
+          "id": "harry-kane",
+          "name": "Harry Kane",
+          "jersey_number": 9,
+          "position": "Atacante",
+          "age": 32,
+          "current_club": "Bayern de Munique",
+          "illustration_url": "/images/players/harry-kane.png",
+          "short_bio": "Um dos centroavantes mais letais de sua geração, maior artilheiro da história da seleção inglesa e excelente criador de jogadas.",
+          "stats": {
+            "career_goals": 420,
+            "world_cups_played": 2,
+            "world_cup_goals": 8,
+            "historical_fact": "Foi o artilheiro isolado (Chuteira de Ouro) da Copa do Mundo de 2018 na Rússia com 6 gols marcados."
+          }
+        }
+      ]
+    },
+    {
+      "id": "italia",
+      "name": "Itália",
+      "group": "Grupo F",
+      "badge_image": "/images/badges/italia.png",
+      "theme_color": "#004b93",
+      "titles_count": 4,
+      "manager": "Luciano Spalletti",
+      "history": {
+        "summary": "Uma das forças mais tradicionais do futebol, quatro vezes campeã do mundo, famosa por sua escola defensiva impecável.",
+        "milestones": "Títulos históricos em 1934, 1938, a consagração na Espanha em 1982 e a emocionante vitória nos pênaltis em 2006 na Alemanha."
+      },
+      "culture": {
+        "traditional_food": "Pizza Napoletana, Lasagna e Gelato",
+        "curiosity": "O uniforme oficial é azul em homenagem à Casa Real de Saboia, embora a bandeira do país seja verde, branca e vermelha."
+      },
+      "players": [
+        {
+          "id": "nicolo-barella",
+          "name": "Nicolò Barella",
+          "jersey_number": 18,
+          "position": "Meio-campista",
+          "age": 29,
+          "current_club": "Inter de Milão",
+          "illustration_url": "/images/players/barella.png",
+          "short_bio": "Meio-campista box-to-box incansável, de altíssima intensidade física, excelente condução de bola e chutes de longa distância precisos.",
+          "stats": {
+            "career_goals": 35,
+            "world_cups_played": 0,
+            "world_cup_goals": 0,
+            "historical_fact": "Pilar vital nas conquistas nacionais de seu clube e na conquista continental da Eurocopa em 2021."
+          }
+        },
+        {
+          "id": "gianluigi-donnarumma",
+          "name": "Gianluigi Donnarumma",
+          "jersey_number": 1,
+          "position": "Goleiro",
+          "age": 27,
+          "current_club": "Paris Saint-Germain",
+          "illustration_url": "/images/players/donnarumma.png",
+          "short_bio": "Goleiro gigante de reflexos espetaculares, estreou no profissional aos 16 anos e é o sucessor natural do lendário Buffon.",
+          "stats": {
+            "career_goals": 0,
+            "world_cups_played": 0,
+            "world_cup_goals": 0,
+            "historical_fact": "Foi eleito o Melhor Jogador do Torneio (MVP) na conquista da Eurocopa de 2021 pela Itália, um feito raríssimo para goleiros."
+          }
+        }
+      ]
+    },
+    {
+      "id": "uruguai",
+      "name": "Uruguai",
+      "group": "Grupo A",
+      "badge_image": "/images/badges/uruguai.png",
+      "theme_color": "#5cb6e4",
+      "titles_count": 2,
+      "manager": "Marcelo Bielsa",
+      "history": {
+        "summary": "Bicampeão mundial lendário e pioneiro, conhecido pela 'Garra Charrúa' — a entrega física e coragem levadas às últimas consequências em campo.",
+        "milestones": "Conquistou a primeira Copa do Mundo em 1930 e chocou o planeta no histórico 'Maracanazo' de 1950 calando o Brasil no Rio de Janeiro."
+      },
+      "culture": {
+        "traditional_food": "Asado Uruguayo, Chivito e Mate",
+        "curiosity": "Embora tenha apenas 3,4 milhões de habitantes, o Uruguai é o menor país do mundo em população a ter conquistado títulos mundiais de futebol."
+      },
+      "players": [
+        {
+          "id": "federico-valverde",
+          "name": "Federico Valverde",
+          "jersey_number": 15,
+          "position": "Meio-campista",
+          "age": 27,
+          "current_club": "Real Madrid",
+          "illustration_url": "/images/players/valverde.png",
+          "short_bio": "Conhecido como 'El Halcón', é um meia moderno de força física extraordinária, passada avassaladora e potente chute de fora da área.",
+          "stats": {
+            "career_goals": 40,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Capitão e motor tático inquestionável da seleção uruguaia na reconstrução sob comando de Bielsa."
+          }
+        },
+        {
+          "id": "darwin-nunez",
+          "name": "Darwin Núñez",
+          "jersey_number": 19,
+          "position": "Atacante",
+          "age": 26,
+          "current_club": "Liverpool",
+          "illustration_url": "/images/players/darwin-nunez.png",
+          "short_bio": "Centroavante veloz e de físico imponente, de presença constante na área adversária e poder de aceleração letal em contra-ataques.",
+          "stats": {
+            "career_goals": 85,
+            "world_cups_played": 1,
+            "world_cup_goals": 0,
+            "historical_fact": "Tornou-se a principal referência ofensiva de gols na campanha das eliminatórias para a Copa do Mundo."
+          }
+        }
+      ]
+    },
+    {
+      "id": "holanda",
+      "name": "Holanda",
+      "group": "Grupo F",
+      "badge_image": "/images/badges/holanda.png",
+      "theme_color": "#ff6600",
+      "titles_count": 0,
+      "manager": "Ronald Koeman",
+      "history": {
+        "summary": "A seleção criadora do revolucionário 'Futebol Total' dos anos 70 comandada por Johan Cruyff, apelidada de 'Laranja Mecânica'.",
+        "milestones": "Conquistou a Eurocopa em 1988 e foi três vezes vice-campeã da Copa do Mundo (1974, 1978 e 2010), a maior marca de finais sem títulos."
+      },
+      "culture": {
+        "traditional_food": "Stroopwafel, Bitterballen e Queijos Edam/Gouda",
+        "curiosity": "A seleção veste laranja em homenagem à Família Real Holandesa (Casa de Orange-Nassau), cor ausente na bandeira nacional tricolor."
+      },
+      "players": [
+        {
+          "id": "virgil-van-dijk",
+          "name": "Virgil van Dijk",
+          "jersey_number": 4,
+          "position": "Zagueiro",
+          "age": 34,
+          "current_club": "Liverpool",
+          "illustration_url": "/images/players/van-dijk.png",
+          "short_bio": "Zagueiro gigante de soberania física aérea inigualável, leitura tática impecável e líder natural, capitão máximo da Laranja Mecânica.",
+          "stats": {
+            "career_goals": 28,
+            "world_cups_played": 1,
+            "world_cup_goals": 1,
+            "historical_fact": "Liderou a Holanda até as quartas de final em 2022 em um dos duelos mais disputados das Copas contra a Argentina."
+          }
+        },
+        {
+          "id": "cody-gakpo",
+          "name": "Cody Gakpo",
+          "jersey_number": 11,
+          "position": "Atacante",
+          "age": 27,
+          "current_club": "Liverpool",
+          "illustration_url": "/images/players/gakpo.png",
+          "short_bio": "Atacante versátil que combina altura com agilidade de drible nas pontas e ótima capacidade de finalização e passes.",
+          "stats": {
+            "career_goals": 70,
+            "world_cups_played": 1,
+            "world_cup_goals": 3,
+            "historical_fact": "Foi a grande revelação holandesa na Copa do Mundo de 2022, marcando gols em todas as partidas da fase de grupos."
+          }
+        }
+      ]
     }
   ]
 }
