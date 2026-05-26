@@ -40,6 +40,7 @@ Imitação de um caderno scrapbook físico feito à mão:
 
 ### 2.3. Doodles & Elementos Gráficos
 Gerados dinamicamente via React com seeds determinísticos baseados em IDs para consistência visual:
+- Qualquer cálculo pseudoaleatório para rotação, tamanho ou offset de stickers, manchas e fitas adesivas deve obrigatoriamente usar uma chave única (`id` do time, jogador ou índice) como *seed* determinística. Isso evita erros de *Hydration Mismatch* no Next.js entre o Node.js/Vercel (servidor) e o browser (cliente).
 - `<TapeStrip />`: Fitas adesivas/washi tape SVG com rotações orgânicas.
 - Doodles SVG: `<ScribbleLine />` (linhas à mão), `<HandArrow />` (setas de destaque), `<CircleHighlight />` (círculo ao redor de números).
 - `<Stamp />`: Carimbos CSS puro com efeito desgastado.
