@@ -107,3 +107,54 @@ Todas as imagens são geradas e pós-processadas usando o script [removeBg.js](f
 2. Commitar alterações lógicas e limpas.
 3. Criar Pull Request via GitHub CLI com o corpo em linha única: `gh pr create --title "..." --body "Sua descrição longa em uma única linha..."`
 4. Squash merge na `main`.
+
+---
+
+## 8. Fases de Desenvolvimento (Roadmap)
+
+> [!NOTE]
+> **Decisões de Escopo do MVP:**
+> - **10 seleções** é o escopo fixo e intencional para o MVP — não expandir além disso nesta fase.
+> - **Imagens dos jogadores** ainda pendentes (França, Alemanha, Portugal, Espanha, Inglaterra, Holanda, Uruguai) serão geradas quando houver liberação para geração de mais assets. As páginas desses times existem e carregarão quando as imagens forem adicionadas em `/public/images/players/`.
+
+---
+
+### 🔴 Fase 1 — Bugs Críticos & Polimento Técnico
+
+Correções que afetam a experiência atual e precisam ser resolvidas antes de qualquer nova funcionalidade.
+
+| # | Item | Descrição |
+|---|------|-----------|
+| 1 | **Fix do carimbo no mobile/tablet** | O elemento `absolute` com `right-[-10px]` sobrepõe a palavra "COPA" em viewports < 1024px. Reposicionar para inline abaixo do título em mobile, mantendo o posicionamento absoluto só em desktop (`lg:`). |
+| 2 | **Title tags dinâmicas por página** | A tag `<title>` é genérica em todas as páginas. Em `team/[id]/page.tsx`, exportar `generateMetadata()` retornando `title: "${team.name} – Almanaque da Copa 2026"` e `description` personalizada. |
+| 3 | **Open Graph tags básicas** | Adicionar `og:title`, `og:description`, `og:type` e `og:url` em `generateMetadata()` para cada página de time, habilitando preview ao compartilhar links. |
+| 4 | **`ScribbleLine` sem uso** | O componente existe em `doodles/` mas nunca é renderizado. Usá-lo como separador decorativo entre os dois jogadores na `team/[id]/page.tsx`. |
+
+---
+
+### 🟡 Fase 2 — Impacto Visual Máximo
+
+Melhorias de animação e estética que elevam o projeto de "bom" para "impressionante". Foco em WOW factor.
+
+| # | Item | Descrição |
+|---|------|-----------|
+| 1 | **Animação "Cair na Mesa"** | Na home, as folhas de grupo devem entrar com animação de queda usando Framer Motion: `initial={{ y: -120, opacity: 0, rotate: X }}` → `animate={{ y: 0, opacity: 1 }}`, com delay escalonado por índice (`delay: index * 0.08s`). Efeito de folha caindo e pousando na mesa. |
+| 2 | **Hero Transition ao clicar no escudo** | Usar `layoutId` do Framer Motion no `<Sticker>` do escudo na home e na página de time. Ao clicar, o escudo "voa" do card do grupo para o cabeçalho da página do time. Requer que o `<Sticker>` na home e no cabeçalho do time compartilhem o mesmo `layoutId={team.id}`. |
+| 3 | **Stickers de jogadores maiores** | Em desktop (`md:`), aumentar de `width={180} height={200}` para `width={240} height={270}`. Em mobile manter o tamanho atual. |
+| 4 | **Página 404 temática** | Criar `src/app/not-found.tsx` com visual de uma folha de papel rasgada na mesa: mensagem "Essa página voou da mesa..." estilo nota manuscrita, com botão de voltar à home. |
+| 5 | **Loading state scrapbook** | Criar `src/app/loading.tsx` com esqueleto animado que imita uma folha de papel em branco sendo "colocada" na mesa. Usar `animate-pulse` nos placeholders. |
+| 6 | **Decorações adicionais na página de time** | Adicionar `<ScribbleLine>` como separador entre os dois jogadores. Adicionar mais `<InkBlot>` em posições estratégicas. Usar `<TapeStrip>` também no topo do bloco de história. |
+
+---
+
+### 🟢 Fase 3 — Funcionalidades & Experiência
+
+Novas features que tornam o almanaque interativo e descobrível.
+
+| # | Item | Descrição |
+|---|------|-----------|
+| 1 | **Navegação entre times** | Adicionar botões "◀ Seleção Anterior / Próxima Seleção ▶" no rodapé do caderno na `team/[id]/page.tsx`. A ordem de navegação segue a lista do `worldcup.json`. |
+| 2 | **Botão de seleção aleatória 🎲** | Botão flutuante na home (canto inferior direito) estilizado como um dado, que navega para uma página de time aleatória. Implementar com `useRouter().push()` e `Math.random()` seeded na lista de times. |
+| 3 | **Hover tooltip nos escudos** | Ao fazer hover em um escudo na home, exibir um pequeno bubble estilo post-it com o nome do time e o grupo. Implementar com Framer Motion `AnimatePresence`. |
+| 4 | **Filtro de times na home** | Um campo de busca estilizado como uma nota manuscrita acima dos grupos. Ao digitar, grupos sem correspondência ficam com `opacity: 0.3`. Implementar como estado local em `ScatteredGroups`. |
+| 5 | **Página de estatísticas `/stats`** | Nova página com ranking visual dos times por: número de títulos, gols totais dos jogadores cadastrados e número de Copas disputadas pelos jogadores. Layout estilo painel de cortiça com post-its e papéis pregados. |

@@ -70,8 +70,9 @@ export default function Home() {
           ))}
 
           {/* Carimbo de 2026 rústico usando font-marker */}
+          {/* Mobile/tablet: inline abaixo do "COPA"; Desktop (lg): absoluto à direita */}
           <div
-            className="absolute right-[-10px] md:right-[15%] top-16 md:top-20 border-4 border-dashed border-red-800 text-red-800 font-marker text-lg md:text-xl font-extrabold px-3 py-1 rounded rotate-12 select-none uppercase tracking-wider bg-white/90 shadow-md"
+            className="mt-3 lg:absolute lg:right-[10%] lg:top-20 border-4 border-dashed border-red-800 text-red-800 font-marker text-base md:text-lg lg:text-xl font-extrabold px-3 py-1 rounded rotate-12 select-none uppercase tracking-wider bg-white/90 shadow-md self-end lg:self-auto"
             aria-hidden="true"
           >
             CAN • MEX • EUA 2026

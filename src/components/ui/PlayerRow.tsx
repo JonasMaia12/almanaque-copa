@@ -3,7 +3,6 @@ import { Player } from '@/types/worldcup';
 import { Sticker } from './Sticker';
 import { HandArrow } from './doodles/HandArrow';
 import { CircleHighlight } from './doodles/CircleHighlight';
-import { TapeStrip } from './doodles/TapeStrip';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
 
 interface PlayerRowProps {
@@ -25,7 +24,6 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
     <div className={`flex flex-col ${alignClass} gap-6 md:gap-16 items-center md:items-start my-12 relative w-full px-4 md:px-10`}>
       {/* Coluna do Sticker */}
       <div className="relative shrink-0 flex flex-col items-center">
-        <TapeStrip seed={player.id} color="washi" className="top-[-10px] left-1/2 -translate-x-1/2" />
         <Sticker 
           src={player.illustration_url} 
           alt={`Ilustração de ${player.name}`} 

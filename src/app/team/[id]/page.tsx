@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import type { Team } from '@/types/worldcup';
 import worldCupData from '@/data/worldcup.json';
 import { TornPaper } from '@/components/ui/TornPaper';
@@ -8,6 +9,7 @@ import { TrophyRow } from '@/components/ui/TrophyRow';
 import { PlayerRow } from '@/components/ui/PlayerRow';
 import { Stamp } from '@/components/ui/doodles/Stamp';
 import { InkBlot } from '@/components/ui/doodles/InkBlot';
+import { ScribbleLine } from '@/components/ui/doodles/ScribbleLine';
 
 export async function generateStaticParams() {
   return worldCupData.teams.map((team) => ({
@@ -17,6 +19,24 @@ export async function generateStaticParams() {
 
 interface TeamPageProps {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: TeamPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const team = worldCupData.teams.find((t) => t.id === id);
+
+  if (!team) return {};
+
+  return {
+    title: `${team.name} – Almanaque da Copa 2026`,
+    description: team.history.summary,
+    openGraph: {
+      title: `${team.name} – Almanaque da Copa 2026`,
+      description: team.history.summary,
+      type: 'website',
+      url: `https://almanaque-copa.vercel.app/team/${team.id}`,
+    },
+  };
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {
@@ -117,12 +137,18 @@ export default async function TeamPage({ params }: TeamPageProps) {
         <div className="p-6 md:p-8 pl-10 md:pl-16 flex-1 flex flex-col justify-start relative">
           <div className="flex flex-col w-full mt-2">
             {team.players.map((player, idx) => (
-              <PlayerRow 
-                key={player.id} 
-                player={player} 
-                isEven={idx % 2 === 0}
-                index={idx}
-              />
+              <React.Fragment key={player.id}>
+                {idx > 0 && (
+                  <div className="px-4 md:px-10 -my-2 opacity-40">
+                    <ScribbleLine seed={`${team.id}-separator-${idx}`} color="var(--color-caneta-vermelha)" />
+                  </div>
+                )}
+                <PlayerRow
+                  player={player}
+                  isEven={idx % 2 === 0}
+                  index={idx}
+                />
+              </React.Fragment>
             ))}
           </div>
         </div>
