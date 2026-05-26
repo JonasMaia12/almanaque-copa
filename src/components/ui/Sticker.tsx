@@ -16,6 +16,7 @@ interface StickerProps {
   // Tamanho do adesivo (ex: 120, 150, 200)
   width?: number;
   height?: number;
+  layoutId?: string;
 }
 
 export const Sticker: React.FC<StickerProps> = ({
@@ -27,6 +28,7 @@ export const Sticker: React.FC<StickerProps> = ({
   hoverRotation,
   width = 120,
   height = 120,
+  layoutId,
 }) => {
   // Rotação orgânica padrão no hover caso não especificado
   const defaultHoverRotation = initialRotation === 0 ? 5 : initialRotation + 4;
@@ -36,6 +38,7 @@ export const Sticker: React.FC<StickerProps> = ({
     <motion.div
       className={`relative inline-block cursor-pointer select-none ${className}`}
       onClick={onClick}
+      layoutId={layoutId}
       initial={{ 
         rotate: initialRotation, 
         scale: 1,

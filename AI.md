@@ -110,51 +110,38 @@ Todas as imagens são geradas e pós-processadas usando o script [removeBg.js](f
 
 ---
 
-## 8. Fases de Desenvolvimento (Roadmap)
+## 8. Fases de Desenvolvimento (Histórico & Conclusão)
 
-> [!NOTE]
-> **Decisões de Escopo do MVP:**
-> - **10 seleções** é o escopo fixo e intencional para o MVP — não expandir além disso nesta fase.
-> - **Imagens dos jogadores** ainda pendentes (França, Alemanha, Portugal, Espanha, Inglaterra, Holanda, Uruguai) serão geradas quando houver liberação para geração de mais assets. As páginas desses times existem e carregarão quando as imagens forem adicionadas em `/public/images/players/`.
+Todas as fases originais de desenvolvimento técnico e interativo do MVP foram inteiramente concluídas com testes integrados e validações visuais de design.
 
----
+### ✅ Fase 1 — Bugs Críticos & Polimento Técnico [CONCLUÍDO]
+* **Fix do carimbo no mobile/tablet:** Reposicionamento dinâmico inline para viewports pequenas para não sobrepor o título principal, mantendo-o absoluto apenas no desktop.
+* **Title e Open Graph tags:** Implementação dinâmica via `generateMetadata()` por seleção no Next.js para melhora substancial em SEO e compartilhamento.
+* **`<ScribbleLine />` divisor:** Componente de linha de caderno rabiscada integrado como separador rústico entre jogadores na página de detalhes do time.
 
-### 🔴 Fase 1 — Bugs Críticos & Polimento Técnico
+### ✅ Fase 2 — Impacto Visual Máximo [CONCLUÍDO]
+* **Animação "Cair na Mesa":** Efeito de folhas soltas caindo e pousando suavemente com spring staggerado em Framer Motion na Mesa da Home.
+* **Hero Transition de Escudos:** Escudos clicados na Home transicionam de forma fluida voando fisicamente até o cabeçalho do caderno em [team/[id]/page.tsx](file:///Users/macbookpro/Documents/Jonas/almanaque-copa/src/app/team/[id]/page.tsx).
+* **Stickers Ampliados:** Tamanho das ilustrações dos jogadores aumentadas para 240px de largura em desktop.
+* **Página 404 & Loading Temáticos:** Rota 404 estruturada como papel pautado rasgado e tela de carregamento simulando esqueleto de papel em branco (`loading.tsx`).
+* **Decorações Adicionais:** TapeStrip integrado na história, novos InkBlots inseridos dinamicamente e divisores aplicados.
 
-Correções que afetam a experiência atual e precisam ser resolvidas antes de qualquer nova funcionalidade.
-
-| # | Item | Descrição |
-|---|------|-----------|
-| 1 | **Fix do carimbo no mobile/tablet** | O elemento `absolute` com `right-[-10px]` sobrepõe a palavra "COPA" em viewports < 1024px. Reposicionar para inline abaixo do título em mobile, mantendo o posicionamento absoluto só em desktop (`lg:`). |
-| 2 | **Title tags dinâmicas por página** | A tag `<title>` é genérica em todas as páginas. Em `team/[id]/page.tsx`, exportar `generateMetadata()` retornando `title: "${team.name} – Almanaque da Copa 2026"` e `description` personalizada. |
-| 3 | **Open Graph tags básicas** | Adicionar `og:title`, `og:description`, `og:type` e `og:url` em `generateMetadata()` para cada página de time, habilitando preview ao compartilhar links. |
-| 4 | **`ScribbleLine` sem uso** | O componente existe em `doodles/` mas nunca é renderizado. Usá-lo como separador decorativo entre os dois jogadores na `team/[id]/page.tsx`. |
-
----
-
-### 🟡 Fase 2 — Impacto Visual Máximo
-
-Melhorias de animação e estética que elevam o projeto de "bom" para "impressionante". Foco em WOW factor.
-
-| # | Item | Descrição |
-|---|------|-----------|
-| 1 | **Animação "Cair na Mesa"** | Na home, as folhas de grupo devem entrar com animação de queda usando Framer Motion: `initial={{ y: -120, opacity: 0, rotate: X }}` → `animate={{ y: 0, opacity: 1 }}`, com delay escalonado por índice (`delay: index * 0.08s`). Efeito de folha caindo e pousando na mesa. |
-| 2 | **Hero Transition ao clicar no escudo** | Usar `layoutId` do Framer Motion no `<Sticker>` do escudo na home e na página de time. Ao clicar, o escudo "voa" do card do grupo para o cabeçalho da página do time. Requer que o `<Sticker>` na home e no cabeçalho do time compartilhem o mesmo `layoutId={team.id}`. |
-| 3 | **Stickers de jogadores maiores** | Em desktop (`md:`), aumentar de `width={180} height={200}` para `width={240} height={270}`. Em mobile manter o tamanho atual. |
-| 4 | **Página 404 temática** | Criar `src/app/not-found.tsx` com visual de uma folha de papel rasgada na mesa: mensagem "Essa página voou da mesa..." estilo nota manuscrita, com botão de voltar à home. |
-| 5 | **Loading state scrapbook** | Criar `src/app/loading.tsx` com esqueleto animado que imita uma folha de papel em branco sendo "colocada" na mesa. Usar `animate-pulse` nos placeholders. |
-| 6 | **Decorações adicionais na página de time** | Adicionar `<ScribbleLine>` como separador entre os dois jogadores. Adicionar mais `<InkBlot>` em posições estratégicas. Usar `<TapeStrip>` também no topo do bloco de história. |
+### ✅ Fase 3 — Funcionalidades & Experiência [CONCLUÍDO]
+* **Navegação Circular no Rodapé:** Botões estilo Post-its coloridos colados abaixo da página com fitas washi e setas desenhadas à mão (`<HandArrow />`).
+* **Sorteador Aleatório 🎲:** Dado flutuante fixo no canto inferior direito da Home que rotaciona e escolhe um time randômico.
+* **Hover Tooltips nos Escudos:** Mini post-its amarelos flutuantes com Framer Motion revelando detalhes sobre o país e grupo.
+* **Filtro de Seleções:** Barra de pesquisa manuscrita com esmaecimento opaco (`opacity-30 blur`) nos grupos inativos.
+* **Página `/stats`:** Painel de cortiça física reunindo estatísticas e rankings de Títulos, Gols em Copas, Gols na Carreira e Edições Disputadas das 10 seleções do MVP.
 
 ---
 
-### 🟢 Fase 3 — Funcionalidades & Experiência
+## 🚀 Próximos Passos (Grafismos Pendentes)
 
-Novas features que tornam o almanaque interativo e descobrível.
+Com o núcleo técnico 100% entregue e validado, resta apenas gerar e recortar os stickers de jogadores restantes nas seguintes seleções quando houver cota de IA disponível:
+* **França** (Kylian Mbappé e Antoine Griezmann) - *Cota esgotada temporariamente*
+* **Alemanha** (Jamal Musiala e Florian Wirtz)
+* **Inglaterra** (Jude Bellingham e Harry Kane)
+* **Holanda** (Virgil van Dijk e Cody Gakpo)
+* **Uruguai** (Federico Valverde e Darwin Núñez)
+* *(Nota: Portugal foi finalizado neste passo com sucesso para Cristiano Ronaldo e Bruno Fernandes).*
 
-| # | Item | Descrição |
-|---|------|-----------|
-| 1 | **Navegação entre times** | Adicionar botões "◀ Seleção Anterior / Próxima Seleção ▶" no rodapé do caderno na `team/[id]/page.tsx`. A ordem de navegação segue a lista do `worldcup.json`. |
-| 2 | **Botão de seleção aleatória 🎲** | Botão flutuante na home (canto inferior direito) estilizado como um dado, que navega para uma página de time aleatória. Implementar com `useRouter().push()` e `Math.random()` seeded na lista de times. |
-| 3 | **Hover tooltip nos escudos** | Ao fazer hover em um escudo na home, exibir um pequeno bubble estilo post-it com o nome do time e o grupo. Implementar com Framer Motion `AnimatePresence`. |
-| 4 | **Filtro de times na home** | Um campo de busca estilizado como uma nota manuscrita acima dos grupos. Ao digitar, grupos sem correspondência ficam com `opacity: 0.3`. Implementar como estado local em `ScatteredGroups`. |
-| 5 | **Página de estatísticas `/stats`** | Nova página com ranking visual dos times por: número de títulos, gols totais dos jogadores cadastrados e número de Copas disputadas pelos jogadores. Layout estilo painel de cortiça com post-its e papéis pregados. |

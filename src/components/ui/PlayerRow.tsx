@@ -27,11 +27,11 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
         <Sticker 
           src={player.illustration_url} 
           alt={`Ilustração de ${player.name}`} 
-          width={180} 
-          height={200} 
+          width={240} 
+          height={270} 
           initialRotation={initialRotation}
           hoverRotation={hoverRotation}
-          className="z-10"
+          className="z-10 w-[160px] h-[180px] md:w-[240px] md:h-[270px]"
         />
         <div className="absolute -bottom-4 right-0 font-stats text-4xl font-bold text-red-800 rotate-12 bg-white/50 rounded-full px-2">
           <CircleHighlight seed={player.id}>

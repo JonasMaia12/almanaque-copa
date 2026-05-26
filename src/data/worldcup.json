@@ -228,7 +228,7 @@
           "position": "Atacante",
           "age": 41,
           "current_club": "Al-Nassr",
-          "illustration_url": "/images/players/cristiano-ronaldo.webp",
+          "illustration_url": "/images/players/cristiano-ronaldo.png",
           "short_bio": "Um dos maiores atletas da história mundial, detentor de inúmeros recordes de gols e títulos europeus.",
           "stats": {
             "career_goals": 885,
@@ -244,7 +244,7 @@
           "position": "Meio-campista",
           "age": 31,
           "current_club": "Manchester United",
-          "illustration_url": "/images/players/bruno-fernandes.webp",
+          "illustration_url": "/images/players/bruno-fernandes.png",
           "short_bio": "Maestro no meio-campo com passes de alta definição e chute forte de média distância.",
           "stats": {
             "career_goals": 160,
