@@ -48,22 +48,6 @@
             "world_cup_goals": 8,
             "historical_fact": "Igualou o recorde oficial de gols de Pelé pela seleção na Copa do Mundo de 2022 no Catar."
           }
-        },
-        {
-          "id": "alisson-becker",
-          "name": "Alisson Becker",
-          "jersey_number": 1,
-          "position": "Goleiro",
-          "age": 33,
-          "current_club": "Liverpool",
-          "illustration_url": "/images/players/alisson.png",
-          "short_bio": "Considerado um dos melhores goleiros do mundo, destaca-se pelo posicionamento perfeito, frieza em situações de mano a mano e reposição de bola precisa.",
-          "stats": {
-            "career_goals": 1,
-            "world_cups_played": 2,
-            "world_cup_goals": 0,
-            "historical_fact": "Foi o goleiro titular incontestável do Brasil nas Copas do Mundo de 2018 na Rússia e 2022 no Catar."
-          }
         }
       ]
     },
@@ -114,22 +98,6 @@
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Fez uma das defesas mais icônicas da história das Copas no último segundo da prorrogação na final contra a França em 2022."
-          }
-        },
-        {
-          "id": "rodrigo-de-paul",
-          "name": "Rodrigo De Paul",
-          "jersey_number": 7,
-          "position": "Meio-campista",
-          "age": 32,
-          "current_club": "Atlético de Madrid",
-          "illustration_url": "/images/players/rodrigo-depaul.png",
-          "short_bio": "O 'motorzinho' da seleção argentina, destaca-se pela entrega física incansável, proteção ao capitão Messi e qualidade na transição ofensiva.",
-          "stats": {
-            "career_goals": 12,
-            "world_cups_played": 1,
-            "world_cup_goals": 0,
-            "historical_fact": "Foi o jogador que mais cobriu quilômetros em campo pela seleção argentina na campanha do título de 2022."
           }
         }
       ]
@@ -182,22 +150,6 @@
             "world_cup_goals": 4,
             "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
           }
-        },
-        {
-          "id": "tchouameni",
-          "name": "Aurélien Tchouaméni",
-          "jersey_number": 8,
-          "position": "Meio-campista",
-          "age": 26,
-          "current_club": "Real Madrid",
-          "illustration_url": "/images/players/tchouameni.webp",
-          "short_bio": "Pilar físico e técnico no meio de campo, excelente interceptador de passes.",
-          "stats": {
-            "career_goals": 15,
-            "world_cups_played": 1,
-            "world_cup_goals": 1,
-            "historical_fact": "Marcou um gol antológico de longa distância contra a Inglaterra nas quartas de final em 2022."
-          }
         }
       ]
     },
@@ -249,22 +201,6 @@
             "world_cup_goals": 0,
             "historical_fact": "Considerado o futuro do meio-campo alemão para as próximas Copas do Mundo."
           }
-        },
-        {
-          "id": "antonio-rudiger",
-          "name": "Antonio Rüdiger",
-          "jersey_number": 2,
-          "position": "Zagueiro",
-          "age": 33,
-          "current_club": "Real Madrid",
-          "illustration_url": "/images/players/rudiger.webp",
-          "short_bio": "Zagueiro veloz, impetuoso e carismático, famoso por suas corridas peculiares e desarmes decisivos.",
-          "stats": {
-            "career_goals": 18,
-            "world_cups_played": 2,
-            "world_cup_goals": 0,
-            "historical_fact": "Líder indiscutível da defesa alemã em competições continentais e mundiais."
-          }
         }
       ]
     },
@@ -315,22 +251,6 @@
             "world_cups_played": 2,
             "world_cup_goals": 2,
             "historical_fact": "Foi o maior assistente e artilheiro de Portugal na campanha da Copa do Catar em 2022."
-          }
-        },
-        {
-          "id": "bernardo-silva",
-          "name": "Bernardo Silva",
-          "jersey_number": 10,
-          "position": "Meio-campista",
-          "age": 31,
-          "current_club": "Manchester City",
-          "illustration_url": "/images/players/bernardo-silva.webp",
-          "short_bio": "Jogador super inteligente dotado de condução de bola fantástica e altíssima dedicação tática.",
-          "stats": {
-            "career_goals": 85,
-            "world_cups_played": 2,
-            "world_cup_goals": 0,
-            "historical_fact": "Motor cerebral tático nas conquistas de Portugal e do Manchester City sob comando de Guardiola."
           }
         }
       ]
