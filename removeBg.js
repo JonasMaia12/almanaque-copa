@@ -85,14 +85,15 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/3557b48b-790b-466e-9ef8-5cab59c63fd2';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/89f5a440-d865-4a3c-a22f-e12f38c5bac6';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/vini_jr.png`, out: `${publicDir}/players/vini-jr.png` },
-  { in: `${artifactsDir}/neymar_jr.png`, out: `${publicDir}/players/neymar-jr.png` },
-  { in: `${artifactsDir}/alisson.png`, out: `${publicDir}/players/alisson.png` },
-  { in: `${artifactsDir}/trophy.png`, out: `${publicDir}/trophy.png` }
+  { in: `${artifactsDir}/franca_badge_1779801019055.png`, out: `${publicDir}/badges/franca.png` },
+  { in: `${artifactsDir}/alemanha_badge_1779801036538.png`, out: `${publicDir}/badges/alemanha.png` },
+  { in: `${artifactsDir}/portugal_badge_1779801051392.png`, out: `${publicDir}/badges/portugal.png` },
+  { in: `${artifactsDir}/inglaterra_badge_1779801067614.png`, out: `${publicDir}/badges/inglaterra.png` },
+  { in: `${artifactsDir}/espanha_badge_1779801084733.png`, out: `${publicDir}/badges/espanha.png` }
 ];
 
 async function run() {

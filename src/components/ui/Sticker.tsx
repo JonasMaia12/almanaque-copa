@@ -11,6 +11,8 @@ interface StickerProps {
   onClick?: () => void;
   // Ângulo inicial de rotação (em graus, ex: -3, 2, 5)
   initialRotation?: number;
+  // Ângulo de rotação no hover. Se omitido, rotaciona organicamente
+  hoverRotation?: number;
   // Tamanho do adesivo (ex: 120, 150, 200)
   width?: number;
   height?: number;
@@ -22,9 +24,14 @@ export const Sticker: React.FC<StickerProps> = ({
   className = '',
   onClick,
   initialRotation = 0,
+  hoverRotation,
   width = 120,
   height = 120,
 }) => {
+  // Rotação orgânica padrão no hover caso não especificado
+  const defaultHoverRotation = initialRotation === 0 ? 5 : initialRotation + 4;
+  const hoverRotateVal = hoverRotation !== undefined ? hoverRotation : defaultHoverRotation;
+
   return (
     <motion.div
       className={`relative inline-block cursor-pointer select-none ${className}`}
@@ -35,7 +42,7 @@ export const Sticker: React.FC<StickerProps> = ({
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))' 
       }}
       whileHover={{
-        rotate: 0,
+        rotate: hoverRotateVal,
         scale: 1.06,
         filter: 'drop-shadow(0 15px 15px rgba(0, 0, 0, 0.35))',
         zIndex: 50,

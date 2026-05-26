@@ -4,6 +4,7 @@ import { Sticker } from './Sticker';
 import { HandArrow } from './doodles/HandArrow';
 import { CircleHighlight } from './doodles/CircleHighlight';
 import { TapeStrip } from './doodles/TapeStrip';
+import { cyrb53, seededRandom } from '@/lib/doodle-seed';
 
 interface PlayerRowProps {
   player: Player;
@@ -14,6 +15,12 @@ interface PlayerRowProps {
 export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
   const alignClass = isEven ? 'md:flex-row' : 'md:flex-row-reverse';
   
+  const seed = cyrb53(player.id);
+  const initialRotation = seededRandom(seed, -6, 6);
+  // Rotaciona para um ângulo ligeiramente diferente no hover (ex: soma ou subtrai de 3 a 6 graus)
+  const hoverOffset = seededRandom(seed + 1, 3, 6) * (seededRandom(seed + 2, -1, 1) > 0 ? 1 : -1);
+  const hoverRotation = initialRotation + hoverOffset;
+
   return (
     <div className={`flex flex-col ${alignClass} gap-6 md:gap-16 items-center md:items-start my-12 relative w-full px-4 md:px-10`}>
       {/* Coluna do Sticker */}
@@ -24,6 +31,8 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
           alt={`Ilustração de ${player.name}`} 
           width={180} 
           height={200} 
+          initialRotation={initialRotation}
+          hoverRotation={hoverRotation}
           className="z-10"
         />
         <div className="absolute -bottom-4 right-0 font-stats text-4xl font-bold text-red-800 rotate-12 bg-white/50 rounded-full px-2">
