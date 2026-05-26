@@ -91,7 +91,8 @@ const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/image
 const files = [
   { in: `${artifactsDir}/vini_jr.png`, out: `${publicDir}/players/vini-jr.png` },
   { in: `${artifactsDir}/neymar_jr.png`, out: `${publicDir}/players/neymar-jr.png` },
-  { in: `${artifactsDir}/alisson.png`, out: `${publicDir}/players/alisson.png` }
+  { in: `${artifactsDir}/alisson.png`, out: `${publicDir}/players/alisson.png` },
+  { in: `${artifactsDir}/trophy.png`, out: `${publicDir}/trophy.png` }
 ];
 
 async function run() {
