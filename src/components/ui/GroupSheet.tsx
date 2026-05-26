@@ -14,8 +14,6 @@ interface GroupSheetProps {
   teams: Team[];
   isMobile: boolean;
   index: number;
-  isDimmed?: boolean;
-  searchQuery?: string;
 }
 
 const GROUP_COLORS: Record<string, string> = {
@@ -29,7 +27,7 @@ const GROUP_COLORS: Record<string, string> = {
   "Grupo H": "#fdf6e3",
 };
 
-export function GroupSheet({ groupName, teams, isMobile, index, isDimmed = false, searchQuery = "" }: GroupSheetProps) {
+export function GroupSheet({ groupName, teams, isMobile, index }: GroupSheetProps) {
   const router = useRouter();
   const [hoveredTeamId, setHoveredTeamId] = React.useState<string | null>(null);
   const hash = cyrb53(groupName);
@@ -44,7 +42,7 @@ export function GroupSheet({ groupName, teams, isMobile, index, isDimmed = false
 
   return (
     <motion.div
-      className={`relative w-[90%] max-w-sm sm:w-64 md:w-72 p-4 md:p-6 rounded-sm mb-4 md:mb-0 ${isDimmed ? 'opacity-30 blur-[0.5px]' : 'opacity-100'} transition-all duration-300`}
+      className="relative w-[90%] max-w-sm sm:w-64 md:w-72 p-4 md:p-6 rounded-sm mb-4 md:mb-0 opacity-100 transition-all duration-300"
       style={{ 
         backgroundColor: bgColor,
         color: isDark ? "#ffffff" : "#1a1a1a",
@@ -92,14 +90,12 @@ export function GroupSheet({ groupName, teams, isMobile, index, isDimmed = false
           const tx = seededRandom(teamHash + 2, -5, 5);
           const ty = seededRandom(teamHash + 3, -5, 5);
 
-          const isTeamMatch = !searchQuery || team.name.toLowerCase().includes(searchQuery);
-
           return (
             <div 
               key={team.id}
-              className={`relative transition-opacity duration-300 ${!isTeamMatch ? 'opacity-20 pointer-events-none' : 'opacity-100'}`}
+              className="relative transition-opacity duration-300 opacity-100"
               style={{ transform: `rotate(${tRotate}deg) scale(${tScale}) translate(${tx}px, ${ty}px)` }}
-              onMouseEnter={() => isTeamMatch && setHoveredTeamId(team.id)}
+              onMouseEnter={() => setHoveredTeamId(team.id)}
               onMouseLeave={() => setHoveredTeamId(null)}
             >
               <AnimatePresence>

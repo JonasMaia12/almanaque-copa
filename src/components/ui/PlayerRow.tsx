@@ -4,6 +4,7 @@ import { Sticker } from './Sticker';
 import { HandArrow } from './doodles/HandArrow';
 import { CircleHighlight } from './doodles/CircleHighlight';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
+import { DoodlePencil } from './doodles/DoodleIcons';
 
 interface PlayerRowProps {
   player: Player;
@@ -51,16 +52,19 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
           <HandArrow seed={player.id + 'arrow'} direction={isEven ? "left" : "right"} className="ml-2 hidden md:inline-block opacity-70" />
         </p>
 
-        {/* Estatísticas estilo lista escrita à mão */}
+        {/* Estatísticas estilo lista escrita à mão com lápis Doodle SVG */}
         <div className="flex flex-col gap-2 ml-4 mt-2">
           <div className="flex items-center gap-2 font-handwritten text-xl text-red-800 -rotate-1">
-            <span className="text-xl">✏</span> {player.stats.career_goals} gols na carreira
+            <DoodlePencil seed={player.id + 'p1'} size={20} color="var(--color-caneta-vermelha)" className="shrink-0" />
+            <span>{player.stats.career_goals} gols na carreira</span>
           </div>
           <div className="flex items-center gap-2 font-handwritten text-xl text-blue-900 rotate-1">
-            <span className="text-xl">✏</span> {player.stats.world_cups_played} Copas disputadas
+            <DoodlePencil seed={player.id + 'p2'} size={20} color="var(--color-caneta-azul)" className="shrink-0" />
+            <span>{player.stats.world_cups_played} Copas disputadas</span>
           </div>
           <div className="flex items-center gap-2 font-handwritten text-xl text-neutral-900 -rotate-[0.5deg]">
-            <span className="text-xl">✏</span> {player.stats.world_cup_goals} gols em Copas
+            <DoodlePencil seed={player.id + 'p3'} size={20} color="var(--color-caneta-preta)" className="shrink-0" />
+            <span>{player.stats.world_cup_goals} gols em Copas</span>
           </div>
         </div>
 
