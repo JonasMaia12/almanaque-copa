@@ -85,16 +85,16 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/3f363929-2610-4f41-9169-11b67bdf2d07';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/d00ccc55-a555-4dcf-96d3-590418a6c4cf';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/mbappe_1779863954238.png`, out: `${publicDir}/players/mbappe.png` },
-  { in: `${artifactsDir}/griezmann_1779863986894.png`, out: `${publicDir}/players/griezmann.png` },
-  { in: `${artifactsDir}/bellingham_1779864005115.png`, out: `${publicDir}/players/bellingham.png` },
-  { in: `${artifactsDir}/harry_kane_1779864024508.png`, out: `${publicDir}/players/harry-kane.png` },
-  { in: `${artifactsDir}/lamine_yamal_1779864060777.png`, out: `${publicDir}/players/lamine-yamal.png` },
-  { in: `${artifactsDir}/rodri_1779864079863.png`, out: `${publicDir}/players/rodri.png` }
+  { in: `${artifactsDir}/musiala_raw_1779879532678.png`, out: `${publicDir}/players/musiala.png` },
+  { in: `${artifactsDir}/wirtz_raw_1779879548561.png`, out: `${publicDir}/players/wirtz.png` },
+  { in: `${artifactsDir}/valverde_raw_1779879565549.png`, out: `${publicDir}/players/valverde.png` },
+  { in: `${artifactsDir}/darwin_nunez_raw_1779879580525.png`, out: `${publicDir}/players/darwin-nunez.png` },
+  { in: `${artifactsDir}/van_dijk_raw_1779879599700.png`, out: `${publicDir}/players/van-dijk.png` },
+  { in: `${artifactsDir}/depay_raw_1779879615948.png`, out: `${publicDir}/players/depay.png` }
 ];
 
 async function run() {
