@@ -85,13 +85,16 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/89f5a440-d865-4a3c-a22f-e12f38c5bac6';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/3f363929-2610-4f41-9169-11b67bdf2d07';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/belgica_badge_1779802281084.png`, out: `${publicDir}/badges/belgica.png` },
-  { in: `${artifactsDir}/de_bruyne_1779802301462.png`, out: `${publicDir}/players/de-bruyne.png` },
-  { in: `${artifactsDir}/doku_1779802327090.png`, out: `${publicDir}/players/doku.png` }
+  { in: `${artifactsDir}/mbappe_1779863954238.png`, out: `${publicDir}/players/mbappe.png` },
+  { in: `${artifactsDir}/griezmann_1779863986894.png`, out: `${publicDir}/players/griezmann.png` },
+  { in: `${artifactsDir}/bellingham_1779864005115.png`, out: `${publicDir}/players/bellingham.png` },
+  { in: `${artifactsDir}/harry_kane_1779864024508.png`, out: `${publicDir}/players/harry-kane.png` },
+  { in: `${artifactsDir}/lamine_yamal_1779864060777.png`, out: `${publicDir}/players/lamine-yamal.png` },
+  { in: `${artifactsDir}/rodri_1779864079863.png`, out: `${publicDir}/players/rodri.png` }
 ];
 
 async function run() {

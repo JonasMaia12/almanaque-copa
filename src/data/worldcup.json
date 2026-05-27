@@ -126,7 +126,7 @@
           "position": "Atacante",
           "age": 27,
           "current_club": "Real Madrid",
-          "illustration_url": "/images/players/mbappe.webp",
+          "illustration_url": "/images/players/mbappe.png",
           "short_bio": "Estrela global famosa por sua velocidade absurda de arranque e finalização cirúrgica.",
           "stats": {
             "career_goals": 312,
@@ -142,7 +142,7 @@
           "position": "Meio-campista",
           "age": 35,
           "current_club": "Atlético de Madrid",
-          "illustration_url": "/images/players/griezmann.webp",
+          "illustration_url": "/images/players/griezmann.png",
           "short_bio": "O cérebro tático dos Bleus, polivalente e incansável na marcação e criação de jogadas.",
           "stats": {
             "career_goals": 180,
@@ -177,7 +177,7 @@
           "position": "Meio-campista",
           "age": 23,
           "current_club": "Bayern de Munique",
-          "illustration_url": "/images/players/musiala.webp",
+          "illustration_url": "/images/players/musiala.png",
           "short_bio": "Conhecido como 'Bambi', é um jovem prodígio com dribles mágicos em espaços minúsculos.",
           "stats": {
             "career_goals": 55,
@@ -193,7 +193,7 @@
           "position": "Meio-campista",
           "age": 23,
           "current_club": "Bayer Leverkusen",
-          "illustration_url": "/images/players/wirtz.webp",
+          "illustration_url": "/images/players/wirtz.png",
           "short_bio": "Meia altamente criativo e dinâmico, maestro da campanha perfeita do Leverkusen na Alemanha.",
           "stats": {
             "career_goals": 45,
@@ -493,19 +493,19 @@
           }
         },
         {
-          "id": "cody-gakpo",
-          "name": "Cody Gakpo",
-          "jersey_number": 11,
+          "id": "memphis-depay",
+          "name": "Memphis Depay",
+          "jersey_number": 10,
           "position": "Atacante",
-          "age": 27,
-          "current_club": "Liverpool",
-          "illustration_url": "/images/players/gakpo.png",
-          "short_bio": "Atacante versátil que combina altura com agilidade de drible nas pontas e ótima capacidade de finalização e passes.",
+          "age": 32,
+          "current_club": "Corinthians",
+          "illustration_url": "/images/players/depay.png",
+          "short_bio": "Atacante habilidoso e criativo, famoso por sua personalidade forte, estilo irreverente e por comemorar tapando os ouvidos.",
           "stats": {
-            "career_goals": 70,
-            "world_cups_played": 1,
+            "career_goals": 178,
+            "world_cups_played": 2,
             "world_cup_goals": 3,
-            "historical_fact": "Foi a grande revelação holandesa na Copa do Mundo de 2022, marcando gols em todas as partidas da fase de grupos."
+            "historical_fact": "É um dos maiores artilheiros da história da Laranja Mecânica, tendo marcado gols cruciais em Copas do Mundo e Eurocopas."
           }
         }
       ]
