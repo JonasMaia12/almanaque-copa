@@ -49,7 +49,23 @@
             "historical_fact": "Igualou o recorde oficial de gols de Pelé pela seleção na Copa do Mundo de 2022 no Catar."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "pele",
+        "name": "Pelé",
+        "jersey_number": 10,
+        "position": "Atacante",
+        "era": "1957-1971",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-pele.png",
+        "short_bio": "O Rei do Futebol, único jogador a vencer três Copas do Mundo, consagrado mundialmente por sua genialidade e atletismo insuperáveis.",
+        "stats": {
+          "career_goals": 1281,
+          "world_cups_played": 4,
+          "world_cup_goals": 12,
+          "historical_fact": "Venceu as Copas de 1958, 1962 e 1970, sendo o jogador mais jovem a marcar um gol e vencer uma Copa do Mundo na história."
+        }
+      }
     },
     {
       "id": "argentina",
@@ -100,7 +116,23 @@
             "historical_fact": "Fez uma das defesas mais icônicas da história das Copas no último segundo da prorrogação na final contra a França em 2022."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "maradona",
+        "name": "Diego Maradona",
+        "jersey_number": 10,
+        "position": "Atacante",
+        "era": "1977-1994",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-maradona.png",
+        "short_bio": "El Pibe de Oro, um dos maiores ícones do futebol mundial, cuja genialidade com a perna esquerda e paixão arrastaram multidões.",
+        "stats": {
+          "career_goals": 345,
+          "world_cups_played": 4,
+          "world_cup_goals": 8,
+          "historical_fact": "Liderou a Argentina ao título da Copa de 1986 no México, marcando o icônico gol da 'Mão de Deus' e o Gol do Século contra a Inglaterra nas quartas de final."
+        }
+      }
     },
     {
       "id": "franca",
@@ -151,7 +183,23 @@
             "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "zidane",
+        "name": "Zinedine Zidane",
+        "jersey_number": 10,
+        "position": "Meio-campista",
+        "era": "1994-2006",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-zidane.png",
+        "short_bio": "Meio-campista de elegância sublime, controle de bola mágico e liderança fria em momentos decisivos de grandes finais mundiais.",
+        "stats": {
+          "career_goals": 156,
+          "world_cups_played": 3,
+          "world_cup_goals": 5,
+          "historical_fact": "Marcou dois gols de cabeça na final da Copa do Mundo de 1998, garantindo o primeiro título mundial da história da França."
+        }
+      }
     },
     {
       "id": "alemanha",
@@ -202,7 +250,23 @@
             "historical_fact": "Considerado o futuro do meio-campo alemão para as próximas Copas do Mundo."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "beckenbauer",
+        "name": "Franz Beckenbauer",
+        "jersey_number": 5,
+        "position": "Defensor",
+        "era": "1965-1977",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-beckenbauer.png",
+        "short_bio": "O Kaiser, revolucionou o futebol mundial criando a posição de 'Líbero' com sua liderança majestosa, classe e inteligência tática única.",
+        "stats": {
+          "career_goals": 109,
+          "world_cups_played": 3,
+          "world_cup_goals": 5,
+          "historical_fact": "Venceu a Copa do Mundo como jogador em 1974 e repetiu a consagração máxima como treinador da Alemanha em 1990."
+        }
+      }
     },
     {
       "id": "portugal",
@@ -253,7 +317,23 @@
             "historical_fact": "Foi o maior assistente e artilheiro de Portugal na campanha da Copa do Catar em 2022."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "eusebio",
+        "name": "Eusébio",
+        "jersey_number": 9,
+        "position": "Atacante",
+        "era": "1961-1973",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-eusebio.png",
+        "short_bio": "O Pantera Negra, força física explosiva e finalização avassaladora, a primeira superestrela global do futebol de Portugal.",
+        "stats": {
+          "career_goals": 733,
+          "world_cups_played": 1,
+          "world_cup_goals": 9,
+          "historical_fact": "Foi o artilheiro isolado da Copa de 1966 com 9 gols, liderando Portugal à sua melhor campanha histórica com o 3º lugar."
+        }
+      }
     },
     {
       "id": "espanha",
@@ -304,7 +384,23 @@
             "historical_fact": "Conquistou a Bola de Ouro (Ballon d'Or) coroando seu protagonismo absoluto e liderança tática impecável."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "iniesta",
+        "name": "Andrés Iniesta",
+        "jersey_number": 6,
+        "position": "Meio-campista",
+        "era": "2006-2018",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-iniesta.png",
+        "short_bio": "Meio-campista de controle refinado, passes milimétricos e inteligência espacial, autor do gol mais importante do futebol espanhol.",
+        "stats": {
+          "career_goals": 93,
+          "world_cups_played": 4,
+          "world_cup_goals": 2,
+          "historical_fact": "Marcou o gol antológico na prorrogação da final da Copa de 2010 contra a Holanda, coroando a Espanha campeã mundial pela primeira vez."
+        }
+      }
     },
     {
       "id": "inglaterra",
@@ -355,7 +451,23 @@
             "historical_fact": "Foi o artilheiro isolado (Chuteira de Ouro) da Copa do Mundo de 2018 na Rússia com 6 gols marcados."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "charlton",
+        "name": "Bobby Charlton",
+        "jersey_number": 9,
+        "position": "Meio-campista",
+        "era": "1958-1970",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-charlton.png",
+        "short_bio": "Cavaleiro do Império Britânico, sobrevivente do desastre de Munique, famoso por sua classe incomparável e chutes de longa distância.",
+        "stats": {
+          "career_goals": 309,
+          "world_cups_played": 4,
+          "world_cup_goals": 4,
+          "historical_fact": "Maestro incontestável da seleção inglesa campeã mundial em casa em 1966, ano em que também conquistou a Bola de Ouro."
+        }
+      }
     },
     {
       "id": "belgica",
@@ -406,7 +518,23 @@
             "historical_fact": "É o maior artilheiro isolado da história dos Diabos Vermelhos, tendo liderado a seleção à histórica medalha de bronze na Copa do Mundo de 2018 na Rússia."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "scifo",
+        "name": "Enzo Scifo",
+        "jersey_number": 10,
+        "position": "Meio-campista",
+        "era": "1984-1998",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-scifo.png",
+        "short_bio": "Meia clássico e elegante de grande visão de jogo e passes precisos, considerado um dos jogadores belgas mais talentosos de sempre.",
+        "stats": {
+          "career_goals": 142,
+          "world_cups_played": 4,
+          "world_cup_goals": 3,
+          "historical_fact": "Liderou a Bélgica até as semifinais na histórica campanha da Copa do Mundo de 1986 no México, sendo eleito o Melhor Jogador Jovem do torneio."
+        }
+      }
     },
     {
       "id": "uruguai",
@@ -457,7 +585,23 @@
             "historical_fact": "Tornou-se a principal referência ofensiva de gols na campanha das eliminatórias para a Copa do Mundo."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "varela",
+        "name": "Obdulio Varela",
+        "jersey_number": 5,
+        "position": "Meio-campista",
+        "era": "1939-1954",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-varela.png",
+        "short_bio": "El Negro Jefe, o capitão dos capitães, símbolo supremo da Garra Charrúa e da coragem desmedida frente ao impossível.",
+        "stats": {
+          "career_goals": 45,
+          "world_cups_played": 2,
+          "world_cup_goals": 2,
+          "historical_fact": "Capitanou o histórico Maracanazo de 1950 calando 200 mil torcedores, proferindo a frase lendária: 'Os de fora são de pau'."
+        }
+      }
     },
     {
       "id": "holanda",
@@ -508,7 +652,23 @@
             "historical_fact": "É um dos maiores artilheiros da história da Laranja Mecânica, tendo marcado gols cruciais em Copas do Mundo e Eurocopas."
           }
         }
-      ]
+      ],
+      "legendary_player": {
+        "id": "cruyff",
+        "name": "Johan Cruyff",
+        "jersey_number": 14,
+        "position": "Atacante",
+        "era": "1966-1977",
+        "current_club": "Lenda Histórica",
+        "illustration_url": "/images/players/legend-cruyff.png",
+        "short_bio": "O arquiteto do Futebol Total, mente revolucionária que mudou a história do futebol como jogador e treinador com sua criatividade sem limites.",
+        "stats": {
+          "career_goals": 425,
+          "world_cups_played": 1,
+          "world_cup_goals": 3,
+          "historical_fact": "Liderou a lendária Laranja Mecânica até a final da Copa do Mundo de 1974, encantando o planeta com seu estilo tático inovador."
+        }
+      }
     }
   ]
 }
