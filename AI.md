@@ -63,10 +63,12 @@ Gerados dinamicamente via React com seeds determinísticos baseados em IDs para 
 
 ## 4. Escopo de Dados (`worldcup.json`)
 
-* **Escopo de Jogadores:** Exatamente **2 jogadores de destaque** por seleção.
-* **Pilotos de validação:**
+* **Escopo de Jogadores:** Exatamente **3 jogadores** por seleção (2 jogadores de destaque regulares + 1 Lenda Histórica).
+* **Pilotos de validação (Regulares):**
   - **Brasil:** Vinícius Júnior e Neymar Jr.
   - **Argentina:** Lionel Messi e Emiliano Martínez (Dibu).
+* **Lendas Históricas (Selo de Ouro):**
+  - Um jogador lendário histórico por seleção (ex: Pelé no Brasil, Maradona na Argentina, Cruyff na Holanda, etc.), renderizados com estilo metalizado reflexivo dourado e cabeçalho "Lenda Histórica".
 
 ---
 
@@ -91,6 +93,15 @@ Todas as imagens são geradas e pós-processadas usando o script [removeBg.js](f
 
 * **Figurinhas de Jogadores (ex: Neymar Jr):**
   > *"Flat vector pop-art style sticker illustration of a pardo Brazilian football player. He has a highly detailed styled mohawk fade hair cut, thin styled eyebrows, a well-groomed short stubble beard, green eyes, and a charismatic wide smile. He is wearing the yellow and green Brazilian national jersey with number 10, celebrating and pointing fingers to the sky. Clean sticker style with a thick, solid white outline border surrounding the entire player illustration, and a thin black line outlining the outside edge of the white border. Isolated on a solid plain pure white background, bold graphic novel aesthetic, vector portrait, no realistic photo, no text, no background graphics."*
+
+### 5.3. Receita para Lendas Históricas (Foil Golden Stickers)
+Para alcançar o visual premium dourado holográfico metalizado ("figurinha dourada brilhosa") com corte de adesivo orgânico flutuante:
+- **Estética Interna:** Padrão holográfico de folha metálica dourada brilhante (*metallic shiny golden holographic foil background*).
+- **Borda de Contorno Dourado:** Borda dourada brilhante muito grossa com relevo (*very thick, glowing golden metallic outline border*) contornada externamente por uma linha preta fina para garantir que o algoritmo de preenchimento `removeBg.js` recorte apenas o fundo branco externo, preservando toda a borda dourada do sticker.
+- **Pose & Estilo:** Ilustração plana pop-art em vetor, pose icônica ou comemoração clássica, uniforme de época sem patrocínio, isolada em fundo branco puro e sólido.
+
+**Prompt Base de Lenda:**
+> *"Flat vector pop-art style sticker illustration of the legendary [player details]. Premium rare collector's edition sticker style, with a metallic shiny golden holographic background foil pattern inside the sticker border. The sticker has a very thick, glowing golden metallic outline border surrounding the entire player, and a thin black line outlining the outside edge of the golden border. The illustration uses warm rich golden, yellow, bronze, and chiseled color palettes with bright white reflective glare highlights to simulate a premium glossy reflective metallic surface. The entire player and his outline borders are fully contained within the frame with generous empty white space margins on all four sides to prevent cropping. Isolated on a solid plain pure white background, bold graphic novel aesthetic, vector portrait, no realistic photo, no text, no background graphics."*
 
 ---
 
@@ -128,20 +139,12 @@ Todas as fases originais de desenvolvimento técnico e interativo do MVP foram i
 
 ### ✅ Fase 3 — Funcionalidades & Experiência [CONCLUÍDO]
 * **Navegação Circular no Rodapé:** Botões estilo Post-its coloridos colados abaixo da página com fitas washi e setas desenhadas à mão (`<HandArrow />`).
-* **Sorteador Aleatório 🎲:** Dado flutuante fixo no canto inferior direito da Home que rotaciona e escolhe um time randômico.
+* **Sorteador Aleatório:** Dado flutuante fixo no canto inferior direito da Home que rotaciona e escolhe um time randômico.
 * **Hover Tooltips nos Escudos:** Mini post-its amarelos flutuantes com Framer Motion revelando detalhes sobre o país e grupo.
 * **Filtro de Seleções:** Barra de pesquisa manuscrita com esmaecimento opaco (`opacity-30 blur`) nos grupos inativos.
 * **Página `/stats`:** Painel de cortiça física reunindo estatísticas e rankings de Títulos, Gols em Copas, Gols na Carreira e Edições Disputadas das 10 seleções do MVP.
 
----
-
-## 🚀 Próximos Passos (Grafismos Pendentes)
-
-Com o núcleo técnico 100% entregue e validado, resta apenas gerar e recortar os stickers de jogadores restantes nas seguintes seleções quando houver cota de IA disponível:
-* **França** (Kylian Mbappé e Antoine Griezmann) - *Cota esgotada temporariamente*
-* **Alemanha** (Jamal Musiala e Florian Wirtz)
-* **Inglaterra** (Jude Bellingham e Harry Kane)
-* **Holanda** (Virgil van Dijk e Cody Gakpo)
-* **Uruguai** (Federico Valverde e Darwin Núñez)
-* *(Nota: Portugal foi finalizado neste passo com sucesso para Cristiano Ronaldo e Bruno Fernandes).*
-
+### ✅ Fase 4 — Conclusão de Lendas e Ajustes Estéticos [CONCLUÍDO]
+* **Figurinhas Estelares Pendentes:** 100% dos stickers estelares que estavam pendentes (Mbappé, Griezmann, Musiala, Wirtz, Bellingham, Kane, Van Dijk, Depay, Valverde e Darwin Núñez) foram gerados e recortados com transparência via script `removeBg.js`.
+* **Todas as 10 Lendas Concluídas:** Integração total das 10 lendas douradas nas 10 seleções do almanaque com imagens transparentes em alta definição.
+* **Limpeza Visual (Sem Emojis):** Ajuste estético dos títulos de cabeçalhos e selos internos para remover emojis (ficando limpo como "Lenda Histórica" e "LENDA HISTÓRICA" internamente), proporcionando uma leitura polida e focada no estilo de álbum vintage físico.
