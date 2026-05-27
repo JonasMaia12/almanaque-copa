@@ -188,7 +188,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                 </div>
                 <div className="w-full flex justify-center my-2">
                   <span className="font-marker text-2xl md:text-3xl uppercase text-amber-800 bg-amber-100 border-2 border-dashed border-amber-500/50 px-5 py-2 rotate-[-1deg] shadow-md">
-                    ✨ Coleção de Ouro – Lenda Histórica ✨
+                    Lenda Histórica
                   </span>
                 </div>
                 <LegendRow player={team.legendary_player} />

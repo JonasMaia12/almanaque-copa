@@ -89,9 +89,10 @@ const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/d00ccc55-a
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/legend_pele_raw_1779888638207.png`, out: `${publicDir}/players/legend-pele.png` },
-  { in: `${artifactsDir}/legend_maradona_raw_1779888661011.png`, out: `${publicDir}/players/legend-maradona.png` },
-  { in: `${artifactsDir}/legend_cruyff_raw_1779888687420.png`, out: `${publicDir}/players/legend-cruyff.png` }
+  { in: `${artifactsDir}/legend_eusebio_raw_1779895646874.png`, out: `${publicDir}/players/legend-eusebio.png` },
+  { in: `${artifactsDir}/legend_charlton_raw_1779895664929.png`, out: `${publicDir}/players/legend-charlton.png` },
+  { in: `${artifactsDir}/legend_scifo_raw_1779895680263.png`, out: `${publicDir}/players/legend-scifo.png` },
+  { in: `${artifactsDir}/legend_varela_raw_1779895696119.png`, out: `${publicDir}/players/legend-varela.png` }
 ];
 
 async function run() {

@@ -38,7 +38,7 @@ export function LegendRow({ player }: LegendRowProps) {
           boxShadow: 'inset 0 0 6px rgba(217,119,6,0.3), 0 2px 4px rgba(0,0,0,0.1)'
         }}
       >
-        🌟 LENDA DE OURO
+        LENDA HISTÓRICA
       </div>
 
       {/* Coluna do Sticker */}
