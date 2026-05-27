@@ -6,6 +6,7 @@ import type { Team } from '@/types/worldcup';
 import worldCupData from '@/data/worldcup.json';
 import { TrophyRow } from '@/components/ui/TrophyRow';
 import { PlayerRow } from '@/components/ui/PlayerRow';
+import { LegendRow } from '@/components/ui/LegendRow';
 import { Stamp } from '@/components/ui/doodles/Stamp';
 import { InkBlot } from '@/components/ui/doodles/InkBlot';
 import { TapeStrip } from '@/components/ui/doodles/TapeStrip';
@@ -179,6 +180,20 @@ export default async function TeamPage({ params }: TeamPageProps) {
                 />
               </React.Fragment>
             ))}
+
+            {team.legendary_player && (
+              <>
+                <div className="px-4 md:px-10 my-6 opacity-40">
+                  <ScribbleLine seed={`${team.id}-legend-separator`} color="var(--color-caneta-preta)" />
+                </div>
+                <div className="w-full flex justify-center my-2">
+                  <span className="font-marker text-2xl md:text-3xl uppercase text-amber-800 bg-amber-100 border-2 border-dashed border-amber-500/50 px-5 py-2 rotate-[-1deg] shadow-md">
+                    ✨ Coleção de Ouro – Lenda Histórica ✨
+                  </span>
+                </div>
+                <LegendRow player={team.legendary_player} />
+              </>
+            )}
           </div>
         </div>
       </div>

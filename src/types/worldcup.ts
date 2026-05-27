@@ -27,6 +27,18 @@ export interface Player {
   stats: PlayerStats;
 }
 
+export interface LegendaryPlayer {
+  id: string;
+  name: string;
+  jersey_number: number;
+  position: string;
+  era: string;
+  current_club: string;
+  illustration_url: string;
+  short_bio: string;
+  stats: PlayerStats;
+}
+
 export interface Team {
   id: string;
   name: string;
@@ -38,6 +50,7 @@ export interface Team {
   history: TeamHistory;
   culture: TeamCulture;
   players: Player[];
+  legendary_player?: LegendaryPlayer;
 }
 
 export interface WorldCupData {
