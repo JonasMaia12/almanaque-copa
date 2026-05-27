@@ -16,14 +16,23 @@ export function LegendRow({ player }: LegendRowProps) {
 
   return (
     <div 
-      className="my-14 p-6 md:p-8 rounded-lg relative overflow-hidden border-4 border-double border-amber-500/50 shadow-[0_10px_30px_rgba(245,158,11,0.15)] flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start w-full transition-all duration-300 hover:shadow-[0_15px_35px_rgba(245,158,11,0.25)] select-none rotate-[0.5deg]"
+      className="my-14 p-6 md:p-8 rounded-lg relative overflow-hidden border-4 border-double border-amber-900/30 shadow-[0_10px_25px_rgba(101,67,33,0.15)] flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start w-full transition-all duration-300 hover:shadow-[0_15px_30px_rgba(101,67,33,0.2)] select-none rotate-[0.5deg]"
       style={{
-        backgroundImage: 'radial-gradient(circle at center, #fffbeb 0%, #fef3c7 70%, #fde68a 100%)',
+        background: `
+          radial-gradient(circle, transparent 40%, rgba(101, 67, 33, 0.18) 100%),
+          repeating-linear-gradient(
+            transparent,
+            transparent 27px,
+            rgba(150, 175, 200, 0.35) 27px,
+            rgba(150, 175, 200, 0.35) 28px
+          ),
+          #e5d7ba
+        `,
         clipPath: 'polygon(0.5% 1%, 99.5% 0%, 100% 99%, 0% 98%)'
       }}
     >
-      {/* Detalhes de Brilho Dourado Metálico nas Bordas */}
-      <div className="absolute inset-0 border-2 border-dashed border-amber-600/30 rounded-lg pointer-events-none" />
+      {/* Detalhes de Brilho Metálico nas Bordas */}
+      <div className="absolute inset-0 border-2 border-dashed border-amber-900/20 rounded-lg pointer-events-none" />
       
       {/* Símbolo de Edição de Ouro no Fundo */}
       <div className="absolute -right-12 -bottom-12 text-[140px] font-marker text-amber-500/10 pointer-events-none uppercase select-none tracking-widest font-black rotate-[-15deg]">
