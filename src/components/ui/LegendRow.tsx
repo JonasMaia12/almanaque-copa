@@ -53,7 +53,7 @@ export function LegendRow({ player }: LegendRowProps) {
           height={270} 
           initialRotation={initialRotation}
           hoverRotation={hoverRotation}
-          className="z-10 w-[170px] h-[190px] md:w-[245px] md:h-[275px] shadow-[0_8px_20px_rgba(217,119,6,0.25)] border-4 border-amber-400"
+          className="z-10 w-[170px] h-[190px] md:w-[245px] md:h-[275px]"
         />
         
         <div className="absolute -bottom-4 right-0 font-stats text-4xl font-bold text-amber-900 rotate-12 bg-amber-100 rounded-full px-2 shadow-md border-2 border-amber-400 z-20">
