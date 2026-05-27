@@ -89,8 +89,7 @@ const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/d00ccc55-a
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/wirtz_new_1779880014656.png`, out: `${publicDir}/players/wirtz.png` },
-  { in: `${artifactsDir}/darwin_new_1779880034006.png`, out: `${publicDir}/players/darwin-nunez.png` }
+  { in: `${artifactsDir}/lukaku_raw_1779880501917.png`, out: `${publicDir}/players/lukaku.png` }
 ];
 
 async function run() {

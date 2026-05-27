@@ -391,19 +391,19 @@
           }
         },
         {
-          "id": "jeremy-doku",
-          "name": "Jérémy Doku",
-          "jersey_number": 11,
+          "id": "romelu-lukaku",
+          "name": "Romelu Lukaku",
+          "jersey_number": 9,
           "position": "Atacante",
-          "age": 24,
-          "current_club": "Manchester City",
-          "illustration_url": "/images/players/doku.png",
-          "short_bio": "Atacante de velocidade explosiva e drible imprevisível de um contra um, considerado uma das armas mais letais da nova geração belga.",
+          "age": 33,
+          "current_club": "Napoli",
+          "illustration_url": "/images/players/lukaku.png",
+          "short_bio": "Maior artilheiro da história da seleção belga, um centroavante de força física descomunal, presença de área implacável e poder de finalização devastador.",
           "stats": {
-            "career_goals": 32,
-            "world_cups_played": 1,
-            "world_cup_goals": 0,
-            "historical_fact": "Estreou em Copas do Mundo em 2022 no Catar mostrando grande agilidade e drible pelas pontas."
+            "career_goals": 385,
+            "world_cups_played": 3,
+            "world_cup_goals": 5,
+            "historical_fact": "É o maior artilheiro isolado da história dos Diabos Vermelhos, tendo liderado a seleção à histórica medalha de bronze na Copa do Mundo de 2018 na Rússia."
           }
         }
       ]
