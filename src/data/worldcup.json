@@ -319,19 +319,19 @@
         }
       ],
       "legendary_player": {
-        "id": "eusebio",
-        "name": "Eusébio",
-        "jersey_number": 9,
-        "position": "Atacante",
-        "era": "1961-1973",
+        "id": "figo",
+        "name": "Luís Figo",
+        "jersey_number": 7,
+        "position": "Meio-campista",
+        "era": "1991-2006",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-eusebio.png",
-        "short_bio": "O Pantera Negra, força física explosiva e finalização avassaladora, a primeira superestrela global do futebol de Portugal.",
+        "illustration_url": "/images/players/legend-figo.png",
+        "short_bio": "O maestro genial da Geração de Ouro portuguesa, dotado de dribles desconcertantes, elegância ímpar e liderança inquestionável.",
         "stats": {
-          "career_goals": 733,
-          "world_cups_played": 1,
-          "world_cup_goals": 9,
-          "historical_fact": "Foi o artilheiro isolado da Copa de 1966 com 9 gols, liderando Portugal à sua melhor campanha histórica com o 3º lugar."
+          "career_goals": 133,
+          "world_cups_played": 2,
+          "world_cup_goals": 0,
+          "historical_fact": "Liderou Portugal ao quarto lugar na Copa de 2006, além de conquistar a Bola de Ouro em 2000 como melhor do mundo."
         }
       }
     },
@@ -393,12 +393,12 @@
         "era": "2006-2018",
         "current_club": "Lenda Histórica",
         "illustration_url": "/images/players/legend-iniesta.png",
-        "short_bio": "Meio-campista de controle refinado, passes milimétricos e inteligência espacial, autor do gol mais importante do futebol espanhol.",
+        "short_bio": "Meio-campista de inteligência única, famoso pelo gol do título de 2010, cuja comemoração emocionou o mundo ao homenagear Dani Jarque.",
         "stats": {
           "career_goals": 93,
           "world_cups_played": 4,
           "world_cup_goals": 2,
-          "historical_fact": "Marcou o gol antológico na prorrogação da final da Copa de 2010 contra a Holanda, coroando a Espanha campeã mundial pela primeira vez."
+          "historical_fact": "Na final de 2010, tirou sua camiseta para revelar a mensagem manuscrita dedicada a seu falecido amigo: 'Dani Jarque siempre con nosotros'."
         }
       }
     },
@@ -453,19 +453,19 @@
         }
       ],
       "legendary_player": {
-        "id": "charlton",
-        "name": "Bobby Charlton",
-        "jersey_number": 9,
+        "id": "beckham",
+        "name": "David Beckham",
+        "jersey_number": 7,
         "position": "Meio-campista",
-        "era": "1958-1970",
+        "era": "1996-2009",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-charlton.png",
-        "short_bio": "Cavaleiro do Império Britânico, sobrevivente do desastre de Munique, famoso por sua classe incomparável e chutes de longa distância.",
+        "illustration_url": "/images/players/legend-beckham.png",
+        "short_bio": "Um dos maiores cobradores de faltas de todos os tempos, dono de passes cirúrgicos e cruzamentos milimétricos com um estilo inconfundível.",
         "stats": {
-          "career_goals": 309,
-          "world_cups_played": 4,
-          "world_cup_goals": 4,
-          "historical_fact": "Maestro incontestável da seleção inglesa campeã mundial em casa em 1966, ano em que também conquistou a Bola de Ouro."
+          "career_goals": 127,
+          "world_cups_played": 3,
+          "world_cup_goals": 3,
+          "historical_fact": "É o único jogador inglês a marcar gols em três Copas do Mundo diferentes (1998, 2002 e 2006), brilhando em momentos sob extrema pressão."
         }
       }
     },
@@ -520,19 +520,19 @@
         }
       ],
       "legendary_player": {
-        "id": "scifo",
-        "name": "Enzo Scifo",
+        "id": "hazard",
+        "name": "Eden Hazard",
         "jersey_number": 10,
-        "position": "Meio-campista",
-        "era": "1984-1998",
+        "position": "Atacante",
+        "era": "2008-2022",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-scifo.png",
-        "short_bio": "Meia clássico e elegante de grande visão de jogo e passes precisos, considerado um dos jogadores belgas mais talentosos de sempre.",
+        "illustration_url": "/images/players/legend-hazard.png",
+        "short_bio": "Meia-atacante genial e extremamente carismático, mestre em conduções rápidas de bola e dribles curtos de agilidade inacreditável.",
         "stats": {
-          "career_goals": 142,
-          "world_cups_played": 4,
+          "career_goals": 167,
+          "world_cups_played": 3,
           "world_cup_goals": 3,
-          "historical_fact": "Liderou a Bélgica até as semifinais na histórica campanha da Copa do Mundo de 1986 no México, sendo eleito o Melhor Jogador Jovem do torneio."
+          "historical_fact": "Foi o capitão e a estrela da Bélgica na conquista da medalha de bronze na Copa de 2018, sendo eleito o segundo melhor jogador de todo o torneio."
         }
       }
     },
@@ -587,19 +587,19 @@
         }
       ],
       "legendary_player": {
-        "id": "varela",
-        "name": "Obdulio Varela",
-        "jersey_number": 5,
-        "position": "Meio-campista",
-        "era": "1939-1954",
+        "id": "forlan",
+        "name": "Diego Forlán",
+        "jersey_number": 10,
+        "position": "Atacante",
+        "era": "2002-2014",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-varela.png",
-        "short_bio": "El Negro Jefe, o capitão dos capitães, símbolo supremo da Garra Charrúa e da coragem desmedida frente ao impossível.",
+        "illustration_url": "/images/players/legend-forlan.png",
+        "short_bio": "Centroavante de técnica impecável e chutes precisos de ambos os pés, famoso pela sua maestria incomum ao chutar a bola Jabulani em 2010.",
         "stats": {
-          "career_goals": 45,
-          "world_cups_played": 2,
-          "world_cup_goals": 2,
-          "historical_fact": "Capitanou o histórico Maracanazo de 1950 calando 200 mil torcedores, proferindo a frase lendária: 'Os de fora são de pau'."
+          "career_goals": 273,
+          "world_cups_played": 3,
+          "world_cup_goals": 6,
+          "historical_fact": "Eleito o Melhor Jogador (Bola de Ouro) da Copa de 2010 na África do Sul, liderando a celeste ao quarto lugar com belíssimos gols."
         }
       }
     },
