@@ -27,7 +27,7 @@
           "illustration_url": "/images/players/vini-jr.png",
           "short_bio": "Revelado pelo Flamengo e estrela do Real Madrid, conhecido por sua velocidade estonteante, dribles desconcertantes e protagonismo em finais europeias.",
           "stats": {
-            "career_goals": 145,
+            "career_goals": 192,
             "world_cups_played": 1,
             "world_cup_goals": 1,
             "historical_fact": "Marcou seu primeiro gol em Copas do Mundo contra a Coreia do Sul nas oitavas de final da Copa de 2022."
@@ -94,7 +94,7 @@
           "illustration_url": "/images/players/lionel-messi.png",
           "short_bio": "Amplamente considerado um dos maiores jogadores de todos os tempos, capitão e lenda viva, coroou sua carreira extraordinária com o título mundial em 2022.",
           "stats": {
-            "career_goals": 838,
+            "career_goals": 910,
             "world_cups_played": 5,
             "world_cup_goals": 13,
             "historical_fact": "É o jogador com mais partidas na história das Copas do Mundo (26 jogos) e marcou gols em todas as fases da Copa de 2022."
@@ -161,7 +161,7 @@
           "illustration_url": "/images/players/mbappe.png",
           "short_bio": "Estrela global famosa por sua velocidade absurda de arranque e finalização cirúrgica.",
           "stats": {
-            "career_goals": 312,
+            "career_goals": 368,
             "world_cups_played": 2,
             "world_cup_goals": 12,
             "historical_fact": "Marcou um Hat-Trick histórico na grande final da Copa do Mundo de 2022."
@@ -177,7 +177,7 @@
           "illustration_url": "/images/players/griezmann.png",
           "short_bio": "O cérebro tático dos Bleus, polivalente e incansável na marcação e criação de jogadas.",
           "stats": {
-            "career_goals": 180,
+            "career_goals": 285,
             "world_cups_played": 2,
             "world_cup_goals": 4,
             "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
@@ -228,7 +228,7 @@
           "illustration_url": "/images/players/musiala.png",
           "short_bio": "Conhecido como 'Bambi', é um jovem prodígio com dribles mágicos em espaços minúsculos.",
           "stats": {
-            "career_goals": 55,
+            "career_goals": 74,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Foi o principal criador de jogadas da Alemanha na Copa do Mundo do Catar com apenas 19 anos."
@@ -244,7 +244,7 @@
           "illustration_url": "/images/players/wirtz.png",
           "short_bio": "Meia altamente criativo e dinâmico, maestro da campanha perfeita do Leverkusen na Alemanha.",
           "stats": {
-            "career_goals": 45,
+            "career_goals": 68,
             "world_cups_played": 0,
             "world_cup_goals": 0,
             "historical_fact": "Considerado o futuro do meio-campo alemão para as próximas Copas do Mundo."
@@ -295,7 +295,7 @@
           "illustration_url": "/images/players/cristiano-ronaldo.png",
           "short_bio": "Um dos maiores atletas da história mundial, detentor de inúmeros recordes de gols e títulos europeus.",
           "stats": {
-            "career_goals": 885,
+            "career_goals": 973,
             "world_cups_played": 5,
             "world_cup_goals": 8,
             "historical_fact": "É o único jogador da história do futebol a marcar gols em 5 edições diferentes de Copas do Mundo."
@@ -311,7 +311,7 @@
           "illustration_url": "/images/players/bruno-fernandes.png",
           "short_bio": "Maestro no meio-campo com passes de alta definição e chute forte de média distância.",
           "stats": {
-            "career_goals": 160,
+            "career_goals": 198,
             "world_cups_played": 2,
             "world_cup_goals": 2,
             "historical_fact": "Foi o maior assistente e artilheiro de Portugal na campanha da Copa do Catar em 2022."
@@ -319,19 +319,19 @@
         }
       ],
       "legendary_player": {
-        "id": "eusebio",
-        "name": "Eusébio",
-        "jersey_number": 9,
-        "position": "Atacante",
-        "era": "1961-1973",
+        "id": "figo",
+        "name": "Luís Figo",
+        "jersey_number": 7,
+        "position": "Meio-campista",
+        "era": "1991-2006",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-eusebio.png",
-        "short_bio": "O Pantera Negra, força física explosiva e finalização avassaladora, a primeira superestrela global do futebol de Portugal.",
+        "illustration_url": "/images/players/legend-figo.png",
+        "short_bio": "O maestro genial da Geração de Ouro portuguesa, dotado de dribles desconcertantes, elegância ímpar e liderança inquestionável.",
         "stats": {
-          "career_goals": 733,
-          "world_cups_played": 1,
-          "world_cup_goals": 9,
-          "historical_fact": "Foi o artilheiro isolado da Copa de 1966 com 9 gols, liderando Portugal à sua melhor campanha histórica com o 3º lugar."
+          "career_goals": 133,
+          "world_cups_played": 2,
+          "world_cup_goals": 0,
+          "historical_fact": "Liderou Portugal ao quarto lugar na Copa de 2006, além de conquistar a Bola de Ouro em 2000 como melhor do mundo."
         }
       }
     },
@@ -378,7 +378,7 @@
           "illustration_url": "/images/players/rodri.png",
           "short_bio": "O melhor volante do futebol moderno, cérebro estratégico e pilar tático incontestável da seleção e de seu clube.",
           "stats": {
-            "career_goals": 38,
+            "career_goals": 49,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Conquistou a Bola de Ouro (Ballon d'Or) coroando seu protagonismo absoluto e liderança tática impecável."
@@ -393,12 +393,12 @@
         "era": "2006-2018",
         "current_club": "Lenda Histórica",
         "illustration_url": "/images/players/legend-iniesta.png",
-        "short_bio": "Meio-campista de controle refinado, passes milimétricos e inteligência espacial, autor do gol mais importante do futebol espanhol.",
+        "short_bio": "Meio-campista de inteligência única, famoso pelo gol do título de 2010, cuja comemoração emocionou o mundo ao homenagear Dani Jarque.",
         "stats": {
           "career_goals": 93,
           "world_cups_played": 4,
           "world_cup_goals": 2,
-          "historical_fact": "Marcou o gol antológico na prorrogação da final da Copa de 2010 contra a Holanda, coroando a Espanha campeã mundial pela primeira vez."
+          "historical_fact": "Na final de 2010, tirou sua camiseta para revelar a mensagem manuscrita dedicada a seu falecido amigo: 'Dani Jarque siempre con nosotros'."
         }
       }
     },
@@ -429,7 +429,7 @@
           "illustration_url": "/images/players/bellingham.png",
           "short_bio": "Meia completo e elegante de passada larga, dotado de mentalidade vencedora implacável e grande faro de gols em momentos decisivos.",
           "stats": {
-            "career_goals": 65,
+            "career_goals": 82,
             "world_cups_played": 1,
             "world_cup_goals": 1,
             "historical_fact": "Marcou o primeiro gol da Inglaterra na Copa do Mundo de 2022 contra o Irã com apenas 19 anos."
@@ -445,7 +445,7 @@
           "illustration_url": "/images/players/harry-kane.png",
           "short_bio": "Um dos centroavantes mais letais de sua geração, maior artilheiro da história da seleção inglesa e excelente criador de jogadas.",
           "stats": {
-            "career_goals": 420,
+            "career_goals": 504,
             "world_cups_played": 2,
             "world_cup_goals": 8,
             "historical_fact": "Foi o artilheiro isolado (Chuteira de Ouro) da Copa do Mundo de 2018 na Rússia com 6 gols marcados."
@@ -453,19 +453,19 @@
         }
       ],
       "legendary_player": {
-        "id": "charlton",
-        "name": "Bobby Charlton",
-        "jersey_number": 9,
+        "id": "beckham",
+        "name": "David Beckham",
+        "jersey_number": 7,
         "position": "Meio-campista",
-        "era": "1958-1970",
+        "era": "1996-2009",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-charlton.png",
-        "short_bio": "Cavaleiro do Império Britânico, sobrevivente do desastre de Munique, famoso por sua classe incomparável e chutes de longa distância.",
+        "illustration_url": "/images/players/legend-beckham.png",
+        "short_bio": "Um dos maiores cobradores de faltas de todos os tempos, dono de passes cirúrgicos e cruzamentos milimétricos com um estilo inconfundível.",
         "stats": {
-          "career_goals": 309,
-          "world_cups_played": 4,
-          "world_cup_goals": 4,
-          "historical_fact": "Maestro incontestável da seleção inglesa campeã mundial em casa em 1966, ano em que também conquistou a Bola de Ouro."
+          "career_goals": 127,
+          "world_cups_played": 3,
+          "world_cup_goals": 3,
+          "historical_fact": "É o único jogador inglês a marcar gols em três Copas do Mundo diferentes (1998, 2002 e 2006), brilhando em momentos sob extrema pressão."
         }
       }
     },
@@ -496,7 +496,7 @@
           "illustration_url": "/images/players/de-bruyne.png",
           "short_bio": "Um dos maiores passadores e criadores de jogadas da história moderna do futebol, capitão e cérebro dos Diabos Vermelhos.",
           "stats": {
-            "career_goals": 175,
+            "career_goals": 189,
             "world_cups_played": 3,
             "world_cup_goals": 2,
             "historical_fact": "Liderou a Bélgica na histórica vitória sobre o Brasil nas quartas de final da Copa de 2018 marcando um gol antológico."
@@ -512,7 +512,7 @@
           "illustration_url": "/images/players/lukaku.png",
           "short_bio": "Maior artilheiro da história da seleção belga, um centroavante de força física descomunal, presença de área implacável e poder de finalização devastador.",
           "stats": {
-            "career_goals": 385,
+            "career_goals": 395,
             "world_cups_played": 3,
             "world_cup_goals": 5,
             "historical_fact": "É o maior artilheiro isolado da história dos Diabos Vermelhos, tendo liderado a seleção à histórica medalha de bronze na Copa do Mundo de 2018 na Rússia."
@@ -520,19 +520,19 @@
         }
       ],
       "legendary_player": {
-        "id": "scifo",
-        "name": "Enzo Scifo",
+        "id": "hazard",
+        "name": "Eden Hazard",
         "jersey_number": 10,
-        "position": "Meio-campista",
-        "era": "1984-1998",
+        "position": "Atacante",
+        "era": "2008-2022",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-scifo.png",
-        "short_bio": "Meia clássico e elegante de grande visão de jogo e passes precisos, considerado um dos jogadores belgas mais talentosos de sempre.",
+        "illustration_url": "/images/players/legend-hazard.png",
+        "short_bio": "Meia-atacante genial e extremamente carismático, mestre em conduções rápidas de bola e dribles curtos de agilidade inacreditável.",
         "stats": {
-          "career_goals": 142,
-          "world_cups_played": 4,
+          "career_goals": 167,
+          "world_cups_played": 3,
           "world_cup_goals": 3,
-          "historical_fact": "Liderou a Bélgica até as semifinais na histórica campanha da Copa do Mundo de 1986 no México, sendo eleito o Melhor Jogador Jovem do torneio."
+          "historical_fact": "Foi o capitão e a estrela da Bélgica na conquista da medalha de bronze na Copa de 2018, sendo eleito o segundo melhor jogador de todo o torneio."
         }
       }
     },
@@ -563,7 +563,7 @@
           "illustration_url": "/images/players/valverde.png",
           "short_bio": "Conhecido como 'El Halcón', é um meia moderno de força física extraordinária, passada avassaladora e potente chute de fora da área.",
           "stats": {
-            "career_goals": 40,
+            "career_goals": 52,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Capitão e motor tático inquestionável da seleção uruguaia na reconstrução sob comando de Bielsa."
@@ -579,7 +579,7 @@
           "illustration_url": "/images/players/darwin-nunez.png",
           "short_bio": "Centroavante veloz e de físico imponente, de presença constante na área adversária e poder de aceleração letal em contra-ataques.",
           "stats": {
-            "career_goals": 85,
+            "career_goals": 112,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Tornou-se a principal referência ofensiva de gols na campanha das eliminatórias para a Copa do Mundo."
@@ -587,19 +587,19 @@
         }
       ],
       "legendary_player": {
-        "id": "varela",
-        "name": "Obdulio Varela",
-        "jersey_number": 5,
-        "position": "Meio-campista",
-        "era": "1939-1954",
+        "id": "forlan",
+        "name": "Diego Forlán",
+        "jersey_number": 10,
+        "position": "Atacante",
+        "era": "2002-2014",
         "current_club": "Lenda Histórica",
-        "illustration_url": "/images/players/legend-varela.png",
-        "short_bio": "El Negro Jefe, o capitão dos capitães, símbolo supremo da Garra Charrúa e da coragem desmedida frente ao impossível.",
+        "illustration_url": "/images/players/legend-forlan.png",
+        "short_bio": "Centroavante de técnica impecável e chutes precisos de ambos os pés, famoso pela sua maestria incomum ao chutar a bola Jabulani em 2010.",
         "stats": {
-          "career_goals": 45,
-          "world_cups_played": 2,
-          "world_cup_goals": 2,
-          "historical_fact": "Capitanou o histórico Maracanazo de 1950 calando 200 mil torcedores, proferindo a frase lendária: 'Os de fora são de pau'."
+          "career_goals": 273,
+          "world_cups_played": 3,
+          "world_cup_goals": 6,
+          "historical_fact": "Eleito o Melhor Jogador (Bola de Ouro) da Copa de 2010 na África do Sul, liderando a celeste ao quarto lugar com belíssimos gols."
         }
       }
     },
@@ -646,7 +646,7 @@
           "illustration_url": "/images/players/depay.png",
           "short_bio": "Atacante habilidoso e criativo, famoso por sua personalidade forte, estilo irreverente e por comemorar tapando os ouvidos.",
           "stats": {
-            "career_goals": 178,
+            "career_goals": 188,
             "world_cups_played": 2,
             "world_cup_goals": 3,
             "historical_fact": "É um dos maiores artilheiros da história da Laranja Mecânica, tendo marcado gols cruciais em Copas do Mundo e Eurocopas."

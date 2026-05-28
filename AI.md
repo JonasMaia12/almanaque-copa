@@ -103,6 +103,26 @@ Para alcançar o visual premium dourado holográfico metalizado ("figurinha dour
 **Prompt Base de Lenda:**
 > *"Flat vector pop-art style sticker illustration of the legendary [player details]. Premium rare collector's edition sticker style, with a metallic shiny golden holographic background foil pattern inside the sticker border. The sticker has a very thick, glowing golden metallic outline border surrounding the entire player, and a thin black line outlining the outside edge of the golden border. The illustration uses warm rich golden, yellow, bronze, and chiseled color palettes with bright white reflective glare highlights to simulate a premium glossy reflective metallic surface. The entire player and his outline borders are fully contained within the frame with generous empty white space margins on all four sides to prevent cropping. Isolated on a solid plain pure white background, bold graphic novel aesthetic, vector portrait, no realistic photo, no text, no background graphics."*
 
+### 5.4. A Fórmula Conceitual de Prompts (O Segredo da Caracterização)
+Para gerar figurinhas marcantes e com excelente semelhança sem violar direitos autorais, os prompts devem ser estruturados combinando **três pilares conceituais fundamentais**:
+
+1. **Pilar 1: Cabelos e Acessórios Icônicos de Época**
+   * O cabelo é o traço mais importante para diferenciar jogadores. Evite termos genéricos.
+   * **Visual Vintage:** Descreva volumes, texturas e, principalmente, acessórios de época (ex: *"thick, wavy jet-black hair held back by a thin black athletic headband"* para Luís Figo ou *"long wavy golden-blonde hair with a thin black headband"* para Diego Forlán).
+   * **Visual Moderno:** Descreva cortes de cabelo geométricos característicos (ex: *"2002 blonde mohawk fade haircut"* para David Beckham ou *"short clean fade haircut and short well-groomed beard"* para Eden Hazard).
+   * *Nota:* Acessórios físicos (como fitas, faixas e tiaras de cabelo) forçam a IA a criar o retrato exato de época, impedindo-a de gerar um corte moderno "padrão".
+
+2. **Pilar 2: Comemorações e Poses Dinâmicas de Impacto**
+   * As figurinhas de scrapbook ganham vida quando retratam o jogador em plena ação corporal dinâmica ou executando sua comemoração mais lendária:
+   * **Comemoração de Voo (CR7 SIUU):** *"captured mid-air in his iconic celebration, jumping and spinning with his back partially turned, arms thrown down and wide in a powerful stance, mouth open shouting in triumph"*.
+   * **Comemoração Emocional (Iniesta Dani Jarque):** *"taken off his red jersey and is holding it, revealing a plain white undershirt. On the chest of the white undershirt, a hand-written name is written in blue ink style"*.
+   * **Comemoração Físico-Carismática (Hazard Knee Slide):** *"sliding on his knees in a classic iconic goal celebration, with a charismatic wide smile and his arms outstretched"*.
+
+3. **Pilar 3: Detalhes Narrativos Únicos (Storytelling)**
+   * Adicione micro-detalhes que contam a história do momento de ouro do jogador:
+   * **Camisas e Braçadeiras:** Descreva golas específicas e detalhes vintage sem citar marcas proprietárias (ex: *"vintage dark wine-red soccer jersey with a prominent green polo collar and a captain's armband"*).
+   * **Elementos de Ação:** Inclua bolas de futebol clássicas de gomos pretos e brancos, ou a clássica bola colorida de época sendo chutada em movimento dinâmico (ex: *"executing a perfect volley kick, striking a classic black and white soccer ball"*).
+
 ---
 
 ## 6. Arquitetura de Componentes

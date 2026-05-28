@@ -85,17 +85,11 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/d00ccc55-a555-4dcf-96d3-590418a6c4cf';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/754e7d7a-89c8-41fa-a516-2f90fc4ed9db';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/legend_zidane_raw_1779893155576.png`, out: `${publicDir}/players/legend-zidane.png` },
-  { in: `${artifactsDir}/legend_beckenbauer_raw_1779893177054.png`, out: `${publicDir}/players/legend-beckenbauer.png` },
-  { in: `${artifactsDir}/legend_iniesta_raw_1779893247915.png`, out: `${publicDir}/players/legend-iniesta.png` },
-  { in: `${artifactsDir}/legend_eusebio_raw_1779895646874.png`, out: `${publicDir}/players/legend-eusebio.png` },
-  { in: `${artifactsDir}/legend_charlton_raw_1779895664929.png`, out: `${publicDir}/players/legend-charlton.png` },
-  { in: `${artifactsDir}/legend_scifo_raw_1779895680263.png`, out: `${publicDir}/players/legend-scifo.png` },
-  { in: `${artifactsDir}/legend_varela_raw_1779895696119.png`, out: `${publicDir}/players/legend-varela.png` }
+  { in: `${artifactsDir}/legend_figo_v3_raw_1779957084828.png`, out: `${publicDir}/players/legend-figo.png` }
 ];
 
 async function run() {
