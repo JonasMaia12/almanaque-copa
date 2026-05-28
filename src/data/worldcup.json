@@ -27,7 +27,7 @@
           "illustration_url": "/images/players/vini-jr.png",
           "short_bio": "Revelado pelo Flamengo e estrela do Real Madrid, conhecido por sua velocidade estonteante, dribles desconcertantes e protagonismo em finais europeias.",
           "stats": {
-            "career_goals": 145,
+            "career_goals": 192,
             "world_cups_played": 1,
             "world_cup_goals": 1,
             "historical_fact": "Marcou seu primeiro gol em Copas do Mundo contra a Coreia do Sul nas oitavas de final da Copa de 2022."
@@ -94,7 +94,7 @@
           "illustration_url": "/images/players/lionel-messi.png",
           "short_bio": "Amplamente considerado um dos maiores jogadores de todos os tempos, capitão e lenda viva, coroou sua carreira extraordinária com o título mundial em 2022.",
           "stats": {
-            "career_goals": 838,
+            "career_goals": 910,
             "world_cups_played": 5,
             "world_cup_goals": 13,
             "historical_fact": "É o jogador com mais partidas na história das Copas do Mundo (26 jogos) e marcou gols em todas as fases da Copa de 2022."
@@ -161,7 +161,7 @@
           "illustration_url": "/images/players/mbappe.png",
           "short_bio": "Estrela global famosa por sua velocidade absurda de arranque e finalização cirúrgica.",
           "stats": {
-            "career_goals": 312,
+            "career_goals": 368,
             "world_cups_played": 2,
             "world_cup_goals": 12,
             "historical_fact": "Marcou um Hat-Trick histórico na grande final da Copa do Mundo de 2022."
@@ -177,7 +177,7 @@
           "illustration_url": "/images/players/griezmann.png",
           "short_bio": "O cérebro tático dos Bleus, polivalente e incansável na marcação e criação de jogadas.",
           "stats": {
-            "career_goals": 180,
+            "career_goals": 285,
             "world_cups_played": 2,
             "world_cup_goals": 4,
             "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
@@ -228,7 +228,7 @@
           "illustration_url": "/images/players/musiala.png",
           "short_bio": "Conhecido como 'Bambi', é um jovem prodígio com dribles mágicos em espaços minúsculos.",
           "stats": {
-            "career_goals": 55,
+            "career_goals": 74,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Foi o principal criador de jogadas da Alemanha na Copa do Mundo do Catar com apenas 19 anos."
@@ -244,7 +244,7 @@
           "illustration_url": "/images/players/wirtz.png",
           "short_bio": "Meia altamente criativo e dinâmico, maestro da campanha perfeita do Leverkusen na Alemanha.",
           "stats": {
-            "career_goals": 45,
+            "career_goals": 68,
             "world_cups_played": 0,
             "world_cup_goals": 0,
             "historical_fact": "Considerado o futuro do meio-campo alemão para as próximas Copas do Mundo."
@@ -295,7 +295,7 @@
           "illustration_url": "/images/players/cristiano-ronaldo.png",
           "short_bio": "Um dos maiores atletas da história mundial, detentor de inúmeros recordes de gols e títulos europeus.",
           "stats": {
-            "career_goals": 885,
+            "career_goals": 973,
             "world_cups_played": 5,
             "world_cup_goals": 8,
             "historical_fact": "É o único jogador da história do futebol a marcar gols em 5 edições diferentes de Copas do Mundo."
@@ -311,7 +311,7 @@
           "illustration_url": "/images/players/bruno-fernandes.png",
           "short_bio": "Maestro no meio-campo com passes de alta definição e chute forte de média distância.",
           "stats": {
-            "career_goals": 160,
+            "career_goals": 198,
             "world_cups_played": 2,
             "world_cup_goals": 2,
             "historical_fact": "Foi o maior assistente e artilheiro de Portugal na campanha da Copa do Catar em 2022."
@@ -378,7 +378,7 @@
           "illustration_url": "/images/players/rodri.png",
           "short_bio": "O melhor volante do futebol moderno, cérebro estratégico e pilar tático incontestável da seleção e de seu clube.",
           "stats": {
-            "career_goals": 38,
+            "career_goals": 49,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Conquistou a Bola de Ouro (Ballon d'Or) coroando seu protagonismo absoluto e liderança tática impecável."
@@ -429,7 +429,7 @@
           "illustration_url": "/images/players/bellingham.png",
           "short_bio": "Meia completo e elegante de passada larga, dotado de mentalidade vencedora implacável e grande faro de gols em momentos decisivos.",
           "stats": {
-            "career_goals": 65,
+            "career_goals": 82,
             "world_cups_played": 1,
             "world_cup_goals": 1,
             "historical_fact": "Marcou o primeiro gol da Inglaterra na Copa do Mundo de 2022 contra o Irã com apenas 19 anos."
@@ -445,7 +445,7 @@
           "illustration_url": "/images/players/harry-kane.png",
           "short_bio": "Um dos centroavantes mais letais de sua geração, maior artilheiro da história da seleção inglesa e excelente criador de jogadas.",
           "stats": {
-            "career_goals": 420,
+            "career_goals": 504,
             "world_cups_played": 2,
             "world_cup_goals": 8,
             "historical_fact": "Foi o artilheiro isolado (Chuteira de Ouro) da Copa do Mundo de 2018 na Rússia com 6 gols marcados."
@@ -496,7 +496,7 @@
           "illustration_url": "/images/players/de-bruyne.png",
           "short_bio": "Um dos maiores passadores e criadores de jogadas da história moderna do futebol, capitão e cérebro dos Diabos Vermelhos.",
           "stats": {
-            "career_goals": 175,
+            "career_goals": 189,
             "world_cups_played": 3,
             "world_cup_goals": 2,
             "historical_fact": "Liderou a Bélgica na histórica vitória sobre o Brasil nas quartas de final da Copa de 2018 marcando um gol antológico."
@@ -512,7 +512,7 @@
           "illustration_url": "/images/players/lukaku.png",
           "short_bio": "Maior artilheiro da história da seleção belga, um centroavante de força física descomunal, presença de área implacável e poder de finalização devastador.",
           "stats": {
-            "career_goals": 385,
+            "career_goals": 395,
             "world_cups_played": 3,
             "world_cup_goals": 5,
             "historical_fact": "É o maior artilheiro isolado da história dos Diabos Vermelhos, tendo liderado a seleção à histórica medalha de bronze na Copa do Mundo de 2018 na Rússia."
@@ -563,7 +563,7 @@
           "illustration_url": "/images/players/valverde.png",
           "short_bio": "Conhecido como 'El Halcón', é um meia moderno de força física extraordinária, passada avassaladora e potente chute de fora da área.",
           "stats": {
-            "career_goals": 40,
+            "career_goals": 52,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Capitão e motor tático inquestionável da seleção uruguaia na reconstrução sob comando de Bielsa."
@@ -579,7 +579,7 @@
           "illustration_url": "/images/players/darwin-nunez.png",
           "short_bio": "Centroavante veloz e de físico imponente, de presença constante na área adversária e poder de aceleração letal em contra-ataques.",
           "stats": {
-            "career_goals": 85,
+            "career_goals": 112,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Tornou-se a principal referência ofensiva de gols na campanha das eliminatórias para a Copa do Mundo."
@@ -646,7 +646,7 @@
           "illustration_url": "/images/players/depay.png",
           "short_bio": "Atacante habilidoso e criativo, famoso por sua personalidade forte, estilo irreverente e por comemorar tapando os ouvidos.",
           "stats": {
-            "career_goals": 178,
+            "career_goals": 188,
             "world_cups_played": 2,
             "world_cup_goals": 3,
             "historical_fact": "É um dos maiores artilheiros da história da Laranja Mecânica, tendo marcado gols cruciais em Copas do Mundo e Eurocopas."
