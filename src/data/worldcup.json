@@ -60,7 +60,7 @@
         "illustration_url": "/images/players/legend-pele.png",
         "short_bio": "O Rei do Futebol, único jogador a vencer três Copas do Mundo, consagrado mundialmente por sua genialidade e atletismo insuperáveis.",
         "stats": {
-          "career_goals": 1281,
+          "career_goals": 757,
           "world_cups_played": 4,
           "world_cup_goals": 12,
           "historical_fact": "Venceu as Copas de 1958, 1962 e 1970, sendo o jogador mais jovem a marcar um gol e vencer uma Copa do Mundo na história."
@@ -127,7 +127,7 @@
         "illustration_url": "/images/players/legend-maradona.png",
         "short_bio": "El Pibe de Oro, um dos maiores ícones do futebol mundial, cuja genialidade com a perna esquerda e paixão arrastaram multidões.",
         "stats": {
-          "career_goals": 345,
+          "career_goals": 293,
           "world_cups_played": 4,
           "world_cup_goals": 8,
           "historical_fact": "Liderou a Argentina ao título da Copa de 1986 no México, marcando o icônico gol da 'Mão de Deus' e o Gol do Século contra a Inglaterra nas quartas de final."
@@ -147,7 +147,7 @@
         "milestones": "Campeã em casa em 1998 (liderada por Zidane) e na Rússia em 2018 (liderada por Mbappé)."
       },
       "culture": {
-        "traditional_food": "Baguaetes, Croissants e Crème Brûlée",
+        "traditional_food": "Baguetes, Croissants e Crème Brûlée",
         "curiosity": "A seleção é conhecida nacionalmente como 'Les Bleus' (Os Azuis)."
       },
       "players": [
@@ -168,19 +168,19 @@
           }
         },
         {
-          "id": "antoine-griezmann",
-          "name": "Antoine Griezmann",
-          "jersey_number": 7,
-          "position": "Meio-campista",
-          "age": 35,
-          "current_club": "Atlético de Madrid",
-          "illustration_url": "/images/players/griezmann.png",
-          "short_bio": "O cérebro tático dos Bleus, polivalente e incansável na marcação e criação de jogadas.",
+          "id": "ousmane-dembele",
+          "name": "Ousmane Dembélé",
+          "jersey_number": 11,
+          "position": "Atacante",
+          "age": 29,
+          "current_club": "Paris Saint-Germain",
+          "illustration_url": "/images/players/dembele.png",
+          "short_bio": "Ponta ambidestro extremamente veloz e imprevisível, letal no um contra um e peça-chave nas beiradas do campo.",
           "stats": {
-            "career_goals": 285,
+            "career_goals": 85,
             "world_cups_played": 2,
-            "world_cup_goals": 4,
-            "historical_fact": "Foi eleito um dos melhores jogadores e garçom principal na campanha do título de 2018."
+            "world_cup_goals": 0,
+            "historical_fact": "Fez parte do estrelado elenco francês campeão da Copa do Mundo de 2018 na Rússia."
           }
         }
       ],
@@ -240,9 +240,9 @@
           "jersey_number": 17,
           "position": "Meio-campista",
           "age": 23,
-          "current_club": "Bayer Leverkusen",
+          "current_club": "Liverpool",
           "illustration_url": "/images/players/wirtz.png",
-          "short_bio": "Meia altamente criativo e dinâmico, maestro da campanha perfeita do Leverkusen na Alemanha.",
+          "short_bio": "Meia altamente criativo e dinâmico, que se consolidou como uma das principais estrelas do futebol inglês.",
           "stats": {
             "career_goals": 68,
             "world_cups_played": 0,
@@ -328,7 +328,7 @@
         "illustration_url": "/images/players/legend-figo.png",
         "short_bio": "O maestro genial da Geração de Ouro portuguesa, dotado de dribles desconcertantes, elegância ímpar e liderança inquestionável.",
         "stats": {
-          "career_goals": 133,
+          "career_goals": 165,
           "world_cups_played": 2,
           "world_cup_goals": 0,
           "historical_fact": "Liderou Portugal ao quarto lugar na Copa de 2006, além de conquistar a Bola de Ouro em 2000 como melhor do mundo."
@@ -529,7 +529,7 @@
         "illustration_url": "/images/players/legend-hazard.png",
         "short_bio": "Meia-atacante genial e extremamente carismático, mestre em conduções rápidas de bola e dribles curtos de agilidade inacreditável.",
         "stats": {
-          "career_goals": 167,
+          "career_goals": 200,
           "world_cups_played": 3,
           "world_cup_goals": 3,
           "historical_fact": "Foi o capitão e a estrela da Bélgica na conquista da medalha de bronze na Copa de 2018, sendo eleito o segundo melhor jogador de todo o torneio."
@@ -579,7 +579,7 @@
           "illustration_url": "/images/players/darwin-nunez.png",
           "short_bio": "Centroavante veloz e de físico imponente, de presença constante na área adversária e poder de aceleração letal em contra-ataques.",
           "stats": {
-            "career_goals": 112,
+            "career_goals": 128,
             "world_cups_played": 1,
             "world_cup_goals": 0,
             "historical_fact": "Tornou-se a principal referência ofensiva de gols na campanha das eliminatórias para a Copa do Mundo."
@@ -596,7 +596,7 @@
         "illustration_url": "/images/players/legend-forlan.png",
         "short_bio": "Centroavante de técnica impecável e chutes precisos de ambos os pés, famoso pela sua maestria incomum ao chutar a bola Jabulani em 2010.",
         "stats": {
-          "career_goals": 273,
+          "career_goals": 310,
           "world_cups_played": 3,
           "world_cup_goals": 6,
           "historical_fact": "Eleito o Melhor Jogador (Bola de Ouro) da Copa de 2010 na África do Sul, liderando a celeste ao quarto lugar com belíssimos gols."
@@ -630,7 +630,7 @@
           "illustration_url": "/images/players/van-dijk.png",
           "short_bio": "Zagueiro gigante de soberania física aérea inigualável, leitura tática impecável e líder natural, capitão máximo da Laranja Mecânica.",
           "stats": {
-            "career_goals": 28,
+            "career_goals": 63,
             "world_cups_played": 1,
             "world_cup_goals": 1,
             "historical_fact": "Liderou a Holanda até as quartas de final em 2022 em um dos duelos mais disputados das Copas contra a Argentina."
@@ -646,7 +646,7 @@
           "illustration_url": "/images/players/depay.png",
           "short_bio": "Atacante habilidoso e criativo, famoso por sua personalidade forte, estilo irreverente e por comemorar tapando os ouvidos.",
           "stats": {
-            "career_goals": 188,
+            "career_goals": 219,
             "world_cups_played": 2,
             "world_cup_goals": 3,
             "historical_fact": "É um dos maiores artilheiros da história da Laranja Mecânica, tendo marcado gols cruciais em Copas do Mundo e Eurocopas."
