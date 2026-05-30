@@ -1,4 +1,3 @@
-import React from 'react';
 import { Player } from '@/types/worldcup';
 import { Sticker } from './Sticker';
 import { HandArrow } from './doodles/HandArrow';

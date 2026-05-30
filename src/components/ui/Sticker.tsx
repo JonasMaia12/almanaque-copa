@@ -70,6 +70,7 @@ export const Sticker: React.FC<StickerProps> = ({
         className="w-full h-full object-contain pointer-events-none"
         draggable={false}
         loading="lazy"
+        sizes={`${width}px`}
       />
     </motion.div>
   );

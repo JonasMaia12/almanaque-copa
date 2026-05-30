@@ -1,4 +1,3 @@
-import React from 'react';
 import { LegendaryPlayer } from '@/types/worldcup';
 import { Sticker } from './Sticker';
 import { CircleHighlight } from './doodles/CircleHighlight';

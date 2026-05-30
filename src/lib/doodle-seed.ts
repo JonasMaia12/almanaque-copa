@@ -23,7 +23,7 @@ export function cyrb53(str: string, seed = 0): number {
  */
 export function seededRandom(seed: number, min: number, max: number): number {
   // Uma função simples LCG (Linear Congruential Generator)
-  const x = Math.sin(seed++) * 10000;
+  const x = Math.sin(seed) * 10000;
   const rand = x - Math.floor(x);
   return min + rand * (max - min);
 }

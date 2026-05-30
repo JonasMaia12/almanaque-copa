@@ -1,22 +1,18 @@
 "use client";
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 interface StickerProps {
   className?: string;
-  initialX?: number;
-  initialY?: number;
   rotate?: number;
   size?: number;
 }
 
 // 1. StarSticker: Estrela Colorida (Amarela/Laranja)
 export function StarSticker({ className = "", rotate = 12, size = 60 }: StickerProps) {
-  const constraintsRef = useRef(null);
   return (
     <motion.div
-      ref={constraintsRef}
       drag
       dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
       dragElastic={0.1}

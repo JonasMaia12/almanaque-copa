@@ -13,7 +13,6 @@
   --color-caneta-vermelha: #8b1a1a;
   --color-caneta-preta: #1a1a1a;
   --color-marca-texto: rgba(255, 224, 102, 0.75);
-  --color-marca-verde: rgba(102, 255, 153, 0.65);
   --color-punk-red: #cc1100;
   
   /* Sombras reais tridimensionais de papel/colagem */
@@ -26,23 +25,11 @@
     0 15px 30px rgba(0, 0, 0, 0.3), 
     0 10px 10px rgba(0, 0, 0, 0.25), 
     0 25px 50px rgba(0, 0, 0, 0.4);
-
-  --shadow-sticker:
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    0 6px 12px rgba(0, 0, 0, 0.25);
-
-  --shadow-sticker-hover:
-    0 10px 20px rgba(0, 0, 0, 0.35),
-    0 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-:root {
-  --color-green-cutting: var(--color-mesa);
 }
 
 body {
   font-family: var(--font-handwritten), system-ui, sans-serif;
-  background-color: var(--color-green-cutting);
+  background-color: var(--color-mesa);
   overflow-x: hidden;
 }
 
@@ -77,22 +64,6 @@ body {
     ), var(--color-papel);
 }
 
-/* Perspectiva 3D para virada de cards e folhas */
-.perspective-1000 {
-  perspective: 1000px;
-}
-
-.transform-style-3d {
-  transform-style: preserve-3d;
-}
-
-.backface-hidden {
-  backface-visibility: hidden;
-}
-
-.rotate-y-180 {
-  transform: rotateY(180deg);
-}
 
 /* Utilitário para fonte cursiva */
 .font-marker {

@@ -1,4 +1,3 @@
-import React from 'react';
 import worldCupData from '@/data/worldcup.json';
 import { ScatteredGroups } from '@/components/ui/ScatteredGroups';
 import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';

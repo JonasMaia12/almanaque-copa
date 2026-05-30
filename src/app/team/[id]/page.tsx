@@ -13,8 +13,9 @@ import { TapeStrip } from '@/components/ui/doodles/TapeStrip';
 import { ScribbleLine } from '@/components/ui/doodles/ScribbleLine';
 import { Sticker } from '@/components/ui/Sticker';
 import { HandArrow } from '@/components/ui/doodles/HandArrow';
-import { DoodleBackArrow } from '@/components/ui/doodles/DoodleIcons';
 import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';
+import { BackToMesa } from '@/components/ui/BackToMesa';
+import { Footer } from '@/components/ui/Footer';
 
 export async function generateStaticParams() {
   return worldCupData.teams.map((team) => ({
@@ -69,16 +70,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
       <PageStickers page="team" />
 
       {/* BOTÃO VOLTAR */}
-      <div className="w-full max-w-4xl flex justify-start mb-6 z-30">
-        <Link href="/" className="relative inline-block rotate-[-2deg] hover:rotate-0 transition-transform duration-150">
-          <div className="bg-amber-100 text-neutral-800 font-marker text-sm px-5 py-2.5 shadow-md border border-amber-200/50 uppercase tracking-wider relative flex items-center gap-2">
-            <div className="absolute left-[-4px] top-0 bottom-0 w-[4px] bg-neutral-900/10 [clip-path:polygon(100%_0,0_50%,100%_100%)]" />
-            <div className="absolute right-[-4px] top-0 bottom-0 w-[4px] bg-neutral-900/10 [clip-path:polygon(0_0,100%_50%,0_100%)]" />
-            <DoodleBackArrow size={18} color="var(--color-caneta-preta)" />
-            Voltar para a Mesa
-          </div>
-        </Link>
-      </div>
+      <BackToMesa className="max-w-4xl" />
 
       {/* CADERNO ABERTO (CONTEÚDO INTERNO) */}
       <div 
@@ -237,9 +229,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
         </Link>
       </div>
       
-      <footer className="w-full max-w-4xl text-center py-8 text-xs text-amber-50/50 font-marker uppercase tracking-wider z-20">
-        © 2026 Almanaque da Copa - Feito à mão digitalmente
-      </footer>
+      <Footer className="max-w-4xl" />
     </main>
   );
 }

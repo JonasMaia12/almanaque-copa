@@ -36,8 +36,8 @@ export default function Loading() {
 
         {/* Cards de grupo skeleton — folhas em branco na mesa */}
         <div className="flex flex-wrap justify-center gap-12 mt-4 pb-20">
-          {Array.from({ length: 9 }).map((_, i) => {
-            const rotations = [-4, 3, -2, 5, -3, 4, -1, 3, -5];
+          {Array.from({ length: 12 }).map((_, i) => {
+            const rotations = [-4, 3, -2, 5, -3, 4, -1, 3, -5, 2, -4, 3];
             const rot = rotations[i] ?? 0;
             return (
               <div

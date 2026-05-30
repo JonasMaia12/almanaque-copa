@@ -1,6 +1,4 @@
 "use client";
-
-import React from 'react';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
 
 interface IconProps {
@@ -224,28 +222,3 @@ export function DoodleBackArrow({ seed = "back", className = "", color = "curren
   );
 }
 
-// 10. DoodleMedal: Medalha rabiscada com fitas
-export function DoodleMedal({ seed = "medal", className = "", color = "currentColor", size = 24 }: IconProps) {
-  const hash = cyrb53(seed);
-  const rot = seededRandom(hash, -8, 8);
-  return (
-    <svg 
-      viewBox="0 0 24 24" 
-      width={size} 
-      height={size} 
-      className={`inline-block select-none ${className}`}
-      style={{ transform: `rotate(${rot}deg)`, stroke: color, fill: "none", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }}
-    >
-      {/* Fitas superiores */}
-      <path d="M8,3 L12,10 L16,3" />
-      <path d="M10,3 L12,8 L14,3" />
-      {/* Medalha redonda */}
-      <circle cx="12" cy="13" r="5.5" />
-      {/* Detalhe interno da medalha */}
-      <circle cx="12" cy="13" r="2.5" fill={color} opacity="0.3" />
-      {/* Detalhe fitas penduradas abaixo */}
-      <path d="M9.5,17.5 L7,22 L11,20" />
-      <path d="M14.5,17.5 L17,22 L13,20" />
-    </svg>
-  );
-}

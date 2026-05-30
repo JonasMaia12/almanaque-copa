@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
 import { Stamp } from './doodles/Stamp';
 import { TapeStrip } from './doodles/TapeStrip';
@@ -25,10 +25,13 @@ const GROUP_COLORS: Record<string, string> = {
   "Grupo F": "#ede9fe",
   "Grupo G": "#1a1a1a",
   "Grupo H": "#fdf6e3",
+  "Grupo I": "#fae8ff",
+  "Grupo J": "#f0fdf4",
+  "Grupo K": "#ecfeff",
+  "Grupo L": "#fff1f2",
 };
 
 export function GroupSheet({ groupName, teams, isMobile, index }: GroupSheetProps) {
-  const router = useRouter();
   const [hoveredTeamId, setHoveredTeamId] = React.useState<string | null>(null);
   const hash = cyrb53(groupName);
   const bgColor = GROUP_COLORS[groupName] || "#ffffff";
@@ -113,14 +116,15 @@ export function GroupSheet({ groupName, teams, isMobile, index }: GroupSheetProp
                   </motion.div>
                 )}
               </AnimatePresence>
-              <Sticker
-                src={team.badge_image}
-                alt={`Escudo da seleção ${team.name}`}
-                width={80}
-                height={80}
-                layoutId={`shield-${team.id}`}
-                onClick={() => router.push(`/team/${team.id}`)}
-              />
+              <Link href={`/team/${team.id}`}>
+                <Sticker
+                  src={team.badge_image}
+                  alt={`Escudo da seleção ${team.name}`}
+                  width={80}
+                  height={80}
+                  layoutId={`shield-${team.id}`}
+                />
+              </Link>
               <span className={`absolute -bottom-4 left-1/2 -translate-x-1/2 text-xs font-handwritten whitespace-nowrap ${isDark ? 'text-white' : 'text-neutral-800'}`}>
                 {team.name}
               </span>

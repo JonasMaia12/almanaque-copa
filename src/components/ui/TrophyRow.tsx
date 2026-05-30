@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 interface TrophyRowProps {
@@ -14,20 +13,16 @@ export function TrophyRow({ count, className = "" }: TrophyRowProps) {
       <span className="text-[10px] font-marker font-bold uppercase tracking-wider text-amber-500 mr-2">Títulos</span>
       <div className="flex gap-1" aria-label={`${count} título${count > 1 ? 's' : ''} mundiais`}>
         {Array.from({ length: count }).map((_, i) => (
-          <div 
-            key={i} 
-            className="animate-bounce" 
-            style={{ animationDelay: `${i * 150}ms` }}
+          <Image 
+            key={i}
+            src="/images/trophy.png" 
+            alt="Troféu" 
+            width={24} 
+            height={36} 
+            className="drop-shadow-md"
+            sizes="24px"
             aria-hidden="true"
-          >
-            <Image 
-              src="/images/trophy.png" 
-              alt="Troféu" 
-              width={24} 
-              height={36} 
-              className="drop-shadow-md"
-            />
-          </div>
+          />
         ))}
       </div>
     </div>
