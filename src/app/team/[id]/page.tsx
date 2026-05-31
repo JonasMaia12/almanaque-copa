@@ -32,14 +32,30 @@ export async function generateMetadata({ params }: TeamPageProps): Promise<Metad
 
   if (!team) return {};
 
+  const fullDescription = `Conheça a história, curiosidades, gastronomia e os craques da seleção de futebol de ${team.name}. ${team.history.summary}`;
+
   return {
-    title: `${team.name} – Almanaque da Copa 2026`,
-    description: team.history.summary,
+    title: team.name,
+    description: fullDescription,
     openGraph: {
-      title: `${team.name} – Almanaque da Copa 2026`,
-      description: team.history.summary,
+      title: `${team.name} | Almanaque da Copa 2026`,
+      description: fullDescription,
       type: 'website',
       url: `https://almanaque-copa.vercel.app/team/${team.id}`,
+      images: [
+        {
+          url: team.badge_image,
+          width: 256,
+          height: 256,
+          alt: `Escudo da Seleção de ${team.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: `${team.name} | Almanaque da Copa 2026`,
+      description: fullDescription,
+      images: [team.badge_image],
     },
   };
 }
