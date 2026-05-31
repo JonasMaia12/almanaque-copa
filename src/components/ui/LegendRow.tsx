@@ -2,7 +2,8 @@ import { LegendaryPlayer } from '@/types/worldcup';
 import { Sticker } from './Sticker';
 import { CircleHighlight } from './doodles/CircleHighlight';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
-import { DoodleBall, DoodleTrophy, DoodleStar } from './doodles/DoodleIcons';
+import { DoodleBall, DoodleStar } from './doodles/DoodleIcons';
+import Image from 'next/image';
 
 interface LegendRowProps {
   player: LegendaryPlayer;
@@ -83,7 +84,16 @@ export function LegendRow({ player }: LegendRowProps) {
             <span className="font-bold">{player.stats.career_goals} gols na carreira lendária</span>
           </div>
           <div className="flex items-center gap-3 font-handwritten text-2xl text-amber-950 rotate-[0.5deg]">
-            <DoodleTrophy seed={player.id + 'trophy'} size={24} color="#b45309" className="shrink-0" />
+            <Image 
+              src="/images/trophy.png" 
+              alt="Troféu" 
+              width={20} 
+              height={30} 
+              className="drop-shadow-xs shrink-0" 
+              sizes="20px"
+              style={{ height: 'auto' }}
+              aria-hidden="true"
+            />
             <span className="font-bold">{player.stats.world_cups_played} Copas disputadas</span>
           </div>
           <div className="flex items-center gap-3 font-handwritten text-2xl text-amber-950 -rotate-1">

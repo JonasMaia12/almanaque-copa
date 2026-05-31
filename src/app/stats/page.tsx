@@ -6,11 +6,11 @@ import { TapeStrip } from '@/components/ui/doodles/TapeStrip';
 import { InkBlot } from '@/components/ui/doodles/InkBlot';
 import { 
   DoodleStar, 
-  DoodleTrophy, 
   DoodleBall, 
   DoodleFire, 
   DoodleGlobe 
 } from '@/components/ui/doodles/DoodleIcons';
+import Image from 'next/image';
 import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';
 import { BackToMesa } from '@/components/ui/BackToMesa';
 import { Footer } from '@/components/ui/Footer';
@@ -151,7 +151,16 @@ export default function StatsPage() {
           {/* POST-IT 1: SELEÇÕES COM TÍTULOS (AMARELO) */}
           <RankingPostIt
             title="Títulos Mundiais"
-            icon={<DoodleTrophy size={20} color="var(--color-caneta-preta)" />}
+            icon={
+              <Image 
+                src="/images/trophy.png" 
+                alt="Troféu" 
+                width={16} 
+                height={24} 
+                className="shrink-0" 
+                style={{ height: 'auto' }}
+              />
+            }
             items={titleRankingItems}
             bgColorClass="bg-[#fef3c7]/95 border-[#fef3c7]/40"
             textColorClass="text-yellow-700"

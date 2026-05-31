@@ -1,4 +1,4 @@
-import { DoodleTrophy } from './doodles/DoodleIcons';
+import Image from 'next/image';
 
 interface TrophyRowProps {
   count: number;
@@ -15,12 +15,16 @@ export function TrophyRow({ count, className = "" }: TrophyRowProps) {
       </span>
       <div className="flex gap-1" aria-label={`${count} título${count > 1 ? 's' : ''} mundiais`}>
         {Array.from({ length: count }).map((_, i) => (
-          <DoodleTrophy 
+          <Image 
             key={i}
-            size={22} 
-            color="#b45309" // Caneta marrom/dourada estilizada
-            seed={`trophy-badge-${i}`}
-            className="drop-shadow-2xs"
+            src="/images/trophy.png" 
+            alt="Troféu" 
+            width={20} 
+            height={30} 
+            className="drop-shadow-md"
+            sizes="20px"
+            style={{ height: 'auto' }}
+            aria-hidden="true"
           />
         ))}
       </div>
