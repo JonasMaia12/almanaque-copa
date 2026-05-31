@@ -86,11 +86,12 @@ async function processImage(inputPath, outputPath) {
   }
 }
 
-const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/754e7d7a-89c8-41fa-a516-2f90fc4ed9db';
+const artifactsDir = '/Users/macbookpro/.gemini/antigravity-cli/brain/f106fe9d-4e8e-4725-a9db-351796f6f367';
 const publicDir = '/Users/macbookpro/Documents/Jonas/almanaque-copa/public/images';
 
 const files = [
-  { in: `${artifactsDir}/legend_figo_v3_raw_1779957084828.png`, out: `${publicDir}/players/legend-figo.png` }
+  { in: `${artifactsDir}/legend_figo_1780248586246.png`, out: `${publicDir}/players/legend-figo.png` },
+  { in: `${artifactsDir}/badge_brasil_1780248601100.png`, out: `${publicDir}/badges/brasil.png` }
 ];
 
 async function run() {
