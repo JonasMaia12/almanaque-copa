@@ -34,6 +34,9 @@ export const Sticker: React.FC<StickerProps> = ({
   const defaultHoverRotation = initialRotation === 0 ? 5 : initialRotation + 4;
   const hoverRotateVal = hoverRotation !== undefined ? hoverRotation : defaultHoverRotation;
 
+  const hasWidthClass = className.split(' ').some(c => c.startsWith('w-') || c.includes(':w-'));
+  const hasHeightClass = className.split(' ').some(c => c.startsWith('h-') || c.includes(':h-'));
+
   return (
     <motion.div
       className={`relative inline-block cursor-pointer select-none ${className}`}
@@ -59,7 +62,10 @@ export const Sticker: React.FC<StickerProps> = ({
         stiffness: 300,
         damping: 15,
       }}
-      style={{ width, height }}
+      style={{ 
+        width: hasWidthClass ? undefined : width, 
+        height: hasHeightClass ? undefined : height 
+      }}
       data-testid="sticker-container"
     >
       <Image

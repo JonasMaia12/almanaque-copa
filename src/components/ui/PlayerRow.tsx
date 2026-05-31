@@ -21,7 +21,7 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
   const hoverRotation = initialRotation + hoverOffset;
 
   return (
-    <div className={`flex flex-col ${alignClass} gap-6 md:gap-16 items-center md:items-start my-12 relative w-full px-4 md:px-10`}>
+    <div className={`flex flex-col ${alignClass} gap-6 md:gap-16 items-center md:items-start my-12 relative w-full px-4 md:px-10`} data-index={index}>
       {/* Coluna do Sticker */}
       <div className="relative shrink-0 flex flex-col items-center">
         <Sticker 
@@ -73,7 +73,7 @@ export function PlayerRow({ player, isEven, index }: PlayerRowProps) {
             className="font-handwritten text-xl text-neutral-900 px-1 py-1 leading-loose box-decoration-clone" 
             style={{ backgroundImage: 'linear-gradient(180deg, transparent 60%, var(--color-marca-texto) 60%)' }}
           >
-            "{player.short_bio}"
+            &quot;{player.short_bio}&quot;
           </span>
         </div>
 

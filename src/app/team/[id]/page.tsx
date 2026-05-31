@@ -195,15 +195,15 @@ export default async function TeamPage({ params }: TeamPageProps) {
         {/* Seleção Anterior */}
         <Link 
           href={`/team/${prevTeam.id}`} 
-          className="relative block w-36 sm:w-48 bg-amber-100/95 hover:bg-amber-50 p-3 pt-5 pb-3 shadow-md border border-amber-200/40 rotate-[-3deg] hover:rotate-[-1deg] transition-all duration-200"
-          style={{ clipPath: 'polygon(0% 0%, 100% 2%, 98% 95%, 2% 100%)' }}
+          className="relative block w-44 sm:w-56 bg-amber-100/95 hover:bg-amber-50 p-3 pt-5 pb-3.5 shadow-md border border-amber-200/40 rotate-[-3deg] hover:rotate-[-1deg] transition-all duration-200"
+          style={{ clipPath: 'polygon(0% 0%, 100% 2%, 97% 93%, 3% 100%)' }}
         >
           <TapeStrip seed={`${team.id}-nav-prev`} color="transparent" className="-top-3 left-1/2 -translate-x-1/2" />
           <div className="flex flex-col items-start gap-1">
             <span className="text-[10px] text-neutral-500 font-marker uppercase tracking-wider">Anterior</span>
-            <div className="flex items-center gap-1 w-full overflow-hidden">
+            <div className="flex items-center gap-1.5 w-full py-0.5">
               <HandArrow seed={`${team.id}-arrow-prev`} direction="left" className="shrink-0 scale-75 w-6 h-4" color="var(--color-caneta-azul)" />
-              <span className="font-handwritten text-lg sm:text-2xl text-neutral-800 font-bold truncate leading-none">
+              <span className="font-handwritten text-sm sm:text-lg text-neutral-800 font-bold leading-tight break-words min-w-0">
                 {prevTeam.name}
               </span>
             </div>
@@ -213,14 +213,14 @@ export default async function TeamPage({ params }: TeamPageProps) {
         {/* Próxima Seleção */}
         <Link 
           href={`/team/${nextTeam.id}`} 
-          className="relative block w-36 sm:w-48 bg-pink-100/95 hover:bg-pink-50 p-3 pt-5 pb-3 shadow-md border border-pink-200/40 rotate-[3deg] hover:rotate-[1deg] transition-all duration-200 text-right"
-          style={{ clipPath: 'polygon(2% 2%, 98% 0%, 100% 100%, 0% 95%)' }}
+          className="relative block w-44 sm:w-56 bg-pink-100/95 hover:bg-pink-50 p-3 pt-5 pb-3.5 shadow-md border border-pink-200/40 rotate-[3deg] hover:rotate-[1deg] transition-all duration-200 text-right"
+          style={{ clipPath: 'polygon(2% 2%, 98% 0%, 100% 100%, 0% 93%)' }}
         >
           <TapeStrip seed={`${team.id}-nav-next`} color="transparent" className="-top-3 left-1/2 -translate-x-1/2" />
           <div className="flex flex-col items-end gap-1">
             <span className="text-[10px] text-neutral-500 font-marker uppercase tracking-wider">Próxima</span>
-            <div className="flex items-center justify-end gap-1 w-full overflow-hidden">
-              <span className="font-handwritten text-lg sm:text-2xl text-neutral-800 font-bold truncate leading-none">
+            <div className="flex items-center justify-end gap-1.5 w-full py-0.5">
+              <span className="font-handwritten text-sm sm:text-lg text-neutral-800 font-bold leading-tight break-words min-w-0">
                 {nextTeam.name}
               </span>
               <HandArrow seed={`${team.id}-arrow-next`} direction="right" className="shrink-0 scale-75 w-6 h-4" color="var(--color-caneta-vermelha)" />

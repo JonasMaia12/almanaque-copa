@@ -30,7 +30,6 @@
 body {
   font-family: var(--font-handwritten), system-ui, sans-serif;
   background-color: var(--color-mesa);
-  overflow-x: hidden;
 }
 
 /* --- ESTILOS DE TEXTURAS CSS (ORCÂNICAS E TÁTEIS) --- */
@@ -74,4 +73,9 @@ body {
 }
 .font-stats {
   font-family: var(--font-stats), cursive;
+}
+
+/* Snaps handwritten cursive text to the 28px background notebook grid lines */
+.bg-lined-paper .font-handwritten {
+  line-height: 28px;
 }

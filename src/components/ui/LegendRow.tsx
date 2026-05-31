@@ -2,6 +2,7 @@ import { LegendaryPlayer } from '@/types/worldcup';
 import { Sticker } from './Sticker';
 import { CircleHighlight } from './doodles/CircleHighlight';
 import { cyrb53, seededRandom } from '@/lib/doodle-seed';
+import { DoodleBall, DoodleTrophy, DoodleStar } from './doodles/DoodleIcons';
 
 interface LegendRowProps {
   player: LegendaryPlayer;
@@ -78,15 +79,15 @@ export function LegendRow({ player }: LegendRowProps) {
         {/* Estatísticas estilo lista escrita com caneta dourada/vermelha */}
         <div className="flex flex-col gap-2 ml-2 mt-2">
           <div className="flex items-center gap-3 font-handwritten text-2xl text-amber-950 -rotate-[0.5deg]">
-            <span className="shrink-0 text-2xl" role="img" aria-label="gols">⚽</span>
+            <DoodleBall seed={player.id + 'ball'} size={24} color="var(--color-caneta-preta)" className="shrink-0" />
             <span className="font-bold">{player.stats.career_goals} gols na carreira lendária</span>
           </div>
           <div className="flex items-center gap-3 font-handwritten text-2xl text-amber-950 rotate-[0.5deg]">
-            <span className="shrink-0 text-2xl" role="img" aria-label="copas">🏆</span>
+            <DoodleTrophy seed={player.id + 'trophy'} size={24} color="#b45309" className="shrink-0" />
             <span className="font-bold">{player.stats.world_cups_played} Copas disputadas</span>
           </div>
           <div className="flex items-center gap-3 font-handwritten text-2xl text-amber-950 -rotate-1">
-            <span className="shrink-0 text-2xl" role="img" aria-label="gols copa">🎯</span>
+            <DoodleStar seed={player.id + 'star'} size={24} color="var(--color-caneta-vermelha)" className="shrink-0" />
             <span className="font-bold">{player.stats.world_cup_goals} gols em Copas do Mundo</span>
           </div>
         </div>
@@ -99,7 +100,7 @@ export function LegendRow({ player }: LegendRowProps) {
               backgroundImage: 'linear-gradient(180deg, transparent 55%, rgba(245, 158, 11, 0.4) 55%)' 
             }}
           >
-            "{player.short_bio}"
+            &quot;{player.short_bio}&quot;
           </span>
         </div>
 

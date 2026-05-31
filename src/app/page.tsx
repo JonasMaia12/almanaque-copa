@@ -16,9 +16,9 @@ const sortedGroups = Object.keys(groups).sort();
 
 // Letras do título com metadados de estilo
 const TITLE_CHARS = [
-  { word: 'ALMANAQUE', chars: ['A','L','M','A','N','A','Q','U','E'], size: 'text-2xl md:text-3xl', gap: 'gap-1.5 md:gap-2' },
-  { word: 'DA', chars: ['D','A'], size: 'text-sm md:text-base', gap: 'gap-1.5' },
-  { word: 'COPA', chars: ['C','O','P','A'], size: 'text-3xl md:text-4xl', gap: 'gap-1.5 md:gap-2' },
+  { word: 'ALMANAQUE', chars: ['A','L','M','A','N','A','Q','U','E'], size: 'text-lg sm:text-2xl md:text-3xl', gap: 'gap-1 sm:gap-1.5 md:gap-2' },
+  { word: 'DA', chars: ['D','A'], size: 'text-xs sm:text-sm md:text-base', gap: 'gap-1 sm:gap-1.5' },
+  { word: 'COPA', chars: ['C','O','P','A'], size: 'text-2xl sm:text-3xl md:text-4xl', gap: 'gap-1 sm:gap-1.5 md:gap-2' },
 ] as const;
 
 function getTitleCharStyle(wordIndex: number, charIndex: number): string {
@@ -30,16 +30,16 @@ function getTitleCharStyle(wordIndex: number, charIndex: number): string {
       : charIndex % 3 === 1
       ? 'bg-neutral-800 text-amber-50'
       : 'bg-red-700 text-white';
-    return `inline-block px-3 py-1 font-sans font-extrabold uppercase shadow-sm border border-neutral-700/20 transform ${rotation} ${bg}`;
+    return `inline-block px-1.5 py-0.5 sm:px-3 sm:py-1 font-sans font-extrabold uppercase shadow-sm border border-neutral-700/20 transform ${rotation} ${bg}`;
   }
   if (wordIndex === 1) {
     // DA
-    return 'inline-block px-2.5 py-0.5 bg-neutral-100 text-neutral-700 font-sans font-black uppercase rotate-1 shadow-2xs border border-neutral-300';
+    return 'inline-block px-1.5 py-0.5 sm:px-2.5 sm:py-0.5 bg-neutral-100 text-neutral-700 font-sans font-black uppercase rotate-1 shadow-2xs border border-neutral-300';
   }
   // COPA
   const rotation = charIndex % 2 === 0 ? '-rotate-3' : 'rotate-3';
   const bg = charIndex % 2 === 0 ? 'bg-blue-600 text-white' : 'bg-amber-400 text-neutral-900';
-  return `inline-block px-4 py-1.5 font-sans font-black uppercase shadow-md border border-neutral-800/10 transform ${rotation} ${bg}`;
+  return `inline-block px-2 py-1 sm:px-4 sm:py-1.5 font-sans font-black uppercase shadow-md border border-neutral-800/10 transform ${rotation} ${bg}`;
 }
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
           {TITLE_CHARS.map((wordData, wIdx) => (
             <div
               key={wordData.word}
-              className={`flex ${wIdx === 1 ? 'justify-center' : 'flex-wrap justify-center'} ${wordData.gap} ${wIdx > 0 ? 'mt-3' : ''} max-w-full`}
+              className={`flex ${wIdx === 1 ? 'justify-center' : 'flex-nowrap sm:flex-wrap justify-center'} ${wordData.gap} ${wIdx > 0 ? 'mt-3' : ''} max-w-full`}
             >
               {wordData.chars.map((char, cIdx) => (
                 <span

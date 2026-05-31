@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { GroupSheet } from './GroupSheet';
 import { Team } from '@/types/worldcup';
-import { DoodleStats, DoodleDie } from './doodles/DoodleIcons';
+import { DoodleStats } from './doodles/DoodleIcons';
 
 interface ScatteredGroupsProps {
   groups: Record<string, Team[]>;
@@ -13,14 +12,11 @@ interface ScatteredGroupsProps {
 }
 
 export function ScatteredGroups({ groups, sortedGroups }: ScatteredGroupsProps) {
-  const router = useRouter();
   const [isMobile, setIsMobile] = useState(true);
   const [mounted, setMounted] = useState(false);
 
-  // Coleta todas as seleções para o sorteador aleatório
-  const allTeams = Object.values(groups).flat();
-
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -29,12 +25,6 @@ export function ScatteredGroups({ groups, sortedGroups }: ScatteredGroupsProps) 
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
-
-  const handleRandomSelect = () => {
-    if (allTeams.length === 0) return;
-    const randomTeam = allTeams[Math.floor(Math.random() * allTeams.length)];
-    router.push(`/team/${randomTeam.id}`);
-  };
 
   if (!mounted) {
     // Avoid hydration mismatch by rendering a safe default
@@ -74,19 +64,6 @@ export function ScatteredGroups({ groups, sortedGroups }: ScatteredGroupsProps) 
           );
         })}
       </div>
-
-      {/* BOTÃO FLUTUANTE SORTEADOR ALEATÓRIO 🎲 (CARIMBO ROBUSTO DE DADO COM DOODLE SVG) */}
-      <button
-        onClick={handleRandomSelect}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-red-700 hover:bg-red-600 text-white rounded-full flex items-center justify-center shadow-lg border-2 border-dashed border-red-900 cursor-pointer select-none group transition-transform active:scale-95"
-        style={{
-          boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255,255,255,0.2)',
-          transform: 'rotate(-5deg)'
-        }}
-        title="Sortear Seleção Aleatória 🎲"
-      >
-        <DoodleDie size={30} className="text-white group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-500 ease-out" />
-      </button>
     </div>
   );
 }

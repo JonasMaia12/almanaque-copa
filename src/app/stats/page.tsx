@@ -122,10 +122,10 @@ export default function StatsPage() {
         <InkBlot seed="stats-ink-2" type="coffee" className="bottom-12 left-8 w-28 h-28 opacity-15" />
         
         {/* Tachinhas nos quatro cantos */}
-        <div className="absolute top-3 left-3 w-4 h-4 bg-red-600 rounded-full border border-red-800 shadow-md z-20" />
-        <div className="absolute top-3 right-3 w-4 h-4 bg-blue-600 rounded-full border border-blue-800 shadow-md z-20" />
-        <div className="absolute bottom-3 left-3 w-4 h-4 bg-yellow-500 rounded-full border border-yellow-700 shadow-md z-20" />
-        <div className="absolute bottom-3 right-3 w-4 h-4 bg-green-600 rounded-full border border-green-800 shadow-md z-20" />
+        <div className="absolute top-5 left-5 w-4 h-4 bg-red-600 rounded-full border border-red-800 shadow-md z-20" />
+        <div className="absolute top-5 right-5 w-4 h-4 bg-blue-600 rounded-full border border-blue-800 shadow-md z-20" />
+        <div className="absolute bottom-5 left-5 w-4 h-4 bg-yellow-500 rounded-full border border-yellow-700 shadow-md z-20" />
+        <div className="absolute bottom-5 right-5 w-4 h-4 bg-green-600 rounded-full border border-green-800 shadow-md z-20" />
 
         {/* TÍTULO DO PAINEL */}
         <div className="flex flex-col items-center mb-12 relative z-20">

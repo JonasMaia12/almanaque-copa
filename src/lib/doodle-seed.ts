@@ -25,5 +25,7 @@ export function seededRandom(seed: number, min: number, max: number): number {
   // Uma função simples LCG (Linear Congruential Generator)
   const x = Math.sin(seed) * 10000;
   const rand = x - Math.floor(x);
-  return min + rand * (max - min);
+  // Arredonda para 5 casas decimais para garantir consistência server/client
+  // e evitar hydration mismatches causados por diferença de precisão de float
+  return Math.round((min + rand * (max - min)) * 100000) / 100000;
 }

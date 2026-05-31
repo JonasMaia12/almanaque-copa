@@ -312,76 +312,9 @@ export function LightningSticker({ className = "", rotate = 15, size = 55 }: Sti
   );
 }
 
-// Componente utilitário para renderizar stickers espalhados em páginas específicas de forma limpa e harmônica
+// Componente utilitário para renderizar stickers espalhados em páginas específicas
+// NOTA: Desativado temporariamente (retornando null) para evitar poluição visual e deixar a tela mais limpa para entrega.
+// O código dos stickers permanece aqui intacto caso decida reativá-los no futuro!
 export function PageStickers({ page }: { page: 'home' | 'team' | 'stats' }) {
-  if (page === 'home') {
-    return (
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
-        {/* Espalhado nas laterais e cantos da mesa principal */}
-        <div className="absolute top-[8%] left-[4%] pointer-events-auto hidden md:block">
-          <StarSticker rotate={-15} size={65} />
-        </div>
-        <div className="absolute top-[35%] left-[2%] pointer-events-auto">
-          <BallSticker rotate={12} size={60} />
-        </div>
-        <div className="absolute bottom-[20%] left-[3%] pointer-events-auto hidden lg:block">
-          <WhistleSticker rotate={-25} size={70} />
-        </div>
-        <div className="absolute top-[12%] right-[3%] pointer-events-auto hidden md:block">
-          <CrownSticker rotate={8} size={65} />
-        </div>
-        <div className="absolute top-[48%] right-[2%] pointer-events-auto">
-          <CardsSticker rotate={-18} size={58} />
-        </div>
-        <div className="absolute bottom-[25%] right-[4%] pointer-events-auto hidden lg:block">
-          <LightningSticker rotate={22} size={60} />
-        </div>
-        <div className="absolute bottom-[5%] left-[20%] pointer-events-auto hidden md:block">
-          <HeartSticker rotate={5} size={50} />
-        </div>
-      </div>
-    );
-  }
-
-  if (page === 'team') {
-    return (
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
-        {/* Um sticker de estrela e bola discretos em volta do caderno de seleções */}
-        <div className="absolute top-[5%] left-[8%] pointer-events-auto hidden lg:block">
-          <StarSticker rotate={-10} size={60} />
-        </div>
-        <div className="absolute top-[25%] right-[5%] pointer-events-auto">
-          <HeartSticker rotate={15} size={50} />
-        </div>
-        <div className="absolute bottom-[18%] left-[4%] pointer-events-auto hidden md:block">
-          <LightningSticker rotate={-15} size={55} />
-        </div>
-        <div className="absolute bottom-[10%] right-[6%] pointer-events-auto">
-          <BallSticker rotate={20} size={55} />
-        </div>
-      </div>
-    );
-  }
-
-  if (page === 'stats') {
-    return (
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
-        {/* Adesivos colados nas bordas do painel de estatísticas */}
-        <div className="absolute top-[4%] left-[6%] pointer-events-auto">
-          <CrownSticker rotate={-8} size={65} />
-        </div>
-        <div className="absolute top-[20%] right-[4%] pointer-events-auto hidden md:block">
-          <WhistleSticker rotate={15} size={65} />
-        </div>
-        <div className="absolute bottom-[15%] left-[3%] pointer-events-auto">
-          <CardsSticker rotate={-12} size={55} />
-        </div>
-        <div className="absolute bottom-[8%] right-[8%] pointer-events-auto hidden md:block">
-          <StarSticker rotate={25} size={60} />
-        </div>
-      </div>
-    );
-  }
-
   return null;
 }

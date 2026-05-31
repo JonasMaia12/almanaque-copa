@@ -35,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${permanentMarker.variable} ${caveat.variable} ${kalam.variable} h-full antialiased`}
+      className={`${permanentMarker.variable} ${caveat.variable} ${kalam.variable} antialiased overflow-x-hidden`}
     >
-      <body className="min-h-full flex flex-col font-handwritten">
+      <body className="min-h-screen flex flex-col font-handwritten">
         {children}
       </body>
     </html>
