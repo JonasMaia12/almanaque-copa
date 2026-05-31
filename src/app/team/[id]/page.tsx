@@ -13,7 +13,6 @@ import { TapeStrip } from '@/components/ui/doodles/TapeStrip';
 import { ScribbleLine } from '@/components/ui/doodles/ScribbleLine';
 import { Sticker } from '@/components/ui/Sticker';
 import { HandArrow } from '@/components/ui/doodles/HandArrow';
-import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';
 import { BackToMesa } from '@/components/ui/BackToMesa';
 import { Footer } from '@/components/ui/Footer';
 
@@ -65,9 +64,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
   return (
     <main className="min-h-screen bg-cutting-mat flex flex-col items-center justify-start py-8 px-4 relative select-none">
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.5)_100%)] z-0" />
-
-      {/* STICKERS DECORATIVOS DA MESA */}
-      <PageStickers page="team" />
 
       {/* BOTÃO VOLTAR */}
       <BackToMesa className="max-w-4xl" />

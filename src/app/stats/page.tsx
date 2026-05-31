@@ -11,7 +11,6 @@ import {
   DoodleGlobe 
 } from '@/components/ui/doodles/DoodleIcons';
 import Image from 'next/image';
-import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';
 import { BackToMesa } from '@/components/ui/BackToMesa';
 import { Footer } from '@/components/ui/Footer';
 import { RankingPostIt, RankingItem } from '@/components/ui/RankingPostIt';
@@ -100,9 +99,6 @@ export default function StatsPage() {
   return (
     <main className="min-h-screen bg-cutting-mat flex flex-col items-center justify-start py-8 px-4 relative select-none">
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.5)_100%)] z-0" />
-
-      {/* STICKERS DECORATIVOS DA PÁGINA */}
-      <PageStickers page="stats" />
 
       {/* BOTÃO VOLTAR */}
       <BackToMesa className="max-w-5xl" />

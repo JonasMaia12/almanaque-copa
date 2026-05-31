@@ -1,6 +1,5 @@
 import worldCupData from '@/data/worldcup.json';
 import { ScatteredGroups } from '@/components/ui/ScatteredGroups';
-import { PageStickers } from '@/components/ui/doodles/DecorativeStickers';
 
 // Agrupa equipes por Grupo — executado uma única vez no servidor em build time
 function buildGroups(teams: typeof worldCupData.teams): Record<string, typeof worldCupData.teams> {
@@ -45,8 +44,6 @@ function getTitleCharStyle(wordIndex: number, charIndex: number): string {
 export default function Home() {
   return (
     <main className="min-h-screen bg-cutting-mat flex flex-col items-center p-4 md:p-8 relative overflow-x-hidden">
-      {/* STICKERS DECORATIVOS DA MESA */}
-      <PageStickers page="home" />
 
       <div className="w-full max-w-6xl relative z-10 pt-4 md:pt-10">
         

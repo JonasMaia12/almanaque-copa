@@ -32,35 +32,7 @@ export function DoodleStats({ seed = "stats", className = "", color = "currentCo
   );
 }
 
-// 2. DoodleDie: Dado rabiscado
-export function DoodleDie({ seed = "die", className = "", color = "currentColor", size = 24 }: IconProps) {
-  const hash = cyrb53(seed);
-  const rot = seededRandom(hash, -10, 10);
-  return (
-    <svg 
-      viewBox="0 0 24 24" 
-      width={size} 
-      height={size} 
-      className={`inline-block select-none ${className}`}
-      style={{ transform: `rotate(${rot}deg)`, stroke: color, fill: "none", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }}
-    >
-      {/* Cubo isometrico desenhado à mão */}
-      {/* Face frontal/lateral */}
-      <path d="M6,8 L14,5 L20,9 L12,12 Z" />
-      <path d="M6,8 L6,16 L12,20 L12,12" />
-      <path d="M20,9 L20,17 L12,20" />
-      {/* Pontos nas faces */}
-      {/* Ponto superior */}
-      <circle cx="13" cy="8.5" r="1" fill={color} />
-      {/* Pontos frontais */}
-      <circle cx="9" cy="12" r="0.75" fill={color} />
-      <circle cx="9" cy="16" r="0.75" fill={color} />
-      {/* Pontos laterais */}
-      <circle cx="16" cy="12" r="0.75" fill={color} />
-      <circle cx="16" cy="15" r="0.75" fill={color} />
-    </svg>
-  );
-}
+
 
 // 3. DoodlePencil: Lápis fofinho rabiscado
 export function DoodlePencil({ seed = "pencil", className = "", color = "currentColor", size = 24 }: IconProps) {
@@ -87,32 +59,7 @@ export function DoodlePencil({ seed = "pencil", className = "", color = "current
   );
 }
 
-// 4. DoodleTrophy: Taça/Troféu rústico
-export function DoodleTrophy({ seed = "trophy", className = "", color = "currentColor", size = 24 }: IconProps) {
-  const hash = cyrb53(seed);
-  const rot = seededRandom(hash, -4, 4);
-  return (
-    <svg 
-      viewBox="0 0 24 24" 
-      width={size} 
-      height={size} 
-      className={`inline-block select-none ${className}`}
-      style={{ transform: `rotate(${rot}deg)`, stroke: color, fill: "none", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }}
-    >
-      {/* Copo principal */}
-      <path d="M6,5 C6,10 7,14 12,14 C17,14 18,10 18,5 Z" />
-      {/* Alça esquerda */}
-      <path d="M6,7 C4,7 4,10 6,11" />
-      {/* Alça direita */}
-      <path d="M18,7 C20,7 20,10 18,11" />
-      {/* Haste e Base */}
-      <path d="M12,14 L12,19" />
-      <path d="M8,20 C10,19 14,19 16,20" />
-      {/* Detalhe da borda superior */}
-      <path d="M5.5,5 C10,4.5 14,4.5 18.5,5" />
-    </svg>
-  );
-}
+
 
 // 5. DoodleStar: Estrela desenhada e imperfeita
 export function DoodleStar({ seed = "star", className = "", color = "currentColor", size = 24 }: IconProps) {
