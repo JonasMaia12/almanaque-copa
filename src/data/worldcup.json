@@ -345,7 +345,7 @@
       "manager": "Luis de la Fuente",
       "history": {
         "summary": "Campeã mundial em 2010 e famosa pela revolução do estilo de jogo 'Tiki-Taka' de posse de bola paciente e passes curtos rápidos.",
-        "milestones": "Conquistou a Copa do Mundo de 2010 na África do Sul com gol antológico de Iniesta na prorrogação contra a Holanda."
+        "milestones": "Conquistou a Copa do Mundo de 2010 na África do Sul com gol antológico de Iniesta na prorrogação contra os Países Baixos."
       },
       "culture": {
         "traditional_food": "Paella Valenciana, Jamón Ibérico e Tapas",
@@ -604,10 +604,10 @@
       }
     },
     {
-      "id": "holanda",
-      "name": "Holanda",
+      "id": "paises-baixos",
+      "name": "Países Baixos",
       "group": "Grupo F",
-      "badge_image": "/images/badges/holanda.png",
+      "badge_image": "/images/badges/paises-baixos.png",
       "theme_color": "#ff6600",
       "titles_count": 0,
       "manager": "Ronald Koeman",
@@ -633,7 +633,7 @@
             "career_goals": 63,
             "world_cups_played": 1,
             "world_cup_goals": 1,
-            "historical_fact": "Liderou a Holanda até as quartas de final em 2022 em um dos duelos mais disputados das Copas contra a Argentina."
+            "historical_fact": "Liderou os Países Baixos até as quartas de final em 2022 em um dos duelos mais disputados das Copas contra a Argentina."
           }
         },
         {
