@@ -18,8 +18,7 @@ O projeto afasta-se de layouts digitais tradicionais para recriar uma **Mesa de 
 ## 🚀 Funcionalidades Integradas
 1. **Painel de Estatísticas (`/stats`):** Um quadro de cortiça reuniendo rankings históricos das 10 seleções do MVP (Artilharia, Títulos, Copas disputadas e mais).
 2. **Figurinhas Estelares & Lendas de Ouro:** Adesivos transparentes em alta definição dos jogadores de destaque de cada país e das 10 maiores lendas da história das Copas (como Pelé e Maradona), renderizados com selo metalizado dourado refletivo.
-3. **Filtro Manuscrito:** Uma barra de busca integrada que esmaece de forma opaca os grupos e seleções inativos.
-4. **Navegação Circular:** Links no rodapé em formato de post-its coloridos para transitar fluentemente entre os países.
+3. **Navegação Circular:** Links no rodapé em formato de post-its coloridos para transitar fluentemente entre os países.
 
 ---
 

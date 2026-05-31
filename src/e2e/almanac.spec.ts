@@ -1,4 +1,8 @@
 import { test, expect } from '@playwright/test';
+import worldCupData from '@/data/worldcup.json';
+
+const brazil = worldCupData.teams.find((team) => team.id === 'brasil');
+const vini = brazil?.players.find((player) => player.id === 'vini-jr');
 
 test.describe('World Cup Almanac E2E Tests', () => {
   
@@ -27,8 +31,10 @@ test.describe('World Cup Almanac E2E Tests', () => {
     const stickerImg = page.locator('img[alt="Ilustração de Vinícius Júnior"]');
     await expect(stickerImg).toBeVisible();
 
-    // 4. Verifica se os gols na carreira estão visíveis
-    const goalsText = page.locator('div:has-text("145 gols na carreira")').last();
+    expect(vini).toBeDefined();
+
+    // 4. Verifica se os gols na carreira do JSON estão visíveis
+    const goalsText = page.locator(`div:has-text("${vini!.stats.career_goals} gols na carreira")`).last();
     await expect(goalsText).toBeVisible();
   });
 });

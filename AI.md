@@ -28,3 +28,9 @@ Todas as imagens de jogadores e troféus são processadas no script `removeBg.js
 * **Regra Anti-Copyright:** Nunca use nomes reais de jogadores nos prompts. Descreva suas características físicas, uniformes e poses específicas.
 * **Borda de Proteção:** Para o algoritmo de recorte não remover a borda branca do adesivo, inclua a instrução de uma linha preta fina contornando o exterior do adesivo (ex: *"thick solid white outline border surrounding the entire player, and a thin black line outlining the outside edge of the white border"*).
 * **Estilo Visual:** Ilustrações planas estilo vetor/pop-art, contornos nítidos a nanquim, texturas de canetinha e cores vibrantes, isolados em fundo branco sólido puro.
+
+---
+
+## 4. Ideias Futuras de Produto
+* **Dossiês de Grupo:** Transformar o almanaque de uma galeria informativa para uma experiência editorial mais completa, com páginas/áreas dedicadas aos grupos oficiais da Copa 2026. Cada dossiê poderia reunir adversários, jogos, datas, cidades, histórico de confrontos e uma nota editorial sobre o duelo mais interessante do grupo.
+* **Dependência de Dados:** Esta ideia só deve ser implementada quando o dataset cobrir todos os times dos grupos oficiais, não apenas as seleções em destaque do MVP. Sem essa cobertura completa, os dossiês ficariam incompletos e passariam a impressão de conteúdo quebrado.
